@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * This is a skinny, horizontal region that spans the entire width of the browser. 
+ * We want to be able to apply block classes to affect the background of the entire 
+ * block region. Therefore, we need the container div inside the block.
+ * 
+ * We omit the block title in alert blocks.
+ */
+#}
+<div{{ attributes.addClass('block') }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <div class="container clearfix">
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+  </div>
+</div>

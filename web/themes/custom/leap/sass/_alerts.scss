@@ -1,0 +1,46 @@
+/* Alert blocks
+*********************************/
+
+.alert-message {
+	.block {
+		text-align: left;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.block.alert-blue {
+		background-color: #a3b8df; /* Sampled blue from the interactive map */
+	}
+	.block.alert-green {
+		background-color: #9ecb98; /* Sampled green from the interactive map */
+	}
+	.block.alert-orange {
+		background-color: #fdd09c; /* Sampled orange from the interactive map */
+	}
+	.block.alert-red {
+		background-color: #e69f98; /* Sampled red from the interactive map */
+	}
+}
+
+.alert-header {
+	.container {
+		padding-left: 105px;
+		@media (min-width: em(768)) {
+
+		}
+		@media (min-width: em(1024)) {
+			padding-left: 0px;
+		}
+		@media (min-width: em(1152)) {
+			padding-left: 128px;
+		}
+	}
+}
+
+body.has-alert {
+	#hero-slideshow.parallax {
+		margin-top: -30px;
+	}
+}

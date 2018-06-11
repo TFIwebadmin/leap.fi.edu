@@ -1,0 +1,128 @@
+/* Variables - START
+*********************************/
+$darkOrange: #d0872a;
+$orange: #e89b37;
+$lightOrange: #eeaa4b;
+$orangeOrange: #f0a749;
+$darkRed: #b01d1b;
+$brown: #73470f;
+$tan: #fccb8d;
+$grayBlueIsh: #515668;
+$darkGray: #414e4b;
+$gray: #707d7a;
+$grayer:#c3c7c6;
+$lightGray: #ebf0ed;
+$grayTeal: #78968f;
+$verylightGray: #cbd0d1;
+$lightGray2: #6f6f6f;
+$lightGray3:#e4e8e7;
+$superlightGray: #dfdfdf;
+$superlightGray2: #f4f4f4;
+$superlightGray3: #bfc1c0;
+$topey: #9ab5a7;
+$greenIsh: #748c7f;
+$lightGreen: #758d81;
+$offWhite:#494949;
+$white:#fff;
+$lightWhite:#f6f6f6;
+$black: #202020;
+$blackIsh: #131313;
+$lightBlack: #272727;
+$purple: #4d5263;
+$lightPurple: #767b8c;
+$darkPurple: #404455;
+$highlightBack: #fdfdfd;
+$highlightText: #5f5d5e;
+/* Functions - START
+*********************************/
+@function em($target, $context: 16) {
+    @return ($target / $context) * 1em;
+}
+/* MIXINS - START
+*********************************/
+@mixin transitions {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+@mixin transitions-color {
+  -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+@mixin transitions-background-color {
+  -webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+}
+@mixin background-cover {
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+@mixin text-shadow {
+  -webkit-text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+  -moz-text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+}
+@mixin text-shadow-strong {
+  -webkit-text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+  -moz-text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+}
+@mixin background-transitions {
+  -webkit-transition: background 200ms ease-in 0;
+    -moz-transition: background 200ms ease-in 0;
+    -o-transition: background 200ms ease-in 0;
+    transition: background 200ms ease-in 0;
+}
+@mixin wordBreak(){
+  -ms-word-wrap: break-all;
+    word-wrap: break-all;
+}
+@mixin borderBox {
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@mixin borderRadius {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+@mixin boxit ($dir) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: $dir;
+  -moz-box-orient: $dir;
+  -ms-box-orient: $dir;
+  -webkit-orient: $dir;
+  orient: $dir;
+}
+@mixin order ($num) {
+  -ms-flex-order:#{$num};
+  -moz-box-ordinal-group:#{$num};
+  -webkit-box-ordinal-group:#{$num};
+  box-ordinal-group:#{$num};
+}
+
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0%   { opacity: 0; transform: translateY(5px); }
+  100% { opacity: 1; transform: translateY(0);}
+}
+

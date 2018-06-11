@@ -1,0 +1,729 @@
+/* Page # - Section
+*********************************/
+body.mobile{
+	background: $black;
+	height: 100%;
+	height: auto;
+}
+.menu-open #page {
+	-moz-transform: translateX(-235px);
+	-webkit-transform: translateX(-235px);
+	-o-transform: translateX(-235px);
+	-ms-transform: translateX(-235px);
+	transform: translateX(-235px);
+}
+body.mobile #page {
+	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.85);
+	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.85);
+	-ms-box-shadow: 0 0 30px rgba(0, 0, 0, 0.85);
+	-o-box-shadow: 0 0 30px rgba(0, 0, 0, 0.85);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.85);
+}
+#page {
+	background-color: #fff;
+	min-height: 100%;
+	@media (min-width: em(320)) {
+		position: relative;
+		z-index: 1;
+		-moz-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		-webkit-transform-origin-x: 50%;
+		-ms-transform-origin-x: 50%;
+		-moz-transform-origin-x: 50%;
+		-o-transform-origin-x: 50%;
+		transform-origin-x: 50%;
+		-webkit-transform-origin-y: 50%;
+		-ms-transform-origin-y: 50%;
+		-moz-transform-origin-y: 50%;
+		-o-transform-origin-y: 50%;
+		transform-origin-y: 50%;
+	}
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		position: relative;
+		z-index: 0;
+		-moz-transition: none;
+		-o-transition: none;
+		-webkit-transition: none;
+		-ms-transition: none;
+		transition: none;
+	}
+}
+#header {
+	clear: both;
+	ul.menu li {
+		list-style: none;
+		display: inline-block;
+	}
+}
+/* Mobile Nav - Section
+*********************************/
+#mobile-nav {
+	@media (min-width: em(320)) {
+		height: 55px;
+		background: $purple url("../images/bg/bg-header-menu-bar.png") repeat;
+		border-bottom: 3px solid $lightPurple;
+		a.logo-small {
+			width: 95px;
+			height: 106px;
+			left: 24px;
+		}
+		.nav-control {
+			width: 45%;
+			float: right;
+			padding-left: 1px;
+			overflow: hidden;
+			li {
+				width: 50%;
+				line-height: em(51);
+				float: left;
+				display: block;
+				border-left: 1px solid $darkPurple;
+				-webkit-box-shadow: 0 0 0 1px rgba(86,91,107, 1);
+				-moz-box-shadow: 0 0 0 1px rgba(86,91,107, 1);
+				box-shadow: 0 0 0 1px rgba(86,91,107, 1);
+				&.active, &:hover {
+					background-color: #414553;
+				}
+				a {
+					background: url("../images/sprites/ui/ui-icon-sprites-mobile.png") no-repeat;
+					text-indent: -9000px;
+					display: block;
+					&.map-btn {
+						background-position: 50% 11px;
+					}
+					&.menu-btn {
+						background-position: 50% -64px;
+					}
+				}
+			}
+		}
+	}
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		display: none;
+	}
+}
+
+/* Nav Wrapper - Section
+*********************************/
+#nav-wrapper {
+	@media (min-width: em(320)) {
+		position: absolute;
+	}
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		position: relative;
+		background-color: $lightGray;
+	}
+	.container {
+		@media (min-width: em(320)) {
+			width: 100%;
+			margin: 0;
+		}
+		@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+			width: 92%;
+		    margin: 0 auto;
+		}
+		@media (min-width: em(1152)) { /* Changed to fix issue with tablets, original value 1024 */
+			width: 100%;
+		}
+	}
+}
+#nav-wrapper.slide-nav {
+	background-color: #202020;
+	-webkit-backface-visibility: hidden;
+	-khtml-opacity: 0;
+	-moz-opacity: 0;
+	-webkit-opacity: 0;
+	-o-opacity: 0;
+	-ms-opacity: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 235px;
+	height: 100%;
+	float: none;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+	@media (min-width: em(320)) {
+		@include boxit(vertical);
+	}
+	@media (min-width: em(1152)) { /* Changed to fix issue with tablets, original value 768 */
+		display: none;
+		position: relative;
+	}
+}
+.menu-open #nav-wrapper.slide-nav {
+	-khtml-opacity: 1;
+	-moz-opacity: 1;
+	-webkit-opacity: 1;
+	-o-opacity: 1;
+	-ms-opacity: 1;
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	z-index: 0;
+}
+/* Top Utility - Section
+*********************************/
+a.logo-small,
+a.logo-large{
+	z-index: 200;
+	background: url('../images/logo/logo-tfi.png') no-repeat 0 50%;
+	background-size: 100%;
+	text-indent: -9000px;
+	position: absolute;
+	top: -1px;
+}
+a.logo-large {
+	left: 0;
+	width: 113px;
+	height: 127px;
+	@media (min-width: em(320)) {
+		display: none;
+	}
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		display: block;
+		width: 90px;
+		height: 101px;
+	}
+	@media (min-width: em(1152)) { /* Changed to fix issue with tablets, original value 1024 */
+		width: 113px;
+		height: 127px;
+	}
+}
+#block-utilitynavigation,
+#block-menu-menu-header-utility-menu {
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		float: right;
+		margin-right: -2px;
+	}
+	@media (min-width: em(1152)) { /* Changed to fix issue with tablets, original value 1024 */
+		margin-right: 0;
+	}
+}
+#menu-utility {
+	@media (min-width: em(320)) {
+		@include order(2);
+		padding-top: 35px;
+	}
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		height: 45px;
+		padding-top:0;
+		@include order(1);
+	}
+	.container {
+		position: relative;
+	}
+	ul.menu {
+		height: auto;
+		li {
+			position: relative;
+			text-transform: uppercase;
+			letter-spacing: em(2);
+			a {
+				font-weight: 700;
+			}
+		}
+		@media (min-width: em(320)) {
+			width: 100%;
+			li {
+				display: block;
+				line-height: em(42);
+			}
+			li a {
+				padding: 0 30px;
+				color: $lightGray;
+				display: block;
+				border-bottom: 1px solid #323540;
+				font-size: em(10);
+				&:hover {
+					color: $orange;
+				}
+			}
+		}
+		@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+			margin-top: -2px;
+			width: auto;
+			li {
+				float: left;
+				display: inline-block;
+				line-height: em(45);
+			}
+			li a {
+				color: $darkGray;
+				padding: 0 7px;
+				display: inline-block;
+				border-bottom: 0;
+				&:hover {
+					color: $darkGray;
+					background-color: #f9f9f9;
+				}
+				&.active-trail {
+					background-color: #d7dbd8;
+				}
+				&.holidays { /* Holidays class turns holiday shopping link red */
+					color: $darkRed;
+				}
+			}
+		}
+		@media (min-width: em(1152)) { /* Changed to fix issue with tablets, original value 1024 */
+			li a {
+				padding: 0 14px;
+				color: $darkGray;
+				font-size: em(10);
+			}
+		}
+	}
+}
+.utility-social-links{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	@media (min-width: em(1024)) { 
+		margin-left: 70px;
+		padding-top: 10px;
+	}
+	@media (min-width: em(1152)) { 
+		margin-left: 100px;
+	}
+	.social-icon {
+		float: left;
+		margin-right: 0.5em;
+	}
+	a {
+		color: $lightGray;
+		font-size: em(30);
+		@media (min-width: em(1024)) { 
+			color: $darkGray;
+			font-size: em(24);
+		}
+	}
+}
+#menu-utility ul.menu li a.buy-tickets {
+	@media (min-width: em(320)) {
+		display: none;
+	}
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		display: inline-block;
+		background-color: $orange;
+		color: $black;
+		position: relative;
+	}
+}
+#menu-utility ul.menu li a.buy-tickets {
+	@media (min-width: em(1152)) { /* Changed to fix issue with tablets, original value 1024 */
+		display: none;
+	}
+}
+#menu-utility,
+#menu-main {
+	@media (min-width: em(320)) {
+		.block-title {
+			font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
+			font-weight: 600;
+			font-style: italic;
+			color: #757b91;
+			font-size: em(14);
+			padding: 19px 30px;
+			border-bottom: 1px solid #323540;
+		}
+	}
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		.block-title {
+			display: none;
+		}
+	}
+}
+
+/* Header - Search Block */
+.block-search {
+	position: relative;
+	@media (min-width: em(320)) {
+		width: 100%;
+		float: none;
+		margin-bottom: 5px;
+		height: 40px;
+		padding: 0 30px;
+	}
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		background-color: #c3c7c5;
+		width: 24.5%;
+		float: right;
+		margin: 0 0 0 2px;
+		padding: 0;
+		height: auto;
+	}
+	@media (min-width: em(1152)) { /* Changed to fix issue with tablets, original value 1024 */
+		margin: 0;
+		width: 20%;
+	}
+}
+.block-search input[type=text],
+.block-search input[type="search"] {
+	-webkit-appearance: none;
+	border-radius: 0;
+	margin: 0;
+	padding: 0 0 0 10%;
+	float: left;
+	border: none;
+	max-width: auto;
+	height: 45px;
+	box-shadow: none;
+	border-radius: none;
+	background-position: 15px 50% !important;
+	@media (min-width: em(320)) {
+		background-color: #fff;
+		height: 40px;
+		width: 75%;
+	}
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		background-color: #c3c7c5;
+		height: 45px;
+	}
+	&:focus {
+		outline: none !important;
+	    background: $white;
+	}
+}
+.block-search label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #4a4a4b;
+	z-index: 5;
+	margin: em(14) 0 0 8%;
+	font-size: em(14);
+}
+.block-search input[type="submit"]	 {
+	text-indent: -9000px;
+	float: right;
+	display: block;
+	width: 25%;
+	margin-left: -1px;
+	margin-bottom: 0;
+	background: url("../images/sprites/ui/ui-icon-sprites.png") no-repeat;
+	&:hover {
+		cursor: pointer;
+	}
+	@media (min-width: em(320)) {
+		height: 40px;
+		background-color: $orange;
+		background-position: 50% -80px;
+		border: 1px solid $darkOrange;
+		&:hover {
+			background-color: $darkOrange;
+		}
+	}
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		height: 45px;
+		background-color: #c3c7c5;
+		background-position: 50% 12px;
+		border: 0;
+		&:hover {
+			background-color: $darkPurple;
+			background-position: 50% -77px;
+		}
+	}
+}
+/* Main Menu - Section
+*********************************/
+.front {
+	#menu-main ul.menu ul.menu,
+	#menu-main ul.menu > li:hover.dropdown > a,
+	#menu-main ul.menu > li:focus.dropdown > a {
+		@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+			background-color: #fff;
+		}
+	}
+}
+#menu-main, #menu-utility {
+	ul.menu > li {
+		a.mobile-menu-toggle {
+			@media (min-width: em(320)) {
+				display: block;
+				cursor: pointer;
+				width: 44px;
+				height: 42px;
+				position: absolute;
+				padding: 0;
+				top: 0;
+				right: 0;
+				background: url(../images/sprites/ui/ui-arrows-sprites.png) no-repeat;
+				background-position: 15px -745px;
+				border-bottom: 0;
+				&:hover {
+					background-color: #25272f;
+				}
+				&.open {
+					background-color: #25272f;
+					background-position: 15px -825px;
+				}
+			}
+			@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+				display: none;
+			}
+		}
+	}
+}
+#menu-main {
+	@media (min-width: em(320)) {
+		@include order(1);
+	}
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		@include order(2);
+		height: 55px;
+		background: $purple url("../images/bg/bg-header-menu-bar.png") repeat;
+		border-bottom: 3px solid $lightPurple;
+	}
+	ul.menu {
+		width: auto;
+		height: auto;
+		> li {
+			position: relative;
+			> a {
+				color: #fff;
+				display: block;
+				font-weight: 500;
+				text-decoration: none;
+				-webkit-transition: none;
+				-moz-transition: none;
+				-o-transition: none;
+				transition: none;
+			}
+		}
+		@media (min-width: em(320)) {
+			> li {
+				line-height: em(42);
+				display: block;
+				border-bottom: 1px solid #323540;
+				> a {
+					font-size: em(12);
+					font-weight: 600;
+					padding: 0 30px;
+					&:hover {
+						color: $orange;
+					}
+				}
+			}
+		}
+		@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+			float: right;
+			> li {
+				display: inline-block;
+				line-height: em(55);
+				float: left;
+				border-left: 1px solid $darkPurple;
+				border-bottom: 0;
+				&:last-child, &.last {
+					border-right: 1px solid $darkPurple;
+				}
+				&.expanded > a {
+					padding: 0 25px 0 10px;
+					background: url("../images/sprites/ui/ui-arrows-sprites.png") no-repeat;
+					background-position: 97% -130px;
+				}
+				&.expanded { /* Add a special rule to eliminate sprite arrows on sub-navigation items */
+					ul.menu > li.expanded a {
+						background: none;
+					}
+				}
+				> a {
+					font-size: em(11);
+					font-weight: 500;
+					padding: 0 10px;
+					&:hover {
+						color: #fff;
+						background-color: $lightPurple;
+					}
+				}
+				&.active-trail > a,
+				&.expanded a.active-trail {
+					background-color: #fff;
+					color: $darkGray;
+				}
+			}
+		}
+		@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 1024 */
+			> li.expanded > a {
+				padding: 0 34px 0 15px;
+			}
+			> li a {
+				font-size: em(12);
+				padding: 0 15px;
+			}
+		}
+	}
+	ul.menu li:hover.dropdown ul.menu{
+		display: block;
+		z-index: 200;
+	}
+	ul.menu > li:hover.dropdown > a,
+	ul.menu > li:focus.dropdown > a {
+	  color: $black;
+	  background-color:$lightGray;
+	  background-position: 97% -333px;
+	}
+	ul.menu > li.expanded:nth-child(4) ul.menu {
+		right: 0;
+	}
+}
+#menu-main ul.menu li a.buy-tickets {
+	@include transitions;
+	&:hover, &:active {
+		background-color: #f4ad52;
+		color:$lightBlack;
+		&:before {
+			background-color: #9b6e35;
+		}
+	}
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		display: none;
+	}
+	@media (min-width: em(1152)) { /* Changed to fix issue with tablets, original value 1024 */
+		display: block;
+		background-color: $orange;
+		color: $black;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background-color: $tan;
+		}
+	}
+}
+/* Menu 2nd Level */
+#menu-main ul.menu ul.menu {
+	display: none;
+	@media (min-width: em(320)) {
+		position: relative;
+		padding: 10px 30px;
+		background-color: #25272f;
+	}
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		position: absolute;
+		min-width: 320px;
+		padding: 10px 20px 50px 20px;
+		background-color: $lightGray;
+	}
+	> li {
+		float: none;
+		border-left: 0;
+		line-height: em(22);
+		display: block;
+		text-align: left;
+		&:last-child, &.last {
+			border-right: 0;
+		}
+		@media (min-width: em(320)) {
+			border-bottom: 0;
+		}
+		@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+			border-bottom: 1px solid $lightGray3;
+		}
+		> a {
+			&:hover, &.active-trail {
+				background-color: inherit;
+				color: $orange;
+				font-weight: 700;
+			}
+			@media (min-width: em(320)) {
+				font-size: em(11);
+				padding: 5px 0;
+				color:$superlightGray3;
+			}
+			@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+				font-size: em(12);
+				padding: 14px 0;
+				color:$darkGray;
+			}
+		}
+	}
+}
+.page-views, .node-type-page {
+	#menu-utility ul.menu ul.menu {
+		@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+			-webkit-box-shadow: 0px 2px 2px 0px #B6B6B6;
+			-moz-box-shadow: 0px 2px 2px 0px #B6B6B6;
+			box-shadow: 0px 2px 2px 0px #B6B6B6;
+		}
+	}
+}
+#menu-utility ul.menu ul.menu {
+	display: none;
+	@media (min-width: em(320)) {
+		position: relative;
+		padding: 10px 30px;
+		background-color: #25272f;
+	}
+	@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+		position: absolute;
+		min-width: 280px;
+		padding: 10px 20px 50px 20px;
+		background-color: $white;
+	}
+	> li {
+		float: none;
+		border-left: 0;
+		line-height: em(22);
+		display: block;
+		text-align: left;
+		&:last-child, &.last {
+			border-right: 0;
+		}
+		@media (min-width: em(320)) {
+			border-bottom: 0;
+		}
+		@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+			border-bottom: 1px solid $lightGray3;
+		}
+		> a {
+			text-transform: none;
+			letter-spacing: 0;
+			&:hover, &.active-trail {
+				background-color: inherit;
+				color: $orange;
+				font-weight: 700;
+			}
+			@media (min-width: em(320)) {
+				font-weight: 600;
+				font-size: em(11);
+				padding: 5px 0;
+				color:$superlightGray3;
+				border-bottom: 0;
+			}
+			@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+				font-weight: 500;
+				font-size: em(12);
+				padding: 14px 0;
+				color:$darkGray;
+			}
+		}
+	}
+}
+/* Menu 3rd Level */
+#menu-main ul.menu ul.menu ul.menu,
+#menu-utility ul.menu ul.menu ul.menu {
+	position: relative;
+	width: 100%;
+	padding: 0px 0px 0px 20px;
+	> li {
+		display: none;
+	}
+}
+/* Menu 4th Level */
+#menu-main ul.menu ul.menu ul.menu ul.menu,
+#menu-utility ul.menu ul.menu ul.menu ul.menu{
+	display: none;
+}

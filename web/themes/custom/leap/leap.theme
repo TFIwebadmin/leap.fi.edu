@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the VEDP theme.
+ */
+
+
+function leap_preprocess_page(&$vars) {
+	// Get site name to use in page.html.twig
+	$vars['site_name'] = \Drupal::config('system.site')->get('name');
+}
+
+
+use Drupal\block\Entity\Block;
+
+function leap_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  if (!empty($variables['elements']['#id'])) {
+    $block = Block::load($variables['elements']['#id']);
+    $suggestions[] = 'block__' . $block->getRegion();
+    $suggestions[] = 'block__' . $block->getRegion() . '__' . $variables['elements']['#id'];
+  }
+  return $suggestions;
+}

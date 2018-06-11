@@ -1,0 +1,79 @@
+.partners-state-grouping {
+	color: $purple;
+	margin-bottom: 40px;
+	background-color: #fff;
+	border: 1px solid #EBF0ED;
+	justify-content: left;
+	padding: 40px 20px 20px;
+	position: relative;
+
+	h3 {
+		position: absolute;
+		font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+		font-size: .8125em;
+		font-style: italic;
+		font-weight: 400;
+		max-width: 95%;
+	    text-transform: capitalize;
+	    color: #272727;
+	    display: inline-block;
+	    border-radius: 0;
+	    padding: 1em 1.375em;
+	    background: #e89b37;
+	    text-decoration: none;
+	    z-index: inherit;
+	    top: -25px;
+    	left: -16px;
+	    transition: all 0.4s ease-in-out;
+
+
+
+		&:before {
+			content: "";
+		    display: inline-block;
+		    border-top: 0px solid transparent;
+		    border-bottom: 16px solid transparent;
+		    border-right: 16px solid #73470f;
+		    position: absolute;
+		    bottom: -16px;
+		    left: 0%;
+		    transition: all 0.4s ease-in-out;
+		}
+	}
+	.states-group {
+
+		.views-row {
+			margin-bottom: 10px;
+			
+			h4 {
+				font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+				font-weight: 800;
+
+				@media (min-width: em(500)) {
+					margin-bottom: 10px;
+				}
+			}
+			.content 
+				div:first-of-type {
+					font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+					font-weight: 700;
+					font-size: 1em;
+				}
+				div + div {
+					font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+					font-weight: 400;
+					font-size: .875em;
+					line-height: 1.75em;
+					color: #707D7A;
+
+				}
+			a {
+				border-bottom: 1px solid #BFC1C0;
+				&:hover {
+					color: $orange;
+					border-bottom: 1px solid $orange;
+				}
+			}
+		}
+	}
+}

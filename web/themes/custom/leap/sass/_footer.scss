@@ -1,0 +1,410 @@
+/* Footer Top
+*********************************/
+#footer-top {
+	position: relative;
+	background: $verylightGray url(../images/bg/patterns/bg-pattern-normal.png) repeat;
+	@media (min-width: em(320)) {
+		padding: 40px 0 50px;
+	}
+	@media (min-width: em(768)) {
+		padding: 50px 0;
+	}
+	.block-title {
+		text-transform: uppercase;
+		color:$darkGray;
+		font-size: em(14);
+		line-height: em(28);
+		font-family: 'Gotham SSm A', 'Gotham SSm B',helvetica, Sans-serif;
+		font-weight:500;
+		letter-spacing: 3px;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 15px;
+		font-size: em(14);
+		font-family: 'Sentinel SSm A', 'Sentinel SSm B';
+		font-weight: 400;
+		font-style: italic;
+		color:$darkGray;
+	}
+	&:after {
+		content: "";
+		width: 100%;
+		height: 2px;
+		background: url(../images/bg/bg-footer-border-top.jpg) repeat-x;
+		position: absolute;
+		bottom: 0;
+	}
+}
+.block-constant-contact {
+	display: inline-block;
+	vertical-align: top;
+	@media (min-width: em(320)) {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	@media (min-width: em(768)) {
+		width: 54%;
+		margin-bottom: 20px;
+		padding-right: 40px;
+		@include borderBox;
+	}
+	@media (min-width: em(1024)) {
+		width: 60%;
+	}
+	.description {
+		font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
+		font-style: italic;
+		font-size: em(13);
+		font-weight: 400;
+		line-height: em(28);
+	}
+	.form-item {
+		position: relative;
+		@media (min-width: em(320)) {
+			width: 100%;
+			display: block;
+		}
+		@media (min-width: em(768)) {
+			width: 60%;
+			display: inline-block;
+		}
+		@media (min-width: em(1024)) {
+			width: auto;
+		}
+	}
+	label {
+		font-weight: 400;
+		font-size: em(12);
+		position: absolute;
+		bottom: 14px;
+		left: 15px;
+		z-index: 20;
+		color: $darkGray;
+	}
+	input[type=text] {
+		width: 100%;
+		max-width: 100%;
+		display: inline-block;
+		position: relative;
+		background-color: #ebf0ec;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		&:focus {
+		    outline: none !important;
+		    border-radius: 1px;
+		    background: $white;
+		}
+	}
+	.form-submit {
+		font: normal 400 em(11) "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+		color: #ebf0ed;
+		letter-spacing: em(3);
+		text-transform: uppercase;
+		background-color: $grayBlueIsh;
+		margin-bottom: 0;
+		padding: 14px 24px;
+		vertical-align: top;
+		margin-top: 16px;
+		cursor: pointer;
+		width: 100%;
+		&:hover {
+			background-color: $darkPurple;
+		}
+		@media (min-width: em(320)) {
+			display: block;
+		}
+		@media (min-width: em(868)) {
+			width: auto;
+			margin-left: -10px;
+			display: inline-block;
+		}
+		@media (min-width: em(1024)) {
+			margin-left: -5px;
+		}
+	}
+	.form-submit-wrapper {
+		@media (min-width: em(320)) {
+			display: block;
+		}
+		@media (min-width: em(768)) {
+			display: inline-block;
+		}
+		.form-submit {
+			@media (min-width: em(768)) {
+				margin-top: -12px;
+			}
+		}
+	}
+}
+.social-list {
+	@media (min-width: em(320)) {
+		width: 100%;
+		.menu li a {
+			width: 40px;
+			height: 40px;
+		}
+	}
+	@media (min-width: em(768)) {
+		width: 54%;
+		margin-bottom: 40px;
+		padding-right: 40px;
+		display: inline-block;
+		@include borderBox;
+		.menu li a {
+			width: 45px;
+			height: 45px;
+		}
+	}
+	@media (min-width: em(1024)) {
+		width: 60%;
+	}
+	.menu li {
+		display:inline-block;
+		@media (max-width: em(360)) {
+			float: left;
+			margin: 0 15px 10px 0;
+			&:nth-child(5n+0) {
+				clear: both;
+			}
+		}
+		a {
+			-webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.6);
+			-moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.6);
+			box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.6);
+			background:#dcdedd url(../images/sprites/ui/ui-social-sprites.png) no-repeat 0 0;
+			@include borderRadius;
+			@include transitions;
+			@media (min-width: em(768)) {
+				background-position-x:2px;
+			}
+			&:hover {
+				background-color:$white;
+			}
+			&.twitter{
+				background-position: 59% 10px;
+				@media (min-width: em(768)) {
+					background-position: 54% 12px;
+				}
+			}
+			&.facebook{
+				background-position: 85% -39px;
+				@media (min-width: em(768)) {
+					background-position: 83% -37px;
+				}
+			}
+			&.google{
+				background-position: 60% -131px;
+				@media (min-width: em(768)) {
+					background-position: 60% -129px;
+				}
+			}
+			&.youtube{
+				background-position: 60% -179px;
+				@media (min-width: em(768)) {
+					background-position: 58% -177px;
+				}
+			}
+			&.instagram{
+				background-position: 59% -86px;
+				@media (min-width: em(768)) {
+					background-position: 59% -83px;
+				}
+			}
+			&.pintrest{
+				background-position: 60% -227px;
+				@media (min-width: em(768)) {
+					background-position: 59% -225px;
+				}
+			}
+			&.linkedin{
+				background-position: 60% -521px;
+				@media (min-width: em(768)) {
+					background-position: 60% -519px;
+				}
+			}
+		}
+	}
+}
+.twitter-feed {
+	@media (min-width: em(320)) {
+		width: 100%;
+		margin-bottom: 40px;
+		.menu li a {
+			width: 40px;
+			height: 40px;
+		}
+	}
+	@media (min-width: em(768)) {
+		width: 45%;
+		display: inline-block;
+		float: right;
+		margin-bottom: 0;
+		margin-left: -6px;
+		vertical-align: top;
+	}
+	@media (min-width: em(1024)) {
+		width: 40%;
+	}
+	a.button-one {
+		margin-left: 63px;
+	}
+}
+/* Footer
+*********************************/
+#footer {
+	overflow: hidden;
+	position: relative;
+	background: $black url(../images/bg/bg-noise-02.jpg) repeat;
+	color: $lightGray2;
+	font-size: em(14);
+	line-height: em(16);
+	-webkit-font-smoothing: auto;
+	@media (min-width: em(320)) {
+		padding: 40px 0 20px 0;
+	}
+	@media (min-width: em(768)) {
+		padding: 40px 0;
+	}
+	&:before, &:after {
+		content: "";
+		position: absolute;
+		height: 100%;
+		top: 0;
+		z-index: 3;
+	}
+	&:before {
+		left: 0;
+		background: url(../images/bg/bg-footer-overlay-left.png) repeat no-repeat;
+		width: 539px;
+	}
+	&:after {
+		right: 0;
+		background: url(../images/bg/bg-footer-overlay-right.png) repeat no-repeat;
+		width: 547px;
+		@media (min-width: em(320)) {
+			display: none;
+		}
+		@media (min-width: em(768)) {
+			display: block;
+		}
+	}
+	.container {
+		position: relative;
+		z-index: 20;
+	}
+	a, a:visited {
+		color:$darkOrange;
+	}
+	a:hover {
+		background: $black;
+		color: $lightOrange;
+	}
+	.block-title {
+		font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
+		font-style: italic;
+		font-size: em(15);
+		font-weight: 800;
+		margin-bottom: 10px;
+	}
+	p {font-weight: 500; margin-bottom: 0;}
+	ul.menu {
+		margin-bottom: 40px;
+		li {
+			text-transform: uppercase;
+			letter-spacing: em(2);
+			&:first-child{
+				margin-left: 0;
+			}
+			a {
+				font-size: em(11);
+				color:$darkOrange;
+				&:hover {
+					color:$lightOrange;
+				}
+				&.active-trail {
+					color:$lightOrange;
+					font-weight: 500;
+					padding-bottom: 4px;
+					border-bottom: 1px solid #3f3f3f;
+				}
+			}
+		}
+		@media (min-width: em(320)) {
+			li {
+				display: block;
+				margin-bottom: 10px;
+				a {
+					font-weight: 600;
+				}
+			}
+		}
+		@media (min-width: em(769)) { /* Don't display menu links inline unless viewport is wider than iPad portrait */
+			li {
+				display: inline-block;
+				margin: 0.1%;
+				a {
+					font-weight: 400;
+				}
+			}
+		}
+		@media (min-width: em(840)) {
+			li {
+				margin: 0.8%;
+			}
+		}
+		@media (min-width: em(1024)) {
+			li {
+				margin: 0 15px;
+			}
+		}
+		ul.menu {
+			display: none;
+		}
+	}
+	.block-block {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: -4px;
+		@media (min-width: em(320)) {
+			width: 100%;
+			margin-bottom: 25px;
+		}
+		@media (min-width: em(575)) {
+			width: 33.33%;
+			margin-bottom: 0;
+		}
+		&.full-width {
+			margin-top: 15px;
+			margin-bottom: 25px;
+			@media (min-width: em(575)) {
+				width: 100%;
+			}
+		}
+	}
+	.packing-info-block p {
+		color: $orange;
+	}
+	#google_translate_element {
+		img {
+			max-width: auto;
+			width: auto;
+		}
+		a:hover {
+			background: none;
+		}
+	}
+}
+#google_translate_element {
+	margin-top: 15px;
+}
+
+.pull15 {
+	margin-left: -15px;
+}
+
+.app-store-button {
+	float: left;
+	margin-top: -20px;
+}

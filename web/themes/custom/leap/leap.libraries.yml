@@ -1,0 +1,27 @@
+global-styles:
+  version: 1.x
+  css:
+    theme:
+      css/messages.css: {}
+      css/tabs.css: {}
+      css/legacy.css: {}
+      css/style.css: {}
+      css/slick.css: {}
+
+typography:
+  css:
+    theme:
+      '//cloud.typography.com/6112652/624102/css/fonts.css': { type: external, minified: true }
+
+
+ui-behaviors:
+  version: 1.x
+  js:
+    js/slick.js: {}
+    js/vimeohelper.js: {}
+    js/scripts.js: {}
+
+    #js/legacy.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

@@ -1,0 +1,140 @@
+.webform-submission-form  {
+	width: 100%;
+	max-width: 415px;
+  margin: 0 auto 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: em(600)) {
+    max-width: 497px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+	.form-item {
+    margin-bottom: 20px;
+
+    @media (min-width: em(600)) {
+      width: calc(50% - 15px);
+      max-width: 50%;
+      margin-right: 10px;
+
+      &.full-width {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+		label {
+			display: block;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+      text-align: left;
+      letter-spacing: em(1.75);
+      color: $purple;
+      font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+      font-weight: 800;
+      font-size: 1em;
+      color: #4D5263;
+    }
+
+		input, textarea {
+      background-color: transparent;
+      width: 100%;
+      max-width: 100%;
+
+      box-shadow: none;
+      border: 1px solid $superlightGray3;
+		}
+  }
+
+  .form-actions{
+
+    input{
+      background-color: $purple;
+      color: white;
+      border-radius: 5px;
+      background-color: #515668;
+      font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-weight: 400;;
+      font-size: 10px;
+      letter-spacing: 0.1875em;
+      padding: 15px 20px;
+      text-transform: uppercase;
+
+    }
+  }
+}
+
+
+.user-form {
+  max-width: 550px;
+  margin: 0 auto 50px; 
+
+  .form-item {
+    margin-bottom: 20px;
+    margin-right: 10px;
+
+    label {
+      display: block;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      text-align: left;
+      letter-spacing: em(1.75);
+      color: $purple;
+      font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+      font-weight: 800;
+      font-size: 1em;
+      color: #4D5263;
+    }
+
+    input, textarea {
+      background-color: transparent;
+      width: 100%;
+      max-width: 100%;
+
+      box-shadow: none;
+      border: 1px solid $superlightGray3;
+    }
+  }
+
+  .form-actions{
+
+    input{
+      background-color: $purple;
+      color: white;
+      border-radius: 5px;
+      background-color: #515668;
+      font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-weight: 400;;
+      font-size: 10px;
+      letter-spacing: 0.1875em;
+      padding: 15px 20px;
+      text-transform: uppercase;
+
+    }
+  }
+  .field--type-address {
+    border: 1px solid #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: .875em;
+    line-height: 1.75em;
+    color: #707D7A;
+    text-align: left;
+    padding-top: 5px;
+
+  }
+
+}
+

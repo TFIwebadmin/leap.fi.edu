@@ -1,0 +1,145 @@
+#block-leappublicmenu,
+#block-leapusermenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @media (min-width: em(500)) {
+    margin-bottom: 30px;
+  };
+
+  .menu{
+    padding: 0px auto;
+    margin-bottom: 16px;
+    columns: 2;
+    position: relative;
+    text-align: center;
+    list-style-position: inside;
+
+
+    @media (min-width: em(550)) {
+      padding: 0px 160px 0 0;
+      columns: 0;
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    li{
+      padding-bottom: 20px;
+      -webkit-column-break-inside: avoid;
+      @media (min-width: em(550)) {
+        width: auto; 
+      }
+
+      a{
+        padding-bottom: 5px;
+        white-space: nowrap;
+        line-height: em(19);
+        font-style: normal;
+        color: #515668;
+        font-size: 10px;
+        font-weight: 800;
+        text-transform: uppercase;
+
+        @media (min-width: em(550)) {
+          margin: 0 15px;
+          padding-bottom: 10px;
+        }
+
+        @media (min-width: em(1024)) {
+          margin: 0 20px;
+        }
+
+        &.is-active{
+          border-bottom: 1px solid;
+
+          @media (min-width: em(800)) {
+            border-bottom: 2px solid;
+          }
+        }
+      }
+    }
+
+    li:last-child {
+      display: block;
+      position: absolute;
+      top: 100%;
+      right: 50%;
+      margin: 0;
+      max-height: 25px;
+      max-width: 155px;
+      overflow: hidden;
+      border: 1px solid;
+      border-radius: 20px;
+      transition: max-height 0.2s ease-in,  background-color 0.12s ease-in;
+      padding-bottom: 0;
+      background-color: #515668;
+      transform: translateX(50%);
+      @media (min-width: em(550)) {
+        top: 0%;
+        right: 1%;
+        display: inline-flex;
+        flex-direction: column;
+        transform: none;
+      }
+
+      &:hover {
+        max-height: 120px;
+        background-color: #E89B37;
+        li {
+          background-color: #E89B37;
+        }
+      }
+
+      a.sub-menu {
+        padding: 7px 20px 5px 10px;
+
+        &:before {
+          content: "\A";
+
+          position: absolute;
+          right: 15px;
+          top: 8px;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 10px solid $white;
+          transform-origin: 50% 50%;
+          transition: all 0.2s ease-in;
+        }
+      }
+
+      li {
+        padding-bottom: 0;
+        width: auto;
+      }
+
+      a {
+        color: #fff;
+        font-size: 10px;
+        font-weight: 800;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        padding: 5px 19px;
+      }
+
+      ul {
+        li:last-child {
+          border:none;
+          position: relative;
+          top: auto;
+          left: auto;
+          transform: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+          &:before {
+            content: none;
+          }
+        }
+      }
+
+    }
+  }
+}

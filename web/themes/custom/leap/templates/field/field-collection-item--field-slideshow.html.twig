@@ -1,0 +1,62 @@
+{#
+/**
+ * @file
+ * Default theme implementation for field collection items.
+ *
+ * Available variables:
+ * - content: An array of comment items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {% hide(content.field_example) %} to temporarily suppress the printing
+ *   of a given element.
+ * - title: The (sanitized) field collection item label.
+ * - url: Direct url of the current entity if specified.
+ * - page: Flag for the full page state.
+ * - attributes: HTML attributes for the surrounding element.
+ *    Attributes include the 'class' information.
+ * - content_attributes: HTML attributes for the content element.
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_entity()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+  	'content',
+  	'slideshow',
+    'field-collection-item',
+    'field-collection-item--name-' ~ field_collection_item.name|clean_class,
+    'field-collection-item--view-mode-' ~ field_collection_item.view_mode|clean_class,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+	
+	{% if content.field_slide_title %}
+	  	<h4 class="slide-title">{{ content.field_slide_title[0] }}</h4>
+	{% endif %}
+
+	{% if content.field_slide_body %}
+		<h3>{{ content.field_slide_body }}</h3>
+	{% endif %}	
+
+	{% if content.field_slide_link %}
+		<div class="action-link">
+			{{ content.field_slide_link }}
+		</div>
+	{% endif %}
+
+	<div class="media-wrapper">
+		{% if content.field_slide_image %}
+			<div class="slide-image">
+				{{ content.field_slide_image }}
+			</div>
+		{% endif %}	
+
+		{% if content.field_slide_video %}
+			<div class="slide-video">
+				{{ content.field_slide_video }}
+			</div>
+		{% endif %}	
+	</div>
+</div>

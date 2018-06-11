@@ -1,0 +1,44 @@
+.img-row {
+  margin-bottom: 100px;
+
+  &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .content{
+
+    div:first-child{
+      margin: auto;
+      margin-bottom: 40px;
+      text-align: center;
+      color: $purple;
+    }
+
+    p{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media (min-width: em(700)) {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      img{
+        margin: 40px 0px;
+        object-fit: contain;
+        height: auto;
+        max-width: 40%;
+
+        @media (min-width: em(700)) {
+          max-width: 20%;
+          margin: 0 40px;
+        }
+      }
+    }
+  }
+}

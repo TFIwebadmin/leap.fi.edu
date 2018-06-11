@@ -1,0 +1,228 @@
+.content-toggler {
+  display: flex;
+  margin-bottom: 25px;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  div{
+    padding: 10px 20px;
+    border: 2px solid $superlightGray;
+    border-radius: 25px;
+    margin: 0 20px;
+
+    &.active{
+      border-color: $purple;
+    }
+  }
+}
+#block-views-block-faq-filter-block-1{
+  clear: both;
+  margin-bottom: 100px;
+
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: em(500)) {
+      flex-direction: row;
+    }
+
+    h3{
+      display: inline;
+      margin: 0px 20px 20px 20px;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: em(16);
+      line-height: em(19);
+      font-weight: 400;
+      border: 2px solid $superlightGray;
+      cursor: pointer;
+      background-color: #4D5263;
+      font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 1em;
+      text-transform: uppercase;
+      letter-spacing: .0625px;
+
+      @include transitions;
+
+      @media (min-width: em(500)) {
+        margin: 40px 20px;
+      }
+
+      &.active{
+        border-color: $purple;
+        color: $purple;
+        background-color: #E89B37
+      }
+
+      &:hover{
+        //border-color: $orange;
+      }
+    }
+  }
+
+  .views-field-field-category{
+    display: none;
+  }
+
+  .views-field-field-faq {
+
+    ul {
+      margin-bottom: 30px;
+      li  {
+        position: relative;
+        margin-bottom: 10px;
+
+        .faq-heading {
+          position: relative;
+          width: 100%;
+          padding: 10px 0 10px 55px;
+          background-color: $superlightGray2;
+          cursor: pointer;
+
+          &:before {
+            content: "\A";
+
+            position: absolute;
+            left: 20px;
+            top: 50%;
+
+            border-style: solid;
+            border-width: 8px 12px 8px 0;
+            border-color: transparent $purple transparent transparent;
+
+            transform-origin: 50% 50%;
+            transform: translateY(-50%) rotate(180deg);
+
+            transition: all 0.2s ease-in;
+          }
+
+          h3{
+            color: $purple;
+            font-weight: 400;
+            line-height: 1.4;
+            padding-right: 20px;
+            font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+            font-weight: 800;
+            font-size: 1em;
+            color: #4D5263;
+
+            @include transitions;
+          }
+          &:hover {
+            &:before {
+              border-color: transparent $darkOrange transparent transparent;
+            }
+
+            h3 {
+              color:$orange;
+            }
+          }
+        }
+
+        .faq-answer {
+          overflow:hidden;
+          max-height: 0px;
+          height:auto;
+          transform-origin:top;
+          transition: max-height 0.3s ease-out;
+
+
+
+          p{
+            padding: 20px 45px;
+            color: $purple;
+            line-height: em(27);
+            font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            font-size: .875em;
+            line-height: 1.75em;
+            color: #707D7A;
+          }
+        }
+        .faq-wrapper {
+
+          &.expanded {
+            .faq-heading {
+
+              &:before {
+                transform: translateY(-50%) rotate(270deg);
+              }
+            }
+            .faq-answer {
+              max-height: 1000px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.about-faq {
+
+  .accordion {
+
+    > div {
+      width: 100%;
+      max-width: 410px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 40px auto;
+
+      @media (min-width: em(800)) {
+        max-width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        >div {
+          width: calc(50% - 15px);
+          max-width: 50%;
+        }
+      }
+
+      div {
+        .faq-wrapper {
+          .faq-heading {
+            margin-bottom: 20px;
+
+            h3 {
+              line-height: 1.4;
+              color: $purple;
+              font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+              font-weight: 800;
+              font-size: 1.25em;
+            }
+          }
+          .faq-answer {
+            p {
+              font-size: em(16);
+              line-height: em(27);
+              color: $purple;
+              font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+              font-weight: 400;
+              font-size: .875em;
+              line-height: 1.75em;
+              color: #707D7A;
+              a {
+                text-decoration: underline;
+                font-weight: 800;
+              }
+            }
+          }
+          h2 {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}

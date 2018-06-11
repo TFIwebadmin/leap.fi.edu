@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  box-sizing:border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  height: 100%;
+  font-size: em(16);
+  color: $black;
+  font-family: 'Gotham SSm 4r', 'Gotham SSm A', 'Gotham SSm B',Helvetica,Arial,sans-serif;
+}
+body{
+  transition:all .2s linear;
+  -o-transition:all .2s linear;
+  -moz-transition:all .2s linear;
+  -webkit-transition:all .2s linear;
+}
+article, aside,
+footer, header,
+nav, section {
+  display: block;
+}
+.clearfix:after {
+  height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  display: block;
+  zoom: 1;
+  clear: both;
+}
+strong {
+  font-weight: 700;
+}
+/* HTML5 Reset - START
+*********************************/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/* Media Query Checker - START
+*********************************/
+#mediaquery {
+  position: absolute;
+  top: -50px;
+  -webkit-transition: width .001s;
+  -moz-transition: width .001s;
+  -ms-transition: width .001s;
+  -o-transition: width .001s;
+  transition: width .001s;
+  visibility: hidden;
+}
+@media (min-width: em(320)) {
+  #mediaquery { width: 50px;}
+  #mediaquery:after { content: "mobile"; }
+}
+@media (min-width: em(1024)) { /* Changed to fix issue with tablets, original value 768 */
+ #mediaquery { width: 100px;}
+ #mediaquery:after { content: "tablet"; }
+}
+@media (min-width: em(1152)) { /* Changed to fix issue with tablets, original value 1024 */
+ #mediaquery { width: 150px;}
+ #mediaquery:after { content: "desktop"; }
+}
+/* Reponsive Container - START
+*********************************/
+.container {
+  @media (min-width: em(320)) {
+    width: auto;
+    height: auto;
+    margin: 0 24px;
+    max-width: 960px;
+  }
+  @media (min-width: em(640)) {
+    width: 92%;
+    margin: 0 auto;
+  }
+  @media (min-width: em(1024)) {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+#main .container, .node-wrap .container {
+  @media (min-width: em(768)) {
+    padding: 0 20px;
+  }
+}
+/* Global Utilities - START
+*********************************/
+p#skip-link {
+  margin: 0;
+}
+.hidden-text {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+/* Phark Image Replacement - http://www.mezzoblue.com/tests/revised-image-replacement/ */
+.phark {
+  display: inline-block;
+  text-indent: -9999px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+h1 {
+  font-size: em(24);
+  line-height: em(22);
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: em(12);
+}
+h2 {
+  font-size: em(18);
+  line-height: em(20);
+  font-weight: 800;
+  font-style: normal;
+}
+h3 {
+  font-size: em(16);
+  line-height: em(18);
+  font-weight: 800;
+  font-style: normal;
+}
+h4 {
+  font-size: em(14);
+  line-height: em(16);
+  font-weight: 800;
+  font-style: normal;
+}
+/* Text
+*********************************/
+p {
+  font-size: em(16);
+  line-height: em(30);
+  font-weight: 400;
+  font-style: normal;
+  margin:0 0 25px 0;
+}
+.basic-body {
+  p a {
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid $superlightGray3;
+  }
+  a.button-one, a.button-three {
+    border-bottom: 0;
+  }
+  iframe {
+    margin: 10px 0;
+    width: 100%;
+  }
+}
+.featured-paragraph {
+  p{
+    font-size: em(19);
+    line-height: 28px;
+    color:$lightBlack;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+abbr {
+  cursor: help;
+  font-size: em(14);
+}
+.strong {
+  font-weight: 600;
+}
+.stronger {
+  font-weight: 800;
+}
+.em {
+  font-style: italic;
+}
+blockquote, blockquote p {
+  font:italic 600 em(16) 'Sentinel SSm A', 'Sentinel SSm B',Georgia, serif;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  color: $darkGray;
+  @media screen and (min-width: em(768) ) {
+    font-size: em(19);
+    padding:0 1em;
+  }
+}
+
+/* Link
+*********************************/
+a, a:visited   {
+  color:$grayBlueIsh;
+  text-decoration: none;
+  @include transitions-color;
+  &:hover {
+    color: $orange;
+  }
+}
+a:hover, a:active, a:focus {
+  color:$darkOrange;
+  @include transitions-background-color;
+}
+*:hover {
+  @include transitions-background-color;
+}
+/* List
+*********************************/
+ul {
+  list-style-type: none;
+}
+ol {
+  list-style-type:none;
+  li {
+    margin-bottom: 11px;
+    ol {
+      padding-left: em(15);
+    }
+  }
+}
+dl {
+  dd {
+    padding-left: em(15);
+  }
+}
+/* Images
+*********************************/
+img {
+  width:100%;
+  max-width: 100%;
+  height: auto;
+}
+figcaption {
+  font-size: em(15);
+  line-height: em(22);
+  font-style: italic;
+}
+.caption {
+  font-size: em(15);
+  line-height: em(20);
+  font-style: italic;
+}
+/* Buttons
+*********************************/
+input[type="button"] {
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding:em(18) em(22);
+  background: $grayBlueIsh;
+  color:$lightGray;
+  &:hover, &:active, &:visited {
+    /* box-shadow: inset 0px 0px 2px 4px $gray; */
+    opacity: .99;
+    color:$orange;
+    cursor: pointer;
+  }
+}

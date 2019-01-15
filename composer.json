@@ -22,6 +22,7 @@
         "drupal/address": "^1.4",
         "drupal/admin_toolbar": "^1.24",
         "drupal/auto_entitylabel": "^2.1",
+        "drupal/better_exposed_filters": "^3.0",
         "drupal/block_class": "^1.0@alpha",
         "drupal/console": "^1.0.2",
         "drupal/contribute": "^1.0",

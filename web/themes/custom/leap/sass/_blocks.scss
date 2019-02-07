@@ -348,3 +348,24 @@
 #block-views-block-partners-map-block-1{
   margin-bottom: 100px;
 }
+
+#block-views-block-grouped-resources-block-1,
+#block-views-block-grouped-resources-block-2 {
+  margin-bottom: 50px;
+  .item-list {
+    ul {
+      list-style-type: disc;
+      margin-bottom: 25px;
+      li {
+        margin-left: 1.5em;
+        margin-bottom: 0.3em;
+      }
+    }
+    h3 {
+      font:italic 600 em(16) 'Sentinel SSm A', 'Sentinel SSm B',Georgia, serif;
+      line-height: 1.5;
+      margin-bottom: 1em;
+      color: $darkGray;
+    }
+  }
+}

@@ -1822,6 +1822,24 @@ table p {
 #block-views-block-partners-map-block-1 {
   margin-bottom: 100px; }
 
+#block-views-block-grouped-resources-block-1,
+#block-views-block-grouped-resources-block-2 {
+  margin-bottom: 50px; }
+  #block-views-block-grouped-resources-block-1 .item-list ul,
+  #block-views-block-grouped-resources-block-2 .item-list ul {
+    list-style-type: disc;
+    margin-bottom: 25px; }
+    #block-views-block-grouped-resources-block-1 .item-list ul li,
+    #block-views-block-grouped-resources-block-2 .item-list ul li {
+      margin-left: 1.5em;
+      margin-bottom: 0.3em; }
+  #block-views-block-grouped-resources-block-1 .item-list h3,
+  #block-views-block-grouped-resources-block-2 .item-list h3 {
+    font: italic 600 1em "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    color: #414e4b; }
+
 /* Nav styles - START
 *********************************/
 nav.menu-inline,

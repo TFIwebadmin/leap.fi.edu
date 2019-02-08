@@ -1995,6 +1995,9 @@ nav.menu-inline,
     #block-leapusermenu .menu li:last-child ul li:last-child:before {
       content: none; }
 
+nav.menu-inline > .menu > li > a {
+  font-size: 14px; }
+
 .old-ie *, .lt-ie9 * {
   font-weight: normal !important; }
 

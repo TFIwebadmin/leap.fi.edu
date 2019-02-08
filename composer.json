@@ -45,6 +45,7 @@
         "drupal/module_filter": "^3.1",
         "drupal/pathauto": "^1.2",
         "drupal/permissions_by_term": "^2.6",
+        "drupal/roleassign": "^1.0",
         "drupal/smtp": "^1.0@beta",
         "drupal/video_embed_field": "^2.0",
         "drupal/webform": "^5.0",

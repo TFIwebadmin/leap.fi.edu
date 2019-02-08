@@ -1144,17 +1144,20 @@ div.video-background, .video-container-featured, .video-container-page {
     top: 50%;
     transform: translate(-50%, -50%); }
 
+.video-grid > div > div,
 #block-views-block-video-grid-block-1 > div > div, #block-views-block-video-grid-block-2 > div > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   @media (min-width: 62.5em) {
+    .video-grid > div > div,
     #block-views-block-video-grid-block-1 > div > div, #block-views-block-video-grid-block-2 > div > div {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start; } }
+  .video-grid > div > div .views-row,
   #block-views-block-video-grid-block-1 > div > div .views-row, #block-views-block-video-grid-block-2 > div > div .views-row {
     width: calc(100% - 40px);
     margin: 0 auto 20px auto;
@@ -1163,19 +1166,24 @@ div.video-background, .video-container-featured, .video-container-page {
        margin: 0 40px 40px 40px;
      } */ }
     @media (min-width: 62.5em) {
+      .video-grid > div > div .views-row,
       #block-views-block-video-grid-block-1 > div > div .views-row, #block-views-block-video-grid-block-2 > div > div .views-row {
         width: calc(50% - 80px); } }
+    .video-grid > div > div .views-row .video-info .video-title h2,
     #block-views-block-video-grid-block-1 > div > div .views-row .video-info .video-title h2, #block-views-block-video-grid-block-2 > div > div .views-row .video-info .video-title h2 {
       margin-bottom: 20px; }
+      .video-grid > div > div .views-row .video-info .video-title h2 span,
       #block-views-block-video-grid-block-1 > div > div .views-row .video-info .video-title h2 span, #block-views-block-video-grid-block-2 > div > div .views-row .video-info .video-title h2 span {
         color: #4d5263;
         line-height: 1.875em;
         font-weight: 400; }
+    .video-grid > div > div .views-row .video-info p,
     #block-views-block-video-grid-block-1 > div > div .views-row .video-info p, #block-views-block-video-grid-block-2 > div > div .views-row .video-info p {
       color: #4d5263;
       font-size: 1em;
       line-height: 1.6875em;
       font-weight: 400; }
+    .video-grid > div > div .views-row .video-info .detail-link,
     #block-views-block-video-grid-block-1 > div > div .views-row .video-info .detail-link, #block-views-block-video-grid-block-2 > div > div .views-row .video-info .detail-link {
       color: #4d5263;
       font-size: 0.8125em;
@@ -1592,7 +1600,7 @@ table p {
 
 #block-suggestedmaterials iframe {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto 50px; }
 
 .field-body {
   color: #4d5263;

@@ -2,13 +2,45 @@
 
 /**
  * @file
- * Functions to support theming in the VEDP theme.
+ * Functions to support theming in the LEAP theme.
  */
+
+use Drupal\file\Entity\File;
+use \Drupal\Core\Url;
+use \Drupal\Core\Link;
 
 
 function leap_preprocess_page(&$vars) {
 	// Get site name to use in page.html.twig
 	$vars['site_name'] = \Drupal::config('system.site')->get('name');
+}
+
+
+function leap_preprocess_node(&$vars) {
+
+    //kint_require();
+    //Kint::$maxLevels = 6;
+    $type = $vars['elements']['#node']->getType();
+
+    switch ($type) {
+        case 'video':
+            //kint($vars['node']->get('field_link')->getValue());
+        	if (isset($vars['node']->get('field_link')->getValue()[0])) {
+        		$uri = $vars['node']->get('field_link')->getValue()[0]['uri'];
+
+			    $url = Url::fromUri(file_create_url($uri));
+			    
+			    // Define custom link text and make the link to pass to twig
+			    $link_text = t('Download');
+			    $vars['downloadlink'] = Link::fromTextAndUrl($link_text, $url);
+
+			    $vars['downloadlink'] = Link::fromTextAndUrl($link_text, $url)->toRenderable();
+				$vars['downloadlink']['#attributes'] = ['class' => 'link-download'];
+        	}
+            break;
+        default:
+    }
+    
 }
 
 

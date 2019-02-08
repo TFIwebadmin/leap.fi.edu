@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d653736c41f176885d175acd11dfc16",
+    "content-hash": "dc84e944a08db1972edc1193d658f3a4",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2245,6 +2245,53 @@
                 "source": "https://cgit.drupalcode.org/block_class",
                 "issues": "https://www.drupal.org/project/issues/block_class",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/block_content_permissions",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/block_content_permissions",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_content_permissions-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "03b3593ca3713955a3aa8519d8ac163961fd881a"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1519041484",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "joshua.roberson",
+                    "homepage": "https://www.drupal.org/user/2999235"
+                }
+            ],
+            "description": "Adds specific permissions for administering block content and block content types.",
+            "homepage": "https://www.drupal.org/project/block_content_permissions",
+            "support": {
+                "source": "http://cgit.drupalcode.org/block_content_permissions"
             }
         },
         {

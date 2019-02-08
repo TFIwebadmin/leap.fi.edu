@@ -24,6 +24,7 @@
         "drupal/auto_entitylabel": "^2.1",
         "drupal/better_exposed_filters": "^3.0",
         "drupal/block_class": "^1.0@alpha",
+        "drupal/block_content_permissions": "^1.6",
         "drupal/console": "^1.0.2",
         "drupal/contribute": "^1.0",
         "drupal/core": "^8.6.0",

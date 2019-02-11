@@ -8,5 +8,5 @@ prod:
   uri: http://leap.fi.edu
 
 local:
-  root: /var/www/leap-composer/web
-  uri: http://localhost/leap-composer/web
+  root: /var/www/leap/web
+  uri: http://localhost/leap/web

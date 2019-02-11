@@ -1844,23 +1844,37 @@ table p {
 #block-views-block-partners-map-block-1 {
   margin-bottom: 100px; }
 
+.block-custom,
 #block-views-block-grouped-resources-block-1,
 #block-views-block-grouped-resources-block-2 {
-  margin-bottom: 50px; }
-  #block-views-block-grouped-resources-block-1 .item-list ul,
-  #block-views-block-grouped-resources-block-2 .item-list ul {
+  margin-bottom: 30px; }
+  .block-custom ul,
+  #block-views-block-grouped-resources-block-1 ul,
+  #block-views-block-grouped-resources-block-2 ul {
     list-style-type: disc;
     margin-bottom: 25px; }
-    #block-views-block-grouped-resources-block-1 .item-list ul li,
-    #block-views-block-grouped-resources-block-2 .item-list ul li {
+    .block-custom ul li,
+    #block-views-block-grouped-resources-block-1 ul li,
+    #block-views-block-grouped-resources-block-2 ul li {
       margin-left: 1.5em;
       margin-bottom: 0.3em; }
-  #block-views-block-grouped-resources-block-1 .item-list h3,
-  #block-views-block-grouped-resources-block-2 .item-list h3 {
-    font: italic 600 1em "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+  .block-custom h2,
+  #block-views-block-grouped-resources-block-1 h2,
+  #block-views-block-grouped-resources-block-2 h2 {
+    font: italic 600 1.125em "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
     line-height: 1.5;
     margin-bottom: 1em;
     color: #414e4b; }
+  .block-custom h3,
+  #block-views-block-grouped-resources-block-1 h3,
+  #block-views-block-grouped-resources-block-2 h3 {
+    line-height: 1.5;
+    margin-bottom: 1em;
+    font-weight: 500; }
+  .block-custom strong,
+  #block-views-block-grouped-resources-block-1 strong,
+  #block-views-block-grouped-resources-block-2 strong {
+    font-weight: 500; }
 
 /* Nav styles - START
 *********************************/

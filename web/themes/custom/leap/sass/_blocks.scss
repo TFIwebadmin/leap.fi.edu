@@ -349,23 +349,32 @@
   margin-bottom: 100px;
 }
 
+.block-custom,
 #block-views-block-grouped-resources-block-1,
 #block-views-block-grouped-resources-block-2 {
-  margin-bottom: 50px;
-  .item-list {
-    ul {
-      list-style-type: disc;
-      margin-bottom: 25px;
-      li {
-        margin-left: 1.5em;
-        margin-bottom: 0.3em;
-      }
+  margin-bottom: 30px;
+
+  ul {
+    list-style-type: disc;
+    margin-bottom: 25px;
+    li {
+      margin-left: 1.5em;
+      margin-bottom: 0.3em;
     }
-    h3 {
-      font:italic 600 em(16) 'Sentinel SSm A', 'Sentinel SSm B',Georgia, serif;
-      line-height: 1.5;
-      margin-bottom: 1em;
-      color: $darkGray;
-    }
+  }
+
+  h2 {
+    font:italic 600 em(18) 'Sentinel SSm A', 'Sentinel SSm B',Georgia, serif;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    color: $darkGray;
+  }
+  h3 {
+    line-height: 1.5;
+    margin-bottom: 1em;  
+    font-weight: 500;
+  }
+  strong {
+    font-weight: 500;   
   }
 }

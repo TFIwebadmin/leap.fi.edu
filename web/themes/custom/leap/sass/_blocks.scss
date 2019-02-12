@@ -380,6 +380,7 @@
   a {
     color: $darkOrange;
     &:hover {
+      color: $orange;
       text-decoration: underline;
     }
   }

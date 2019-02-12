@@ -1878,6 +1878,7 @@ table p {
   .block-custom a:hover,
   #block-views-block-grouped-resources-block-1 a:hover,
   #block-views-block-grouped-resources-block-2 a:hover {
+    color: #e89b37;
     text-decoration: underline; }
 
 .main-content .block:last-of-type {

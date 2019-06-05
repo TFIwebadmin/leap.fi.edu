@@ -359,6 +359,9 @@ input[type="button"] {
     color: #e89b37;
     cursor: pointer; }
 
+iframe {
+  width: 100%; }
+
 .main-page-heading {
   padding: 40px; }
   .main-page-heading h1 {

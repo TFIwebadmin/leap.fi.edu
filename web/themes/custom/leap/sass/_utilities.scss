@@ -12,7 +12,7 @@
     background-color: #515668;
     font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.1875em;
     padding: 15px 20px;
     text-transform: uppercase;
@@ -21,9 +21,9 @@
 
     &:hover {
       color: #fff !important;
-      background-color: #515668;
-      font-size: 10px;
-      font-weight: 800;
+      background-color: lighten(#515668, 10%);
+      //font-size: 10px;
+      //font-weight: 800;
     }
 
 

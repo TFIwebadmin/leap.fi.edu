@@ -4,9 +4,9 @@
 prod:
   host: leap.fi.edu
   user: todd
-  root: /var/www/leap
+  root: /var/www/leap/web
   uri: http://leap.fi.edu
 
 local:
   root: /var/www/leap/web
-  uri: http://localhost/leap/web
+  uri: http://leap.localhost

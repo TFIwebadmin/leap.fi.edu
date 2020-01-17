@@ -935,10 +935,10 @@ a.logo-large {
 #menu-utility .container {
   position: relative; }
 @media (min-width: 64em) {
-  #menu-utility .block:first-of-type {
+  #menu-utility nav {
     margin-left: 90px; } }
 @media (min-width: 72em) {
-  #menu-utility .block:first-of-type {
+  #menu-utility nav {
     margin-left: 120px; } }
 #menu-utility ul.menu {
   height: auto; }

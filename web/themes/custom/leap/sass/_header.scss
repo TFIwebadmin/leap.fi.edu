@@ -247,7 +247,7 @@ a.logo-large {
 	.container {
 		position: relative;
 	}
-	.block:first-of-type {
+	nav {
 		@media (min-width: em(1024)) { 
 			margin-left: 90px;
 		}

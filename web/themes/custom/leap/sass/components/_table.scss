@@ -1,14 +1,16 @@
 table {
-	
+	width: 100%;
+	margin-bottom: 40px;
 	thead {
 		tr{
 			display: flex;
+			background-color: $superlightGray;
 			padding: 10px 10px;
 			border-top: 1px solid $verylightGray;
 			text-align: left;	
 			th {
 				flex: 3;
-				font-weight: 300;
+				font-weight: 600;
 				+ th {
 					flex: 1;
 					text-align: center;
@@ -32,7 +34,7 @@ table {
 		}
 		
 		td:last-of-type {
-			color: $verylightGray; 
+			//color: $verylightGray; 
 		}
 	}
 	p {

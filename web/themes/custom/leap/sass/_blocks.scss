@@ -1,25 +1,23 @@
-#block-mainpagecontent {
-  article{
-    .intro-text p, .contact-us p {
-      max-width: 650px;
-      margin: 0 auto;
-      margin-bottom: 100px;
-      text-align: center;
-      font-style: normal;
-      opacity: 0;
-      transform: translateY(5px);
-      animation: fadeInUp 0.5s 0.25s forwards ease-in;
-      font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
-      font-style: italic;
-      font-weight: 400;
-      font-size: 1.375em;
-      line-height: 1.875em;
-      color: #6F6F6F;
-    }
+.main-page-content {
+  .intro-text p, .contact-us p {
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    text-align: center;
+    font-style: normal;
+    opacity: 0;
+    transform: translateY(5px);
+    animation: fadeInUp 0.5s 0.25s forwards ease-in;
+    font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.375em;
+    line-height: 1.875em;
+    color: #6F6F6F;
   }
 }
 
-#block-suggestedmaterials {
+.block-suggestedmaterials {
   iframe {
     display: block;
     margin: 0 auto 50px;
@@ -316,7 +314,7 @@
 
 }
 
-#block-surveys{
+.block-surveys{
 
   div{
     p:first-of-type{
@@ -345,13 +343,11 @@
   }
 }
 
-#block-views-block-partners-map-block-1{
+.block-map{
   margin-bottom: 100px;
 }
 
-.block-custom,
-#block-views-block-grouped-resources-block-1,
-#block-views-block-grouped-resources-block-2 {
+.block-resources {
   //margin-bottom: 30px;
 
   ul {

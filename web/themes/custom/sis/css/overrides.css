@@ -1,0 +1,57 @@
+a:hover,
+a:visited:hover,
+.views-field-field-faq ul li .faq-heading:hover,
+.partners-state-grouping .states-group .views-row a:hover,
+.faq-accordion .views-field-field-faq ul li .faq-heading:hover,
+.faq-accordion .views-field-field-faq ul li .faq-heading:hover h3,
+.join-us div h3 {
+  color: #f36633; }
+
+.block-custom a,
+#block-views-block-grouped-resources-block-1 a,
+#block-views-block-grouped-resources-block-2 a {
+  color: #e6470e; }
+  .block-custom a:hover,
+  #block-views-block-grouped-resources-block-1 a:hover,
+  #block-views-block-grouped-resources-block-2 a:hover {
+    color: #f36633; }
+
+a.button.button-inverse,
+input[type="button"].button-inverse,
+input[type="submit"].button-inverse {
+  background-color: #f36633;
+  color: #ffffff; }
+  a.button.button-inverse:hover, a.button.button-inverse:active, a.button.button-inverse:visited,
+  input[type="button"].button-inverse:hover,
+  input[type="button"].button-inverse:active,
+  input[type="button"].button-inverse:visited,
+  input[type="submit"].button-inverse:hover,
+  input[type="submit"].button-inverse:active,
+  input[type="submit"].button-inverse:visited {
+    background-color: #e6470e; }
+
+.slick-dots:hover {
+  background-color: #f36633; }
+
+.partners-state-grouping h3 {
+  background-color: #f36633;
+  color: #ffffff; }
+
+.faq-accordion header h3.active {
+  background-color: #f36633;
+  color: #ffffff; }
+
+nav.nav-site-main .menu li:last-child:hover {
+  background-color: #f36633;
+  color: #ffffff; }
+  nav.nav-site-main .menu li:last-child:hover li {
+    background-color: #f36633; }
+
+.form-item input.error,
+.partners-state-grouping .states-group .views-row a:hover {
+  border-color: #f36633; }
+
+.faq-accordion .views-field-field-faq ul li .faq-heading:hover:before {
+  border-color: transparent #f36633 transparent transparent; }
+
+/*# sourceMappingURL=overrides.css.map */

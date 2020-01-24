@@ -59,7 +59,7 @@
 (function () {
 
   var toggleFAQItem = function (selectedIdx) {
-    jQuery('#block-views-block-faq-filter-block-1 ul li .faq-wrapper').each(function (idx, element) {
+    jQuery('.faq-accordion ul li .faq-wrapper').each(function (idx, element) {
       if (selectedIdx === idx && !jQuery(element).hasClass('expanded')) {
         jQuery(element).delay(1000).addClass('expanded');
         return;
@@ -73,7 +73,7 @@
   var toggleSelectedFAQHeader = function (selectedIdx) {
 
     //hides or shows the selected views
-    jQuery('#block-views-block-faq-filter-block-1 .views-row').each(function (idx, element) {
+    jQuery('.faq-accordion .views-row').each(function (idx, element) {
       if (selectedIdx === idx) {
         jQuery(element).show();
         return;
@@ -83,7 +83,7 @@
     });
 
     //toggles the correct style on the selected nav item
-    jQuery('#block-views-block-faq-filter-block-1 header h3').each(function (idx, element) {
+    jQuery('.faq-accordion header h3').each(function (idx, element) {
       if (selectedIdx === idx) {
         jQuery(element).addClass('active');
         return;
@@ -96,7 +96,7 @@
   }
 
   //Initialize the nav click
-  jQuery('#block-views-block-faq-filter-block-1 header h3').each(function(idx, element) {
+  jQuery('.faq-accordion header h3').each(function(idx, element) {
     jQuery(element).click(function () {
       toggleSelectedFAQHeader(idx)
     })
@@ -107,7 +107,7 @@
   });
 
   //Initialize the actual faq stuff
-  jQuery('#block-views-block-faq-filter-block-1 ul li').each(function (idx, element) {
+  jQuery('.faq-accordion ul li').each(function (idx, element) {
     jQuery(element).click(function () {
       toggleFAQItem(idx)
     })

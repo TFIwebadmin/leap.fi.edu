@@ -11,7 +11,7 @@
 	}
 }
 
-
+.block-page-title,
 #block-leap-page-title {
 
   > h1 {
@@ -32,6 +32,7 @@
   }
 }
 
+.block-team,
 #block-views-block-team-block-1 {
 
   > h2 {
@@ -49,7 +50,12 @@
   }
 }
 
-#block-views-block-team-block-1, .views-element-container, #block-acknowledgments, #block-surveys, #block-suggestedmaterials {
+.block-custom,
+.block-team,
+.block-acknowledgments,
+.block-surveys,
+.block-suggestedmaterials, 
+.views-element-container {
 
 	> h1, > h2, article > h2 {
 
@@ -66,7 +72,7 @@
 	}
 }
 
-#block-acknowledgments {
+.block-acknowledgments {
   margin-bottom: 75px;
 
 	p {
@@ -95,7 +101,7 @@
   }
 }
 
-#block-surveys {
+.block-surveys {
 	margin-bottom: 80px;
 	p {
       max-width: 650px;

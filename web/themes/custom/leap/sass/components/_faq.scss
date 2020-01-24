@@ -17,7 +17,7 @@
     }
   }
 }
-#block-views-block-faq-filter-block-1{
+.faq-accordion{
   clear: both;
   margin-bottom: 100px;
 
@@ -70,7 +70,8 @@
     display: none;
   }
 
-  .views-field-field-faq {
+  .views-field-field-faq,
+  .views-field-field-faqs {
 
     ul {
       margin-bottom: 30px;

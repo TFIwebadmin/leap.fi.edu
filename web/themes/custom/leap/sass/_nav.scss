@@ -1,5 +1,6 @@
 // Navigtaion menus
 nav.menu-inline,
+nav.nav-site-main,
 #block-leappublicmenu,
 #block-leapusermenu{
   display: flex;
@@ -61,6 +62,7 @@ nav.menu-inline,
 
 
 // Treat last main nav item as user dropdown.
+nav.nav-site-main,
 #block-leappublicmenu,
 #block-leapusermenu{
   .menu {

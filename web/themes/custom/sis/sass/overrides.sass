@@ -1,0 +1,62 @@
+$brand: #f36633
+$brand-dark: darken($brand, 10%)
+$text-color: #544f40
+
+// Body text color
+
+
+// Highlight text color
+a:hover,
+a:visited:hover,
+.views-field-field-faq ul li .faq-heading:hover,
+.partners-state-grouping .states-group .views-row a:hover,
+.faq-accordion .views-field-field-faq ul li .faq-heading:hover,
+.faq-accordion .views-field-field-faq ul li .faq-heading:hover h3,
+.join-us div h3
+  color: $brand
+
+.block-custom,
+#block-views-block-grouped-resources-block-1,
+#block-views-block-grouped-resources-block-2 
+  a
+    color: $brand-dark
+    &:hover
+      color: $brand
+
+
+
+
+
+// Background color
+a.button,
+input[type="button"],
+input[type="submit"]
+  &.button-inverse
+    background-color: $brand
+    color: #ffffff
+    &:hover, &:active, &:visited
+      background-color: $brand-dark
+.slick-dots:hover
+  background-color: $brand
+.partners-state-grouping h3
+  background-color: $brand
+  color: #ffffff
+.faq-accordion header h3.active
+  background-color: $brand
+  color: #ffffff
+nav.nav-site-main .menu li:last-child:hover
+  background-color: $brand
+  color: #ffffff
+  li 
+    background-color: $brand
+
+
+
+
+// Border color
+.form-item input.error,
+.partners-state-grouping .states-group .views-row a:hover
+  border-color: $brand
+
+.faq-accordion .views-field-field-faq ul li .faq-heading:hover:before
+  border-color: transparent $brand transparent transparent

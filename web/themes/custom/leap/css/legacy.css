@@ -282,19 +282,41 @@ figcaption {
 
 /* Buttons
 *********************************/
-input[type="button"] {
-  font-weight: 600;
-  letter-spacing: 2px;
+a.button,
+input[type="button"],
+input[type="submit"] {
+  color: #ebf0ed;
   border-radius: 5px;
-  text-transform: uppercase;
-  padding: 1.125em 1.375em;
-  background: #515668;
-  color: #ebf0ed; }
-  input[type="button"]:hover, input[type="button"]:active, input[type="button"]:visited {
-    /* box-shadow: inset 0px 0px 2px 4px $gray; */
+  background-color: #515668;
+  font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1875em;
+  padding: 15px 20px;
+  text-transform: uppercase; }
+  a.button:hover, a.button:active, a.button:visited,
+  input[type="button"]:hover,
+  input[type="button"]:active,
+  input[type="button"]:visited,
+  input[type="submit"]:hover,
+  input[type="submit"]:active,
+  input[type="submit"]:visited {
+    background-color: #404455;
     opacity: .99;
-    color: #e89b37;
     cursor: pointer; }
+  a.button.button-inverse,
+  input[type="button"].button-inverse,
+  input[type="submit"].button-inverse {
+    color: #272727;
+    background-color: #e89b37; }
+    a.button.button-inverse:hover, a.button.button-inverse:active, a.button.button-inverse:visited,
+    input[type="button"].button-inverse:hover,
+    input[type="button"].button-inverse:active,
+    input[type="button"].button-inverse:visited,
+    input[type="submit"].button-inverse:hover,
+    input[type="submit"].button-inverse:active,
+    input[type="submit"].button-inverse:visited {
+      background-color: #d0872a; }
 
 iframe {
   width: 100%; }

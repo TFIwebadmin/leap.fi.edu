@@ -257,19 +257,30 @@ figcaption {
 }
 /* Buttons
 *********************************/
-input[type="button"] {
-  font-weight: 600;
-  letter-spacing: 2px;
+a.button,
+input[type="button"],
+input[type="submit"] {
+  color: $lightGray;
   border-radius: 5px;
+  background-color: $grayBlueIsh;
+  font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1875em;
+  padding: 15px 20px;
   text-transform: uppercase;
-  padding:em(18) em(22);
-  background: $grayBlueIsh;
-  color:$lightGray;
   &:hover, &:active, &:visited {
-    /* box-shadow: inset 0px 0px 2px 4px $gray; */
+    background-color: $darkPurple;
     opacity: .99;
-    color:$orange;
+    //color:$orange;
     cursor: pointer;
+  }
+  &.button-inverse {
+    color: $lightBlack;
+    background-color: $orange;
+    &:hover, &:active, &:visited {
+      background-color: $darkOrange;
+    }
   }
 }
 

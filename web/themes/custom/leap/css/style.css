@@ -1811,6 +1811,7 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin-bottom: 100px; }
   @media (min-width: 50em) {
     .block-option {

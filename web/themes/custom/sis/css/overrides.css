@@ -54,8 +54,11 @@ nav.nav-site-main .menu li:last-child:hover {
 .faq-accordion .views-field-field-faq ul li .faq-heading:hover:before {
   border-color: transparent #f36633 transparent transparent; }
 
-.block-gsk-banner img {
-  width: auto;
-  margin: 0 auto; }
+.block-gsk-banner {
+  clear: both;
+  margin-top: 60px; }
+  .block-gsk-banner img {
+    width: auto;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=overrides.css.map */

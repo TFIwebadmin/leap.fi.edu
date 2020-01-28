@@ -740,7 +740,7 @@ iframe {
       font-weight: 800;
       font-size: 1em;
       color: #4D5263; }
-    .webform-submission-form .form-item input, .webform-submission-form .form-item textarea {
+    .webform-submission-form .form-item input, .webform-submission-form .form-item textarea, .webform-submission-form .form-item select {
       background-color: transparent;
       width: 100%;
       max-width: 100%;

@@ -96,7 +96,8 @@ input[type=text],
 input[type=password], 
 input[type=email],
 input[type=tel], 
-textarea, {
+textarea,
+select {
   font-family: 'Gotham SSm A', 'Gotham SSm B';
   padding: 12px 15px;
   color: #404040;

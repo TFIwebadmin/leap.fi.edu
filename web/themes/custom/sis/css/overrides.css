@@ -63,6 +63,10 @@ nav.nav-site-main .menu li:last-child:hover {
 
 .main-page-heading {
   text-align: center; }
+  .main-page-heading h1 {
+    font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif; }
+    .main-page-heading h1 a {
+      color: #f36633; }
 
 img.title-image {
   width: auto; }

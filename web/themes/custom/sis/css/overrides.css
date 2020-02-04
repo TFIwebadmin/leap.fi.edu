@@ -61,4 +61,33 @@ nav.nav-site-main .menu li:last-child:hover {
     width: auto;
     margin: 0 auto; }
 
+.main-page-heading {
+  text-align: center; }
+
+img.title-image {
+  width: auto; }
+
+nav.nav-site-main {
+  background-color: #f36633; }
+  @media (min-width: 31.25em) {
+    nav.nav-site-main {
+      margin-bottom: 50px; } }
+  nav.nav-site-main .menu {
+    margin-bottom: 0; }
+    nav.nav-site-main .menu li {
+      padding-top: 8px;
+      padding-bottom: 10px; }
+      nav.nav-site-main .menu li a {
+        color: #fff; }
+    nav.nav-site-main .menu li:last-child {
+      background-color: #b5380b; }
+      nav.nav-site-main .menu li:last-child li {
+        padding-bottom: 10px; }
+      @media (min-width: 34.375em) {
+        nav.nav-site-main .menu li:last-child {
+          top: 5px;
+          padding-top: 0px; }
+          nav.nav-site-main .menu li:last-child a.sub-menu {
+            padding-top: 6px; } }
+
 /*# sourceMappingURL=overrides.css.map */

@@ -132,18 +132,21 @@
           height:auto;
           transform-origin:top;
           transition: max-height 0.3s ease-out;
-          .faq-padding {
-            padding: 20px 45px;
+          *:first-child {
+            padding-top: 25px;
+          }
+          *:last-child {
+            padding-bottom: 25px;
+          }
+          p, ul, ol  {
+            padding-left: 45px;
+            padding-right: 45px;
             //color: $purple;
             color: #707D7A;
             line-height: em(27);
             font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
             font-weight: 400;
             font-size: .875em;
-          }
-          p {
-            // line-height: 1.75em;
-            // color: #707D7A;
           }
           ul, ol {
             margin-bottom: 25px;

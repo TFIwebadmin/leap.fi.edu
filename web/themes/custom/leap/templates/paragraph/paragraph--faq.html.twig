@@ -53,7 +53,9 @@
       <h3>{{ content.field_question[0] }}</h3>
     </div>
     <div class="faq-answer body">
-      {{ content.field_answer[0] }}
+      <div class="faq-padding">
+        {{ content.field_answer }}
+      </div>
     </div>
   </div>
 {% endblock paragraph %}

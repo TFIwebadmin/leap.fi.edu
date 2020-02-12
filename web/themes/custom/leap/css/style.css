@@ -658,7 +658,6 @@ iframe {
     font-style: italic;
     font-weight: 400;
     max-width: 95%;
-    text-transform: capitalize;
     color: #272727;
     display: inline-block;
     border-radius: 0;
@@ -932,16 +931,31 @@ iframe {
         height: auto;
         transform-origin: top;
         transition: max-height 0.3s ease-out; }
-        .faq-accordion .views-field-field-faq ul li .faq-answer p,
-        .faq-accordion .views-field-field-faqs ul li .faq-answer p {
+        .faq-accordion .views-field-field-faq ul li .faq-answer .faq-padding,
+        .faq-accordion .views-field-field-faqs ul li .faq-answer .faq-padding {
           padding: 20px 45px;
-          color: #4d5263;
+          color: #707D7A;
           line-height: 1.6875em;
           font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
           font-weight: 400;
-          font-size: .875em;
-          line-height: 1.75em;
-          color: #707D7A; }
+          font-size: .875em; }
+        .faq-accordion .views-field-field-faq ul li .faq-answer ul, .faq-accordion .views-field-field-faq ul li .faq-answer ol,
+        .faq-accordion .views-field-field-faqs ul li .faq-answer ul,
+        .faq-accordion .views-field-field-faqs ul li .faq-answer ol {
+          margin-bottom: 25px;
+          margin-left: 2em; }
+        .faq-accordion .views-field-field-faq ul li .faq-answer ul,
+        .faq-accordion .views-field-field-faqs ul li .faq-answer ul {
+          list-style-type: disc; }
+          .faq-accordion .views-field-field-faq ul li .faq-answer ul ul,
+          .faq-accordion .views-field-field-faqs ul li .faq-answer ul ul {
+            list-style-type: circle; }
+        .faq-accordion .views-field-field-faq ul li .faq-answer ol,
+        .faq-accordion .views-field-field-faqs ul li .faq-answer ol {
+          list-style: decimal; }
+        .faq-accordion .views-field-field-faq ul li .faq-answer a:hover,
+        .faq-accordion .views-field-field-faqs ul li .faq-answer a:hover {
+          text-decoration: underline; }
       .faq-accordion .views-field-field-faq ul li .faq-wrapper.expanded .faq-heading:before,
       .faq-accordion .views-field-field-faqs ul li .faq-wrapper.expanded .faq-heading:before {
         transform: translateY(-50%) rotate(270deg); }

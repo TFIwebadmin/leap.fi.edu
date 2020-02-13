@@ -132,15 +132,18 @@
           height:auto;
           transform-origin:top;
           transition: max-height 0.3s ease-out;
-          *:first-child {
-            padding-top: 25px;
-          }
-          *:last-child {
-            padding-bottom: 25px;
+          // *:first-child {
+          //   padding-top: 25px;
+          // }
+          // *:last-child {
+          //   padding-bottom: 25px;
+          // }
+          div {
+            padding: 25px 45px;
           }
           p, ul, ol  {
-            padding-left: 45px;
-            padding-right: 45px;
+            //padding-left: 45px;
+            //padding-right: 45px;
             //color: $purple;
             color: #707D7A;
             line-height: em(27);

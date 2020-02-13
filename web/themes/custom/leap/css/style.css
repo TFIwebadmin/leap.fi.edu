@@ -931,18 +931,13 @@ iframe {
         height: auto;
         transform-origin: top;
         transition: max-height 0.3s ease-out; }
-        .faq-accordion .views-field-field-faq ul li .faq-answer *:first-child,
-        .faq-accordion .views-field-field-faqs ul li .faq-answer *:first-child {
-          padding-top: 25px; }
-        .faq-accordion .views-field-field-faq ul li .faq-answer *:last-child,
-        .faq-accordion .views-field-field-faqs ul li .faq-answer *:last-child {
-          padding-bottom: 25px; }
+        .faq-accordion .views-field-field-faq ul li .faq-answer div,
+        .faq-accordion .views-field-field-faqs ul li .faq-answer div {
+          padding: 25px 45px; }
         .faq-accordion .views-field-field-faq ul li .faq-answer p, .faq-accordion .views-field-field-faq ul li .faq-answer ul, .faq-accordion .views-field-field-faq ul li .faq-answer ol,
         .faq-accordion .views-field-field-faqs ul li .faq-answer p,
         .faq-accordion .views-field-field-faqs ul li .faq-answer ul,
         .faq-accordion .views-field-field-faqs ul li .faq-answer ol {
-          padding-left: 45px;
-          padding-right: 45px;
           color: #707D7A;
           line-height: 1.6875em;
           font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;

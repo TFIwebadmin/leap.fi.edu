@@ -50,10 +50,10 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     <div class="faq-heading question">
-      <h3>{{ content.field_question[0] }}</h3>
+      <h3>{{ content.field_question }}</h3>
     </div>
     <div class="faq-answer body">
-      {{ content.field_answer[0] }}
+      {{ content.field_answer }}
     </div>
   </div>
 {% endblock paragraph %}

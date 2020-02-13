@@ -49,22 +49,21 @@
 {% block paragraph %}
   <div class="{% if content.field_block_class %}{{ content.field_block_class[0] }}{% endif %}">
     <div{{ attributes.addClass(classes) }}>
-
       <div class="content"{{ content_attributes }} >
         {% if content.field_block_title %}
           <div class="field-title">
             <h3>{{ content.field_block_title[0] }}</h3>
-        </div>      
-      {% endif %}
-      {% if content.field_block_content %}
-        <div class="field-body">
+          </div>      
+        {% endif %}
+        {% if content.field_block_content %}
+          <div class="field-body">
             {{ content.field_block_content }}
           </div>
         {% endif %}
         {% if content.field_block_link %}
-        <div class="action-link">
-          {{ content.field_block_link[0] }}
-        </div>
+          <div class="action-link">
+            {{ content.field_block_link[0] }}
+          </div>
         {% endif %}
       </div>
     </div>

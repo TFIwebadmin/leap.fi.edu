@@ -59,7 +59,7 @@
 (function () {
 
   var toggleFAQItem = function (selectedIdx) {
-    jQuery('.faq-accordion ul li .faq-wrapper').each(function (idx, element) {
+    jQuery('.faq-accordion ul li.list-item .faq-wrapper').each(function (idx, element) {
       if (selectedIdx === idx && !jQuery(element).hasClass('expanded')) {
         jQuery(element).delay(1000).addClass('expanded');
         return;
@@ -107,7 +107,7 @@
   });
 
   //Initialize the actual faq stuff
-  jQuery('.faq-accordion ul li').each(function (idx, element) {
+  jQuery('.faq-accordion ul li.list-item').each(function (idx, element) {
     jQuery(element).click(function () {
       toggleFAQItem(idx)
     })

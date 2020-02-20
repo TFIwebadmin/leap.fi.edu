@@ -14,8 +14,8 @@
 # Ignore Drupal's file directory
 /web/sites/*/files/
 
-# Ignore .sass-cache
-/web/*/.sass-cache/
+# Ignore Sass cache everywhere
+.sass-cache/
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest

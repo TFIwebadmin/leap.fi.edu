@@ -104,10 +104,9 @@
       font-weight: 700;
       font-size: 1em;
       margin: 0 20px;
-      color: #4D5263;
       font: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
-      color: #758D81;
-      font-style: itlaic;
+      color: $purple;
+      font-style: italic;
     }
 
     .views-field-body{
@@ -118,7 +117,7 @@
       font-weight: 400;
       font-size: .875em;
       line-height: 1.75em;
-      color: #707D7A;
+      color: $gray;
       margin: 0 20px;
     }
   }
@@ -291,7 +290,7 @@
       font-weight: 400;
       font-size: .875em;
       line-height: 1.75em;
-      color: #707D7A;
+      //color: #707D7A;
 
     }
   }

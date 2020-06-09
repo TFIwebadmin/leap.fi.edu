@@ -56,8 +56,8 @@
 
       &.active{
         border-color: $purple;
-        color: $purple;
-        background-color: #E89B37
+        color: $gray;
+        background-color: $lightOrange;
       }
 
       &:hover{
@@ -144,8 +144,8 @@
           p, ul, ol  {
             //padding-left: 45px;
             //padding-right: 45px;
-            //color: $purple;
-            color: #707D7A;
+            color: $purple;
+            //color: $gray;
             line-height: em(27);
             font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
             font-weight: 400;
@@ -235,7 +235,7 @@
               font-weight: 400;
               font-size: .875em;
               line-height: 1.75em;
-              color: #707D7A;
+              //color: $gray;
               a {
                 text-decoration: underline;
                 font-weight: 800;

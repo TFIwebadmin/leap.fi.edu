@@ -257,7 +257,8 @@
 	overflow: hidden;
 	position: relative;
 	background: $black url(../images/bg/bg-noise-02.jpg) repeat;
-	color: $lightGray2;
+	//color: $lightGray2;
+	color: $lightGray4;  // Contrast fix
 	font-size: em(14);
 	line-height: em(16);
 	-webkit-font-smoothing: auto;

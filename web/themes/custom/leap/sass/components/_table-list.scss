@@ -1,5 +1,6 @@
 .partners-state-grouping {
-	color: $purple;
+	//color: $purple;
+	color: $gray;
 	margin-bottom: 40px;
 	background-color: #fff;
 	border: 1px solid #EBF0ED;
@@ -64,7 +65,7 @@
 					font-weight: 400;
 					font-size: .875em;
 					line-height: 1.75em;
-					color: #707D7A;
+					color: $purple;
 
 				}
 			a {

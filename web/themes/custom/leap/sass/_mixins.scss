@@ -33,6 +33,21 @@ $lightPurple: #767b8c;
 $darkPurple: #404455;
 $highlightBack: #fdfdfd;
 $highlightText: #5f5d5e;
+
+/* Color Contrast Fixes - START
+*********************************/
+$gray: #303030;
+$darkGray: #303030;
+$greenIsh: #a0b1a8;
+$topey: #435B4F;
+$topeyOld: #9ab5a7;
+$grayTeal: #435B4F;
+$lightGray4: #909090;
+$purple: #505857;
+$darkOrange: #A06922;
+
+$orangeContrast: #4A4F5E;
+
 /* Functions - START
 *********************************/
 @function em($target, $context: 16) {

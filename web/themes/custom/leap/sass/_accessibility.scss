@@ -1,0 +1,9 @@
+// Indicate keyboard focus visually
+a {
+	&:focus {
+		outline-style: solid;
+		//outline-color: #ff0000;
+		outline-width: 2px;
+		outline-offset: 0px;
+	}
+}

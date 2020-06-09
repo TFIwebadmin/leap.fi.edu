@@ -293,7 +293,7 @@ a:hover, a:visited:hover {
 }
 
 a:hover, a:active, a:focus {
-  color: #d0872a;
+  color: #A06922;
   -webkit-transition: background-color 0.4s ease;
   -moz-transition: background-color 0.4s ease;
   -o-transition: background-color 0.4s ease;
@@ -386,7 +386,7 @@ input[type=button].button-inverse:visited,
 input[type=submit].button-inverse:hover,
 input[type=submit].button-inverse:active,
 input[type=submit].button-inverse:visited {
-  background-color: #d0872a;
+  background-color: #A06922;
 }
 
 iframe {
@@ -1415,11 +1415,11 @@ a.logo-large {
     height: 40px;
     background-color: #e89b37;
     background-position: 50% -80px;
-    border: 1px solid #d0872a;
+    border: 1px solid #A06922;
   }
   .block-search input[type=submit]:hover,
 .block-search #search-toggle:hover {
-    background-color: #d0872a;
+    background-color: #A06922;
   }
 }
 @media (min-width: 64em) {
@@ -2191,7 +2191,7 @@ a.logo-large {
   z-index: 20;
 }
 #footer a, #footer a:visited {
-  color: #d0872a;
+  color: #A06922;
 }
 #footer a:hover {
   background: #202020;
@@ -2220,7 +2220,7 @@ a.logo-large {
 }
 #footer ul.menu li a {
   font-size: 0.6875em;
-  color: #d0872a;
+  color: #A06922;
 }
 #footer ul.menu li a:hover {
   color: #eeaa4b;

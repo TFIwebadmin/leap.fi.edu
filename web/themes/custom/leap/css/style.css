@@ -1749,6 +1749,7 @@ div.video-background .action-link a {
   margin-bottom: 25px;
   margin-left: 2em;
   color: #505857;
+  line-height: 1.875em;
 }
 .basic-page ul {
   list-style-type: disc;

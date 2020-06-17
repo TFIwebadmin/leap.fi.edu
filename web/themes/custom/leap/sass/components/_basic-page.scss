@@ -4,7 +4,7 @@
   }
 
   .intro-text {
-    
+
   }
 
   .intro-paragraph {
@@ -96,4 +96,20 @@
   a:hover {
     text-decoration: underline;
   }
+}
+
+.intro-text {
+    text-align: center;
+    font-style: normal;
+    opacity: 0;
+    font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.375em;
+    line-height: 1.875em;
+    color: $lightGray2;
+    a {
+      text-decoration: underline;
+      color: $darkGray;
+    }
 }

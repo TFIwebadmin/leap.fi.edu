@@ -1764,6 +1764,22 @@ div.video-background .action-link a {
   text-decoration: underline;
 }
 
+.intro-text {
+  text-align: center;
+  font-style: normal;
+  opacity: 0;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.375em;
+  line-height: 1.875em;
+  color: #6f6f6f;
+}
+.intro-text a {
+  text-decoration: underline;
+  color: #303030;
+}
+
 .resouces-file {
   background-color: #f4f4f4;
   padding: 30px;

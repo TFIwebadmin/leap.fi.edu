@@ -2020,7 +2020,7 @@ table p {
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 /* Content Blocks - START
 *********************************/
-.main-page-content .intro-text p, .main-page-content .contact-us p {
+.intro-text p, .contact-us p {
   max-width: 650px;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -2034,7 +2034,7 @@ table p {
   font-weight: 400;
   font-size: 1.375em;
   line-height: 1.875em;
-  color: #6F6F6F;
+  color: #6f6f6f;
 }
 
 .block-suggestedmaterials iframe {
@@ -2355,6 +2355,13 @@ table p {
 
 .main-content .block:last-of-type {
   margin-bottom: 100px;
+}
+
+.block-box {
+  border: 4px solid #e4e8e7;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
 /* Nav styles - START

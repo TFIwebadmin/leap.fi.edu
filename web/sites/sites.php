@@ -60,7 +60,6 @@ $sites['leap.fi.edu'] = 'default';
 $sites['leap.localhost'] = 'default';
 
 $sites['scienceinthesummer.fi.edu'] = 'scienceinthesummer';
-$sites['fisis.violadigital.com'] = 'scienceinthesummer';
 $sites['sis.localhost'] = 'scienceinthesummer';
 
 $sites['mastereducator.fi.edu'] = 'mastereducator';

@@ -1,0 +1,99 @@
+{#
+/**
+ * @file
+ * Theme override to display a single page.
+ *
+ */
+#}
+
+{%
+  set classes = [
+    'page',
+    'bkgd-pattern-bottom',
+    hero_color ? 'color-' ~ hero_color|clean_class
+  ]
+%}
+
+
+<header id="header" class="header" role="banner">
+  <div id="nav-wrapper" class="clearfix">
+  {% if page.utility_nav %}
+    <nav id="menu-utility" class="clearfix" role="navigation">
+      <div class="container">
+        <a href="https://www.fi.edu" class="logo-large" rel="home" title="{{ 'Return to The Franklin Institute homepage'|t }}" aria-label="{{ 'The Franklin Institute logo'|t }}"><div class="site-name">{{ 'The Franklin Institute'|t }}</div></a>
+        <div class="utility-wrapper">
+          {{ page.utility_nav }}
+        </div>
+      </div>
+    </nav>
+  {% endif %}
+
+  {% if page.primary_nav %}
+    <nav id="menu-main" class="clearfix" role="navigation">
+      <div class="container">
+        {{ page.primary_nav }}
+      </div>
+    </nav>
+  {% endif %}
+  </div>
+</header>
+
+<div{{ attributes.addClass(classes) }}>
+  <div id="mobile-nav">
+      <a href="https://www.fi.edu" class="logo-small" rel="home" title="{{ 'Return to The Franklin Institute homepage'|t }}" aria-label="{{ 'The Franklin Institute logo'|t }}"><div class="site-name">{{ 'The Franklin Institute'|t }}</div></a>
+    <ul class="nav-control">
+      <li><a href="https://tickets.fi.edu" class="buy-tickets" target="_blank">Buy Tickets</a></li>
+      <!-- HIDE li><a href="/interactive-map" class="map-btn" title="Open Map">Map</a></li-->
+      <li><a href="javascript:;" class="menu-btn" title="Open Menu">Menu</a></li>
+    </ul>
+  </div>
+
+  {% if page.alert %}
+    <div id="alert-message" class="alert-message alert-header">
+      {{ page.alert }}
+    </div>
+  {% endif %}
+
+  <header class="main-page-heading">
+    <div class="container">
+      <div class="site-partner-logo"><img src="/{{ directory }}/images/GSK_Logo.png" alt="GSK logo"></div>
+      <h1><a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a></h1>
+      <div class="site-name-subhead">{{ "in partnership with The Franklin Institute"|t }}</div>
+    </div>
+  </header>
+  {% if page.site_nav %}
+    <div class="site-navigation clearfix">
+      {{ page.site_nav }}
+    </div>
+  {% endif %}
+
+  <div id="content" class="content-wrapper">
+    {% if page.hero %}
+      <div id="hero" class="hero">
+        <div class="color-theme-block"></div>
+        <div class="hero-content container">
+          {{ page.hero }}
+        </div>
+      </div>
+    {% endif %}
+    <div class="container clearfix">
+      {{ page.highlighted }}
+      {{ page.help }}
+      <a id="main-content" tabindex="-1"></a>
+        <div class="main-content">
+          {{ page.content }}
+        </div>
+    </div>
+    {{ page.below }}
+  </div>
+
+  {% if page.footer %}
+    <footer id="footer">
+      <div class="container">
+        {{ page.footer }}
+      </div>
+    </footer>
+  {% endif %}
+
+</div>
+<div id="mediaquery"></div>

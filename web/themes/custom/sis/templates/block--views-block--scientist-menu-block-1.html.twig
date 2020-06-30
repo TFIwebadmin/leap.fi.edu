@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * 
+ */
+#}
+<div{{ attributes.addClass('block scientist-menu') }}>
+  <div class="center-icon">
+  	<img class="no-stretch down-arrow" alt="down arrow" src="/{{ directory }}/images/arrow.png">
+  </div>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>

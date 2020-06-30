@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Science in the Summer theme.
+ */
+
+
+function sis_preprocess_page(&$variables) {
+	// Get site name to use in page.html.twig
+	$variables['site_name'] = \Drupal::config('system.site')->get('name');
+
+    // Define some node-specific settings, and prepare certain node fields to render in page.html.twig.
+    if(isset($variables['node'])) {
+        $node_type = $variables['node']->getType();
+        $variables['node_type'] = $node_type;
+        
+        switch ($node_type) {
+            case 'page':
+            case 'scientist':
+                $color = $variables['node']->get('field_color_theme')->getValue();
+                if (isset($color[0])) {
+                    $variables['hero_color'] = $color[0]['value'];
+                }
+                break;
+            default:
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.site-navigation
+  background-color: $lightOrange
+  padding-top: 16px
+  nav.nav-site-main
+    margin-bottom: 0px !important
+    .menu 
+      margin-bottom: 0px !important
+      li
+        a 
+          color: #383838
+      li:last-child 
+        a.sub-menu
+          color: $white
+
+
+
+// Z-Indexes
+.page,
+.site-navigation,
+.content-wrapper
+  position: relative
+
+.site-navigation
+  z-index: 2
+
+.content-wrapper
+  z-index: 1

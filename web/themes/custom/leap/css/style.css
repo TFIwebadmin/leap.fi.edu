@@ -405,7 +405,7 @@ dl dd {
 
 /* Images
 *********************************/
-img {
+.content-wrapper img {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -2035,7 +2035,7 @@ table p {
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 /* Content Blocks - START
 *********************************/
-.intro-text p, .contact-us p {
+.main-page-content .intro-text p, .main-page-content .contact-us p {
   max-width: 650px;
   margin: 0 auto;
   margin-bottom: 100px;

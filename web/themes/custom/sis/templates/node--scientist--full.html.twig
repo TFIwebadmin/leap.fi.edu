@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ *
+ */
+#}
+<article{{ attributes.addClass('node-scientist') }}>
+
+  <div{{ content_attributes }}>
+    {{ content.field_video_ref }}
+    <div class="main-page-content">
+      <div class="intro-text color-match">
+        {{ content.body }}
+      </div>
+      <div class="center-icon">
+        <img class="no-stretch down-arrow" alt="down arrow" src="/{{ directory }}/images/arrow.png">
+      </div>
+      {{ content.field_steps }}
+    </div>
+  </div>
+
+</article>

@@ -6,9 +6,18 @@ input[type="submit"],
   background-color: $orange
   color: $white
   border-radius: 0px
+  cursor: pointer
+
+a.button
+  text-decoration: none
+  &:hover, &:active, &:visited 
+    background-color: $orange
+    color: $white
+    opacity: 1
   &.button-inverse
     background-color: #383838
-
+    &:hover, &:active, &:visited 
+      background-color: #383838
 
 img.no-stretch
   width: auto

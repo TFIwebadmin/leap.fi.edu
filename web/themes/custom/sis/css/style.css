@@ -5,7 +5,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.01em;
 }
 
-body,
 p {
   font-size: 0.875rem;
   line-height: 1.4;
@@ -211,12 +210,21 @@ input[type=submit],
   background-color: #F36633;
   color: #FFFFFF;
   border-radius: 0px;
+  cursor: pointer;
 }
-a.button.button-inverse,
-input[type=button].button-inverse,
-input[type=submit].button-inverse,
-.action-link a.button-inverse,
-.action-link a:visited.button-inverse {
+
+a.button {
+  text-decoration: none;
+}
+a.button:hover, a.button:active, a.button:visited {
+  background-color: #F36633;
+  color: #FFFFFF;
+  opacity: 1;
+}
+a.button.button-inverse {
+  background-color: #383838;
+}
+a.button.button-inverse:hover, a.button.button-inverse:active, a.button.button-inverse:visited {
   background-color: #383838;
 }
 

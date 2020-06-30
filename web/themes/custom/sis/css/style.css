@@ -52,8 +52,8 @@ p {
 .color-theme-block {
   display: block;
   position: relative;
-  height: 500px;
-  margin-bottom: -400px;
+  height: 200px;
+  margin-bottom: -150px;
 }
 .color-theme-blue .color-theme-block {
   background-color: #485DAA;
@@ -68,6 +68,18 @@ p {
   background-color: #00A4B3;
 }
 
+@media (min-width: 768px) {
+  .color-theme-block {
+    height: 300px;
+    margin-bottom: -250px;
+  }
+}
+@media (min-width: 992px) {
+  .color-theme-block {
+    height: 500px;
+    margin-bottom: -400px;
+  }
+}
 .color-theme-blue h2, .color-theme-blue h3 {
   color: #485DAA;
 }
@@ -134,8 +146,8 @@ p {
 .site-navigation nav.nav-site-main .menu li a {
   color: #383838;
 }
-.site-navigation nav.nav-site-main .menu li:last-child a.sub-menu {
-  color: #FFFFFF;
+.site-navigation nav.nav-site-main .menu li:last-child {
+  background-color: #EEA32D;
 }
 
 .page,

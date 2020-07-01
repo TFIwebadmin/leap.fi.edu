@@ -192,11 +192,26 @@ div.video-background .button, div.video-background .field--name-field-events .fi
 .scientist-menu .views-view-grid .views-col {
   padding: 20px;
 }
-.scientist-menu .views-view-grid .views-col img {
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
+.scientist-menu .views-view-grid .views-col a {
+  display: block;
   -webkit-box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.scientist-menu .theme-magenta a:hover {
+  -webkit-box-shadow: 0 5px 10px 10px rgba(186, 14, 130, 0.5);
+  box-shadow: 0 5px 10px 10px rgba(186, 14, 130, 0.5);
+}
+.scientist-menu .theme-blue a:hover {
+  -webkit-box-shadow: 0 5px 10px 10px rgba(72, 93, 170, 0.5);
+  box-shadow: 0 5px 10px 10px rgba(72, 93, 170, 0.5);
+}
+.scientist-menu .theme-green a:hover {
+  -webkit-box-shadow: 0 5px 10px 10px rgba(85, 164, 61, 0.5);
+  box-shadow: 0 5px 10px 10px rgba(85, 164, 61, 0.5);
+}
+.scientist-menu .theme-teal a:hover {
+  -webkit-box-shadow: 0 5px 10px 10px rgba(0, 164, 179, 0.5);
+  box-shadow: 0 5px 10px 10px rgba(0, 164, 179, 0.5);
 }
 
 .down-arrow {

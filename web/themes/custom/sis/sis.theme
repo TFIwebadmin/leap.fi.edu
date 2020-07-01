@@ -28,6 +28,18 @@ function sis_preprocess_page(&$variables) {
     }
 }
 
+// function sis_preprocess_views_view_fields(&$variables) {
+//     kint_require();
+//     Kint::$maxLevels = 6;
+//     if($variables['view']->id() == 'scientist_menu') {
+//         //ksm($variables);
+//         //$color = $variables['view']->field['field_color_theme']->getValue(Drupal\views\ResultRow $values, $field = NULL);
+//         $color = reset($variables['fields']['field_color_theme']->content);
+//         ksm($color);
+//     }
+    
+// }
+
 /**
  * Implements hook_theme_suggestions_page_alter().
  */

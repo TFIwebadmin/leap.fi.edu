@@ -179,16 +179,7 @@ div.video-background:before, .video-container-featured:before, .video-container-
 div.video-background .video-info, .video-container-featured .video-info, .video-container-page .video-info {
   top: 40%;
 }
-div.video-background .button, .video-container-featured .button, .video-container-page .button {
-  color: #FFFFFF;
-  border-radius: 0px;
-  background-color: #F36633;
-  font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.1875em;
-  padding: 15px 20px;
-  text-transform: uppercase;
+div.video-background .button, div.video-background .field--name-field-events .field__item a, .field--name-field-events .field__item div.video-background a, .video-container-featured .button, .video-container-featured .field--name-field-events .field__item a, .field--name-field-events .field__item .video-container-featured a, .video-container-page .button, .video-container-page .field--name-field-events .field__item a, .field--name-field-events .field__item .video-container-page a {
   z-index: 3;
   position: absolute;
   bottom: 30%;
@@ -218,17 +209,88 @@ div.video-background .button, .video-container-featured .button, .video-containe
   line-height: 48px;
   margin-bottom: 20px;
 }
-.node-scientist .paragraph {
+.node-scientist .paragraph--type--video,
+.node-scientist .paragraph--type--instructions,
+.node-scientist .paragraph--type--schedule {
   margin-top: 60px;
   margin-bottom: 60px;
   margin-left: 200px;
 }
-.node-scientist .paragraph h3.color-match,
-.node-scientist .paragraph .video-container-page {
+.node-scientist .paragraph--type--video h3.color-match,
+.node-scientist .paragraph--type--video .video-container-page,
+.node-scientist .paragraph--type--instructions h3.color-match,
+.node-scientist .paragraph--type--instructions .video-container-page,
+.node-scientist .paragraph--type--schedule h3.color-match,
+.node-scientist .paragraph--type--schedule .video-container-page {
   width: 70%;
 }
+.node-scientist .field--name-field-steps {
+  margin-bottom: 100px;
+}
 
-a.button,
+.instructions-flex {
+  display: flex;
+}
+.instructions-flex ul {
+  list-style-type: disc;
+  margin-left: 1.25em;
+  margin-bottom: 2em;
+}
+.instructions-flex a {
+  font-weight: bold;
+}
+
+.paragraph--type--schedule img {
+  width: 50%;
+  float: left;
+  margin-right: 30px;
+}
+
+.field--name-field-events {
+  display: flex;
+  clear: both;
+  margin-top: 40px;
+}
+.field--name-field-events .field__item {
+  max-width: 80%;
+  display: block;
+}
+.field--name-field-events .field--name-field-date {
+  margin-top: 50px;
+}
+.field--name-field-events .field--name-field-block-link {
+  margin-top: 30px;
+}
+
+.field--name-field-materials {
+  margin-left: 30px;
+  white-space: nowrap;
+}
+.field--name-field-materials .field__label {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.field--name-field-materials li {
+  margin-bottom: 0.5em;
+}
+
+.button, .field--name-field-events .field__item a {
+  color: #FFFFFF;
+  border-radius: 0px;
+  background-color: #F36633;
+  font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1875em;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+
+a.button, .field--name-field-events .field__item a,
 input[type=button],
 input[type=submit],
 .action-link a,
@@ -239,23 +301,27 @@ input[type=submit],
   cursor: pointer;
 }
 
-a.button {
+a.button, .field--name-field-events .field__item a {
   text-decoration: none;
 }
-a.button:hover, a.button:active, a.button:visited {
+a.button:hover, .field--name-field-events .field__item a:hover, a.button:active, .field--name-field-events .field__item a:active, a.button:visited, .field--name-field-events .field__item a:visited {
   background-color: #F36633;
   color: #FFFFFF;
   opacity: 1;
 }
-a.button.button-inverse {
+a.button.button-inverse, .field--name-field-events .field__item a.button-inverse {
   background-color: #383838;
 }
-a.button.button-inverse:hover, a.button.button-inverse:active, a.button.button-inverse:visited {
+a.button.button-inverse:hover, .field--name-field-events .field__item a.button-inverse:hover, a.button.button-inverse:active, .field--name-field-events .field__item a.button-inverse:active, a.button.button-inverse:visited, .field--name-field-events .field__item a.button-inverse:visited {
   background-color: #383838;
 }
 
 img.no-stretch {
   width: auto;
+}
+
+.main-page-content a {
+  color: #F36633;
 }
 
 /*# sourceMappingURL=style.css.map */

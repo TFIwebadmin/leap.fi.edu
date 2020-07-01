@@ -18,7 +18,15 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       <h3 class="color-match">{{ content.field_block_title }}</h3>
-      {{ content|without('field_block_title') }}
+      {{ content.field_intro }}
+      <div class="instructions-flex">
+        <div class="instructions-docs">
+          {{ content.field_resources }}
+        </div>
+        <div class="instructions-materials">
+          {{ content.field_materials}}
+        </div>
+      </div>
     {% endblock %}
   </div>
 {% endblock paragraph %}

@@ -82,16 +82,19 @@
 <article{{ attributes.addClass(classes) }}>
       
   <div class="documents-wrapper">
-    <div class="document-image-wrapper">
+    <div class="document-icon-wrapper" aria-label="{{ 'document icon' }}">
       {{ content.field_image }}
     </div>
-    {{ content.body }}
-    <ul>
-      <li class="file"><a href={{ content.field_file[0] }} download>Download in English</a></li>
-      {% if content.field_file2[0] %}
-        <li class="file"><a href={{ content.field_file2[0] }} download>Descargar en Espanol</a></li>
-      {% endif %}
-    </ul>
+    <div class="document-content">
+      <h4 class="sr-only">{{ label }}</h4>
+      {{ content.body }}
+      <ul>
+        <li class="file"><a href={{ content.field_file[0] }} download>Download in English</a></li>
+        {% if content.field_file2[0] %}
+          <li class="file"><a href={{ content.field_file2[0] }} download>Descargar en Espanol</a></li>
+        {% endif %}
+      </ul>
+    </div>
   </div>
     
 

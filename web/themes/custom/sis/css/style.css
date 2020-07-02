@@ -254,6 +254,45 @@ div.video-background .button, div.video-background .field--name-field-events .fi
   font-weight: bold;
 }
 
+.instructions-docs .documents-wrapper {
+  display: flex;
+}
+.instructions-docs .documents-wrapper .document-icon-wrapper {
+  flex: 1 0 auto;
+  display: block;
+  width: 150px;
+  height: 195px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  background-image: url("../images/document-guide-theme-blue.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.color-theme-green .instructions-docs .documents-wrapper .document-icon-wrapper {
+  background-image: url("../images/document-guide-theme-green.png");
+}
+.color-theme-magenta .instructions-docs .documents-wrapper .document-icon-wrapper {
+  background-image: url("../images/document-guide-theme-magenta.png");
+}
+.color-theme-teal .instructions-docs .documents-wrapper .document-icon-wrapper {
+  background-image: url("../images/document-guide-theme-teal.png");
+}
+.instructions-docs .documents-wrapper .document-content {
+  padding-top: 20px;
+}
+.instructions-docs .field__item:last-of-type .document-icon-wrapper {
+  background-image: url("../images/document-notebook-theme-blue.png");
+}
+.color-theme-green .instructions-docs .field__item:last-of-type .document-icon-wrapper {
+  background-image: url("../images/document-notebook-theme-green.png");
+}
+.color-theme-magenta .instructions-docs .field__item:last-of-type .document-icon-wrapper {
+  background-image: url("../images/document-notebook-theme-magenta.png");
+}
+.color-theme-teal .instructions-docs .field__item:last-of-type .document-icon-wrapper {
+  background-image: url("../images/document-notebook-theme-teal.png");
+}
+
 .paragraph--type--schedule img {
   width: 50%;
   float: left;
@@ -336,6 +375,17 @@ img.no-stretch {
 
 .main-page-content a {
   color: #F36633;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

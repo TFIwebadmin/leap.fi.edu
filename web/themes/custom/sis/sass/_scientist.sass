@@ -54,6 +54,40 @@
   a 
     font-weight: bold
 
+.instructions-docs
+  .documents-wrapper
+    display: flex
+    .document-icon-wrapper
+      flex: 1 0 auto
+      display: block
+      width: 150px
+      height: 195px
+      margin-right: 30px
+      margin-bottom: 50px
+      background-image: url('../images/document-guide-theme-blue.png')
+      background-repeat: no-repeat
+      background-size: contain
+      .color-theme-green &
+        background-image: url('../images/document-guide-theme-green.png')
+      .color-theme-magenta &
+        background-image: url('../images/document-guide-theme-magenta.png')
+      .color-theme-teal &
+        background-image: url('../images/document-guide-theme-teal.png')
+    .document-content
+      padding-top: 20px
+  .field__item:last-of-type
+    .document-icon-wrapper
+      background-image: url('../images/document-notebook-theme-blue.png')
+      .color-theme-green &
+        background-image: url('../images/document-notebook-theme-green.png')
+      .color-theme-magenta &
+        background-image: url('../images/document-notebook-theme-magenta.png')
+      .color-theme-teal &
+        background-image: url('../images/document-notebook-theme-teal.png')
+
+
+
+
 .paragraph--type--schedule 
   img
     width: 50%

@@ -38,11 +38,48 @@
     margin-top: 60px
     margin-bottom: 60px
     margin-left: 200px
+    position: relative
     h3.color-match,
     .video-container-page
       width: 70%
   .field--name-field-steps
     margin-bottom: 100px
+
+.field--name-field-steps
+  counter-reset: steps 1
+  .paragraph--type--video,
+  .paragraph--type--instructions,
+  .paragraph--type--schedule
+    &::before
+      counter-increment: steps              
+      content: counter(steps)
+
+.numbering,
+.paragraph--type--video::before,
+.paragraph--type--instructions::before,
+.paragraph--type--schedule::before
+  width: 105px
+  padding: 10px 0
+  display: block
+  text-align: center
+  background-color: $lightOrange
+  border-radius: 100%
+  font-weight: 900
+  font-size: 72px
+
+
+.scientist-video
+  position: relative
+  .numbering
+    position: absolute
+    top: 20px
+    left: 20px
+
+.paragraph--type--video::before,
+.paragraph--type--instructions::before,
+.paragraph--type--schedule::before
+  position: absolute
+  left: -200px
 
 
 .instructions-flex

@@ -229,6 +229,7 @@ div.video-background .button, div.video-background .field--name-field-events .fi
   margin-top: 60px;
   margin-bottom: 60px;
   margin-left: 200px;
+  position: relative;
 }
 .node-scientist .paragraph--type--video h3.color-match,
 .node-scientist .paragraph--type--video .video-container-page,
@@ -240,6 +241,46 @@ div.video-background .button, div.video-background .field--name-field-events .fi
 }
 .node-scientist .field--name-field-steps {
   margin-bottom: 100px;
+}
+
+.field--name-field-steps {
+  counter-reset: steps 1;
+}
+.field--name-field-steps .paragraph--type--video::before,
+.field--name-field-steps .paragraph--type--instructions::before,
+.field--name-field-steps .paragraph--type--schedule::before {
+  counter-increment: steps;
+  content: counter(steps);
+}
+
+.numbering,
+.paragraph--type--video::before,
+.paragraph--type--instructions::before,
+.paragraph--type--schedule::before {
+  width: 105px;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  background-color: #EEA32D;
+  border-radius: 100%;
+  font-weight: 900;
+  font-size: 72px;
+}
+
+.scientist-video {
+  position: relative;
+}
+.scientist-video .numbering {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.paragraph--type--video::before,
+.paragraph--type--instructions::before,
+.paragraph--type--schedule::before {
+  position: absolute;
+  left: -200px;
 }
 
 .instructions-flex {

@@ -8,7 +8,12 @@
 <article{{ attributes.addClass('node-scientist') }}>
 
   <div{{ content_attributes }}>
-    {{ content.field_video_ref }}
+    <div class="scientist-video">
+      {{ content.field_video_ref }}
+      {% if numbering %}
+        <div class="numbering">1</div>
+      {% endif %}
+    </div>
     <div class="main-page-content">
       <div class="intro-text color-match">
         {{ content.body }}

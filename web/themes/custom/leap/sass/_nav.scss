@@ -33,6 +33,7 @@ nav.nav-site-main,
     li{
       padding-bottom: 20px;
       -webkit-column-break-inside: avoid;
+      //letter-spacing: 0.125em;
       @media (min-width: em(550)) {
         width: auto; 
       }

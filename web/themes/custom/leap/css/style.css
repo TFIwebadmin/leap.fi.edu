@@ -2038,7 +2038,7 @@ table p {
 .main-page-content .intro-text p, .main-page-content .contact-us p {
   max-width: 650px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   text-align: center;
   font-style: normal;
   opacity: 0;

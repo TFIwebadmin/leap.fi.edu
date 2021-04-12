@@ -219,6 +219,11 @@ div.video-background .button, div.video-background .field--name-field-events .fi
   -webkit-box-shadow: 0 5px 10px 10px rgba(0, 164, 179, 0.5);
   box-shadow: 0 5px 10px 10px rgba(0, 164, 179, 0.5);
 }
+.scientist-menu footer {
+  max-width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
 
 .down-arrow {
   margin-bottom: 40px;

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "705d879659b05e97e61f0be9e5fb6560",
+    "content-hash": "f72a8a7a1f38eec0f1f9e5175c4439d3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3702,73 +3702,6 @@
             "time": "2019-10-21T12:28:38+00:00"
         },
         {
-            "name": "drupal/field_collection_to_paragraphs",
-            "version": "2.0.0-beta2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/field_collection_to_paragraphs.git",
-                "reference": "2.0.0-beta2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_collection_to_paragraphs-2.0.0-beta2.zip",
-                "reference": "2.0.0-beta2",
-                "shasum": "7cf728612ca8c3f663e896749c41090791be6f83"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/field_collection": "^3.0",
-                "drupal/migrate_plus": "^4.0",
-                "drupal/migrate_tools": "^4.0",
-                "drupal/paragraphs": "^1.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.0-beta2",
-                    "datestamp": "1624285367",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "codebymikey",
-                    "homepage": "https://www.drupal.org/u/codebymikey",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "aimai",
-                    "homepage": "https://www.drupal.org/user/3634629"
-                },
-                {
-                    "name": "billy.davies",
-                    "homepage": "https://www.drupal.org/user/2631403"
-                },
-                {
-                    "name": "codebymikey",
-                    "homepage": "https://www.drupal.org/user/3573206"
-                }
-            ],
-            "description": "Migrates Field Collection items to Paragraphs",
-            "homepage": "https://www.drupal.org/project/field_collection_to_paragraphs",
-            "keywords": [
-                "Drupal",
-                "Field Collection",
-                "Paragraphs"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/field_collection_to_paragraphs",
-                "issues": "https://www.drupal.org/project/issues/field_collection_to_paragraphs"
-            }
-        },
-        {
             "name": "drupal/field_group",
             "version": "3.1.0",
             "source": {
@@ -4801,133 +4734,6 @@
                 "source": "https://git.drupalcode.org/project/metatag",
                 "issues": "https://www.drupal.org/project/issues/metatag",
                 "docs": "https://www.drupal.org/docs/8/modules/metatag"
-            }
-        },
-        {
-            "name": "drupal/migrate_plus",
-            "version": "4.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/migrate_plus.git",
-                "reference": "8.x-4.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-4.2.zip",
-                "reference": "8.x-4.2",
-                "shasum": "5736a43e39cc5c091d54ceef2849ea35ba979af3"
-            },
-            "require": {
-                "drupal/core": "^8.3"
-            },
-            "require-dev": {
-                "drupal/entity": "*",
-                "drupal/migrate_example_advanced_setup": "*",
-                "drupal/migrate_example_setup": "*",
-                "drupal/migrate_tools": "*",
-                "drupal/profile": "*"
-            },
-            "suggest": {
-                "ext-soap": "*",
-                "sainsburys/guzzle-oauth2-plugin": "3.0 required for the OAuth2 authentication plugin"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-4.2",
-                    "datestamp": "1555683487",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Mike Ryan",
-                    "homepage": "https://www.drupal.org/u/mikeryan",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "mikeryan",
-                    "homepage": "https://www.drupal.org/user/4420"
-                }
-            ],
-            "description": "Enhancements to core migration support.",
-            "homepage": "https://www.drupal.org/project/migrate_plus",
-            "support": {
-                "source": "https://cgit.drupalcode.org/migrate_plus",
-                "issues": "https://www.drupal.org/project/issues/migrate_plus",
-                "irc": "irc://irc.freenode.org/drupal-migrate"
-            }
-        },
-        {
-            "name": "drupal/migrate_tools",
-            "version": "4.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/migrate_tools.git",
-                "reference": "8.x-4.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-4.5.zip",
-                "reference": "8.x-4.5",
-                "shasum": "06390b359bf53c50a30f2d6dc4c7542bfb1fe7ca"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/migrate_plus": "^4 || ^5"
-            },
-            "require-dev": {
-                "drupal/migrate_plus": "4.x-dev",
-                "drupal/migrate_source_csv": "^2.2",
-                "drush/drush": "^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-4.5",
-                    "datestamp": "1574693285",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9 || ^10"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "drupalspoons",
-                    "homepage": "https://www.drupal.org/user/3647684"
-                },
-                {
-                    "name": "heddn",
-                    "homepage": "https://www.drupal.org/user/1463982"
-                },
-                {
-                    "name": "mikeryan",
-                    "homepage": "https://www.drupal.org/user/4420"
-                }
-            ],
-            "description": "Tools to assist in developing and running migrations.",
-            "homepage": "http://drupal.org/project/migrate_tools",
-            "support": {
-                "source": "http://cgit.drupalcode.org/migrate_tools",
-                "issues": "http://drupal.org/project/migrate_tools",
-                "irc": "irc://irc.freenode.org/drupal-migrate"
             }
         },
         {
@@ -9892,7 +9698,6 @@
         "drupal/block_class": 15,
         "drupal/feeds": 15,
         "drupal/field_collection": 20,
-        "drupal/field_collection_to_paragraphs": 10,
         "drupal/me_redirect": 10,
         "drupal/smtp": 10
     },

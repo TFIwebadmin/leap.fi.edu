@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f72a8a7a1f38eec0f1f9e5175c4439d3",
+    "content-hash": "08bb062705492461b1e0ec7ab124cca7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3625,81 +3625,6 @@
                 "source": "https://git.drupalcode.org/project/feeds",
                 "issues": "https://www.drupal.org/project/issues/feeds"
             }
-        },
-        {
-            "name": "drupal/field_collection",
-            "version": "dev-3.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/field_collection.git",
-                "reference": "3a75aa582983b9657bc27d9467999d3a9609fec4"
-            },
-            "require": {
-                "drupal/core": "^8"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-3.x-dev",
-                    "datestamp": "1571661185",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Renato Gonçalves H (RenatoG)",
-                    "homepage": "https://www.drupal.org/u/RenatoG",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Nedjo Rogers (nedjo)",
-                    "homepage": "https://www.drupal.org/u/nedjo",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Joel Farris (Senpai)",
-                    "homepage": "https://www.drupal.org/u/senpai",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Lee Rowlands (larowlan)",
-                    "homepage": "https://www.drupal.org/u/larowlan",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Ra Mänd (ram4nd)",
-                    "homepage": "https://www.drupal.org/u/ram4nd",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Wolfgang Ziegler (fago)",
-                    "homepage": "https://www.drupal.org/u/fago",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Joel Muzzerall (jmuzz)",
-                    "homepage": "https://www.drupal.org/u/jmuzz",
-                    "role": "Co-maintainer"
-                }
-            ],
-            "description": "Provides a field collection field, to which any number of fields can be attached.",
-            "homepage": "https://drupal.org/project/field_collection",
-            "support": {
-                "source": "https://cgit.drupalcode.org/modal_page",
-                "issues": "https://drupal.org/project/issues/field_collection",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
-            },
-            "time": "2019-10-21T12:28:38+00:00"
         },
         {
             "name": "drupal/field_group",
@@ -9697,7 +9622,6 @@
         "drupal-composer/drupal-scaffold": 20,
         "drupal/block_class": 15,
         "drupal/feeds": 15,
-        "drupal/field_collection": 20,
         "drupal/me_redirect": 10,
         "drupal/smtp": 10
     },

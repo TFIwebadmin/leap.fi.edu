@@ -1,7 +1,7 @@
 name: Science in the Summer (Franklin Institute)
 type: theme
 description: A sub-theme of Leap into Science; same templates, with modest branding changes
-core: 8.x
+core_version_requirement: ^8.8 || ^9
 base theme: "leap"
 libraries:
   - sis/global-styles

@@ -1,7 +1,7 @@
 name: Leap into Science (Franklin Institute)
 type: theme
 description: A custom theme for Leap into Science, based on the main theme for fi.edu
-core: 8.x
+core_version_requirement: ^8.8 || ^9
 base theme: "stable"
 libraries:
   - leap/typography

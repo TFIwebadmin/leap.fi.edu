@@ -29,8 +29,6 @@
         "drupal/contribute": "^1.0",
         "drupal/core-recommended": "^8.8",
         "drupal/ctools": "^3.0",
-        "drupal/devel": "^2.1",
-        "drupal/discourse_sso": "^1.0",
         "drupal/entity_browser": "^2.2",
         "drupal/entity_embed": "^1.0",
         "drupal/entityqueue": "^1.0",

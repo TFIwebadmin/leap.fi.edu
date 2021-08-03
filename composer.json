@@ -18,7 +18,6 @@
     "require": {
         "composer/installers": "^1.7",
         "cweagans/composer-patches": "^1.6",
-        "drupal-composer/drupal-scaffold": "dev-master",
         "drupal/address": "^1.4",
         "drupal/admin_toolbar": "^2.0",
         "drupal/auto_entitylabel": "^3.0",

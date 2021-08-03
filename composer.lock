@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e152f375171c57d6f832bee263570689",
+    "content-hash": "7e75523932b3c9900db78af46c1f1a85",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1947,51 +1947,6 @@
                 "php"
             ],
             "time": "2019-06-08T11:03:04+00:00"
-        },
-        {
-            "name": "drupal-composer/drupal-scaffold",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal-composer/drupal-scaffold.git",
-                "reference": "933a393e6648b1fa007efceacae530093b5da164"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/933a393e6648b1fa007efceacae530093b5da164",
-                "reference": "933a393e6648b1fa007efceacae530093b5da164",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0.0",
-                "composer/semver": "^1.4",
-                "php": "^5.5.9|>=7.0.8"
-            },
-            "require-dev": {
-                "composer/composer": "dev-master",
-                "g1a/composer-test-scenarios": "^2.1.0",
-                "phpunit/phpunit": "^6",
-                "squizlabs/php_codesniffer": "^2.8"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "DrupalComposer\\DrupalScaffold\\Plugin",
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "DrupalComposer\\DrupalScaffold\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
-            "abandoned": "drupal/core-composer-scaffold",
-            "time": "2020-09-17T20:01:58+00:00"
         },
         {
             "name": "drupal/address",
@@ -13298,7 +13253,6 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal-composer/drupal-scaffold": 20,
         "drupal/block_class": 15,
         "drupal/feeds": 15,
         "drupal/smtp": 10,

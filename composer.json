@@ -25,7 +25,9 @@
         "drupal/block_class": "^1.0@alpha",
         "drupal/block_content_permissions": "^1.6",
         "drupal/console": "^1.0.2",
-        "drupal/core-recommended": "^8.8",
+        "drupal/core-composer-scaffold": "^9",
+        "drupal/core-project-message": "^9",
+        "drupal/core-recommended": "^9",
         "drupal/ctools": "^3.0",
         "drupal/entity_browser": "^2.2",
         "drupal/entity_embed": "^1.0",
@@ -45,7 +47,7 @@
         "drupal/module_filter": "^3.1",
         "drupal/paragraphs": "^1.10",
         "drupal/pathauto": "^1.2",
-        "drupal/permissions_by_term": "^2.34",
+        "drupal/permissions_by_term": "^3.1",
         "drupal/roleassign": "^1.0",
         "drupal/smtp": "^1.0@beta",
         "drupal/upgrade_status": "^3.0",
@@ -54,16 +56,11 @@
         "drupal/view_unpublished": "^1.0",
         "drupal/webform": "^6.1@beta",
         "drush/drush": "^10.0",
-        "symfony/css-selector": "4.4.25 as 3.4.47",
-        "symfony/dom-crawler": "4.2.12 as 3.4.47",
-        "symfony/filesystem": "4.4.26 as 3.4.47",
-        "symfony/finder": "4.4.25 as 3.4.47",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "drupal/core-dev": "8.9.x"
     },
     "conflict": {
         "drupal/drupal": "*"

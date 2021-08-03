@@ -25,7 +25,6 @@
         "drupal/block_class": "^1.0@alpha",
         "drupal/block_content_permissions": "^1.6",
         "drupal/console": "^1.0.2",
-        "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
         "drupal/ctools": "^3.0",

@@ -41,7 +41,6 @@
         "drupal/honeypot": "^2.0",
         "drupal/inline_entity_form": "^1.0",
         "drupal/masquerade": "^2.0",
-        "drupal/me_redirect": "^1.0@beta",
         "drupal/menu_link_attributes": "^1.0",
         "drupal/metatag": "^1.5",
         "drupal/module_filter": "^3.1",

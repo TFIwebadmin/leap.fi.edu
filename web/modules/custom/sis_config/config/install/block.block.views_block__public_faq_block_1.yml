@@ -1,0 +1,35 @@
+uuid: 5c7ea1d0-fb52-4e56-8585-a6d04fc04855
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.public_faq
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - leap
+third_party_settings:
+  block_class:
+    classes: 'about-faq faq-accordion'
+id: views_block__public_faq_block_1
+theme: leap
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:public_faq-block_1'
+settings:
+  id: 'views_block:public_faq-block_1'
+  label: 'Frequently Asked Questions'
+  provider: views
+  label_display: visible
+  views_label: 'Frequently Asked Questions'
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/2
+    negate: false
+    context_mapping: {  }

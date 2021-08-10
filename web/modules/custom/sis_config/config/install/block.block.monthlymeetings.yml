@@ -1,0 +1,44 @@
+uuid: 9466f48a-cce7-4929-b0c9-9d66963b1254
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c23969e9-3c8f-4404-b0ea-6f8526cce027'
+  module:
+    - block_class
+    - block_content
+    - system
+    - user
+  theme:
+    - leap
+third_party_settings:
+  block_class:
+    classes: block-resources
+id: monthlymeetings
+theme: leap
+region: content
+weight: 3
+provider: null
+plugin: 'block_content:c23969e9-3c8f-4404-b0ea-6f8526cce027'
+settings:
+  id: 'block_content:c23969e9-3c8f-4404-b0ea-6f8526cce027'
+  label: 'Monthly Meetings'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/links-reports\r\n/node/141"
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      program_staff: program_staff
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

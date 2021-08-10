@@ -1,0 +1,8 @@
+uuid: 2081710b-e87e-4fc3-9714-141da77ddd1f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Science career theme'
+vid: science_career_theme
+description: ''
+weight: 0

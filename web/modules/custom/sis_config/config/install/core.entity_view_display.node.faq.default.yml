@@ -1,0 +1,48 @@
+uuid: af74acf8-a173-4089-ba70-0c1e255c5dfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.faq.body
+    - field.field.node.faq.field_category
+    - field.field.node.faq.field_faqs
+    - node.type.faq
+  module:
+    - field_group
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_accordion:
+      children:
+        - body
+        - field_faq
+      parent_name: ''
+      weight: 1
+      format_type: accordion
+      format_settings:
+        id: ''
+        classes: accordion
+        effect: none
+      label: Accordion
+      region: content
+id: node.faq.default
+targetEntityType: node
+bundle: faq
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_category: true
+  field_faqs: true

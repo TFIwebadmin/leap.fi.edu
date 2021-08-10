@@ -1,0 +1,8 @@
+uuid: 18f23446-96ad-403e-a961-5f20541fbffa
+langcode: en
+status: true
+dependencies: {  }
+id: featured_video
+label: 'Featured video'
+revision: 0
+description: ''

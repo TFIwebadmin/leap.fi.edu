@@ -1,0 +1,9 @@
+uuid: 93fd99fc-67db-4ea5-a240-2d1c106cb966
+langcode: en
+status: true
+dependencies: {  }
+id: national_coord
+label: 'National coordinator'
+weight: -5
+is_admin: null
+permissions: {  }

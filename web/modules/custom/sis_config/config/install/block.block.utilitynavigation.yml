@@ -1,0 +1,25 @@
+uuid: 8ec7ca9e-a7bc-4bd8-b5dd-b2d8297f43c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.utility
+  module:
+    - system
+  theme:
+    - leap
+id: utilitynavigation
+theme: leap
+region: utility_nav
+weight: 0
+provider: null
+plugin: 'system_menu_block:utility'
+settings:
+  id: 'system_menu_block:utility'
+  label: 'Utility navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

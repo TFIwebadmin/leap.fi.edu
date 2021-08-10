@@ -1,0 +1,22 @@
+uuid: 4a65f736-a214-4ce0-9d9c-7a19706804d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: scientist_pages
+label: 'Scientist pages'
+type: 'canonical_entities:node'
+pattern: '[node:field_category]/[node:title]'
+selection_criteria:
+  4264125d-93d2-40e4-8462-8d568550f18b:
+    id: node_type
+    bundles:
+      scientist: scientist
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4264125d-93d2-40e4-8462-8d568550f18b
+selection_logic: and
+weight: -5
+relationships: {  }

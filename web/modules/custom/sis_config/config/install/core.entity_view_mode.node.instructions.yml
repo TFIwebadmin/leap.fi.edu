@@ -1,0 +1,10 @@
+uuid: d7bbc9e5-de68-4f5f-97dd-0965d30e449a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.instructions
+label: 'Instructions block'
+targetEntityType: node
+cache: true

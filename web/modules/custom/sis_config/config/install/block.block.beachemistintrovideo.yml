@@ -1,0 +1,31 @@
+uuid: 0c8a423c-ea60-44c7-9c67-9843018ec80f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:featured_video:81b0a699-e57c-4cf7-9abe-0759bdabf9e0'
+  module:
+    - block_content
+    - system
+  theme:
+    - sis
+id: beachemistintrovideo
+theme: sis
+region: hero
+weight: -14
+provider: null
+plugin: 'block_content:81b0a699-e57c-4cf7-9abe-0759bdabf9e0'
+settings:
+  id: 'block_content:81b0a699-e57c-4cf7-9abe-0759bdabf9e0'
+  label: 'Be a Chemist intro video'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/316
+    negate: false
+    context_mapping: {  }

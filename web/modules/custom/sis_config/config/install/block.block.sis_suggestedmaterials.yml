@@ -1,0 +1,35 @@
+uuid: 445c9736-2419-4eb2-b70d-1cd21b7bac57
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2c5fe3f6-d329-490e-8bd6-c070a080acc9'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - sis
+third_party_settings:
+  block_class:
+    classes: block-suggestedmaterials
+id: sis_suggestedmaterials
+theme: sis
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:2c5fe3f6-d329-490e-8bd6-c070a080acc9'
+settings:
+  id: 'block_content:2c5fe3f6-d329-490e-8bd6-c070a080acc9'
+  label: 'Kit Materials List'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/130\r\n/node/141"
+    negate: false
+    context_mapping: {  }

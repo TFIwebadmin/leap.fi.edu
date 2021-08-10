@@ -1,0 +1,37 @@
+uuid: c08cb274-6b4c-4681-aabb-c79293f18052
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.leap-public-menu
+  module:
+    - block_class
+    - system
+    - user
+  theme:
+    - leap
+third_party_settings:
+  block_class:
+    classes: nav-site-main
+id: leappublicmenu
+theme: leap
+region: hero
+weight: -8
+provider: null
+plugin: 'system_menu_block:leap-public-menu'
+settings:
+  id: 'system_menu_block:leap-public-menu'
+  label: 'Leap public menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

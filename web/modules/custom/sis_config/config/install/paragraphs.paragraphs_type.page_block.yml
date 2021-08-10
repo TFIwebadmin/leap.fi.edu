@@ -1,0 +1,9 @@
+uuid: 5742ba15-5681-4e26-a7cd-7420aadaea8d
+langcode: en
+status: true
+dependencies: {  }
+id: page_block
+label: 'Page block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

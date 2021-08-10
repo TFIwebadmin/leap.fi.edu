@@ -1,0 +1,14 @@
+uuid: 0c13716b-92a6-4e6d-b738-d8034b24d9b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.national_coord
+  module:
+    - user
+id: user_add_role_action.national_coord
+label: 'Add the National coord role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: national_coord

@@ -1,0 +1,33 @@
+uuid: 848afd6a-05c5-4302-9932-51dfc25471d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_color_theme
+field_name: field_color_theme
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: theme-blue
+      label: Blue
+    -
+      value: theme-green
+      label: Green
+    -
+      value: theme-magenta
+      label: Magenta
+    -
+      value: theme-teal
+      label: Teal
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

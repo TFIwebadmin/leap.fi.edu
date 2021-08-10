@@ -1,0 +1,188 @@
+.scientist-menu
+  .views-view-grid .views-col
+    padding: 20px
+    @media (max-width: 499px)
+      width: 100% !important
+    img
+      //display: block
+      -webkit-box-shadow: 0 5px 10px 10px rgba(0,0,0,.2)
+      box-shadow: 0 5px 10px 10px rgba(0,0,0,.2)
+  .theme-magenta
+    img:hover
+      -webkit-box-shadow: 0 5px 10px 10px rgba(186,14,130,.5)
+      box-shadow: 0 5px 10px 10px rgba(186,14,130,.5)
+  .theme-blue
+    img:hover
+      -webkit-box-shadow: 0 5px 10px 10px rgba(72,93,170,.5)
+      box-shadow: 0 5px 10px 10px rgba(72,93,170,.5)
+  .theme-green
+    img:hover
+      -webkit-box-shadow: 0 5px 10px 10px rgba(85,164,61,.5)
+      box-shadow: 0 5px 10px 10px rgba(85,164,61,.5)
+  .theme-teal
+    img:hover
+      -webkit-box-shadow: 0 5px 10px 10px rgba(0,164,179,.5)
+      box-shadow: 0 5px 10px 10px rgba(0,164,179,.5)
+  footer
+    max-width: 80%
+    margin: 50px auto
+    text-align: center
+
+.down-arrow
+  margin-bottom: 40px
+
+.node-scientist
+  h3.color-match
+    font-weight: 900
+    font-size: 24px
+    line-height: 30px
+    margin-bottom: 20px
+    @media (min-width: 992px)
+      font-size: 38px
+      line-height: 48px
+  .paragraph--type--video,
+  .paragraph--type--instructions,
+  .paragraph--type--schedule
+    margin-top: 60px
+    margin-bottom: 60px
+    margin-left: 85px
+    position: relative
+    @media (min-width: 992px)
+      margin-left: 200px
+    h3.color-match,
+    .video-container-page
+      width: 70%
+  .field--name-field-steps
+    margin-bottom: 100px
+
+.field--name-field-steps
+  counter-reset: steps 1
+  .paragraph--type--video,
+  .paragraph--type--instructions,
+  .paragraph--type--schedule
+    &::before
+      counter-increment: steps              
+      content: counter(steps)
+
+.numbering,
+.paragraph--type--video::before,
+.paragraph--type--instructions::before,
+.paragraph--type--schedule::before
+  width: 65px
+  padding: 10px 0
+  display: block
+  text-align: center
+  background-color: $lightOrange
+  border-radius: 100%
+  font-weight: 900
+  font-size: 36px
+  @media (min-width: 992px)
+    font-size: 72px
+    width: 105px
+
+
+.scientist-video
+  position: relative
+  .numbering
+    position: absolute
+    top: 20px
+    left: 20px
+
+.paragraph--type--video::before,
+.paragraph--type--instructions::before,
+.paragraph--type--schedule::before
+  position: absolute
+  left: -85px
+  @media (min-width: 992px)
+    left: -200px
+
+
+.instructions-flex
+  display: block
+  @media (min-width: 992px)
+    display: flex
+  ul 
+    list-style-type: disc
+    margin-left: 1.25em
+    margin-bottom: 2em
+  a 
+    font-weight: bold
+
+.instructions-docs
+  .documents-wrapper
+    display: flex
+    .document-icon-wrapper
+      flex: 1 0 auto
+      display: block
+      width: 75px
+      height: 195px
+      margin-right: 30px
+      margin-bottom: 50px
+      background-image: url('../images/document-guide-theme-blue.png')
+      background-repeat: no-repeat
+      background-size: contain
+      @media (min-width: 992px)
+        width: 150px
+      .color-theme-green &
+        background-image: url('../images/document-guide-theme-green.png')
+      .color-theme-magenta &
+        background-image: url('../images/document-guide-theme-magenta.png')
+      .color-theme-teal &
+        background-image: url('../images/document-guide-theme-teal.png')
+    .document-content
+      padding-top: 20px
+  .field__item:last-of-type
+    .document-icon-wrapper
+      background-image: url('../images/document-notebook-theme-blue.png')
+      .color-theme-green &
+        background-image: url('../images/document-notebook-theme-green.png')
+      .color-theme-magenta &
+        background-image: url('../images/document-notebook-theme-magenta.png')
+      .color-theme-teal &
+        background-image: url('../images/document-notebook-theme-teal.png')
+
+
+
+
+.paragraph--type--schedule 
+  img
+    width: 100%
+    @media (min-width: 768px)
+      width: 50%
+      float: left 
+      margin-right: 30px  
+
+.field--name-field-events
+  display: block
+  clear: both
+  margin-top: 40px
+  @media (min-width: 768px)
+    display: flex
+  .field__item
+    max-width: 80%
+    display: block
+    a 
+      @extend .button
+  .field--name-field-date
+    margin-top: 50px
+  .field--name-field-block-link
+    margin-top: 30px
+
+.field--name-field-materials
+  @media (min-width: 992px)
+    margin-left: 30px
+    white-space: nowrap
+  .field__label
+    font-style: normal
+    font-weight: 900
+    font-size: 16px
+    line-height: 140%
+    text-transform: uppercase
+    margin-bottom: 1em
+  li 
+    margin-bottom: 0.5em
+
+
+
+  
+  

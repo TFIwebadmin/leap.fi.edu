@@ -1,0 +1,18 @@
+uuid: 5e3bcfa3-8dde-490f-986f-7cef72f4311c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Team member'
+type: team
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

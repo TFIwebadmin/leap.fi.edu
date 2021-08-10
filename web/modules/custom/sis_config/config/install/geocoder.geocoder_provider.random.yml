@@ -1,0 +1,9 @@
+uuid: 7f8b5c47-f9aa-4e46-8eaf-2f5ec1e16768
+langcode: en
+status: true
+dependencies: {  }
+id: random
+label: Random
+plugin: random
+configuration:
+  apiKey: null

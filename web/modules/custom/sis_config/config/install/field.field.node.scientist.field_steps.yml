@@ -1,0 +1,53 @@
+uuid: 79b8ab82-f336-4ee1-b334-aa202b9d731f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_steps
+    - node.type.scientist
+    - paragraphs.paragraphs_type.instructions
+    - paragraphs.paragraphs_type.schedule
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.scientist.field_steps
+field_name: field_steps
+entity_type: node
+bundle: scientist
+label: Steps
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      instructions: instructions
+      schedule: schedule
+      video: video
+    target_bundles_drag_drop:
+      contact:
+        weight: 4
+        enabled: false
+      event:
+        weight: 9
+        enabled: false
+      faq:
+        weight: 5
+        enabled: false
+      instructions:
+        enabled: true
+        weight: 11
+      page_block:
+        weight: 6
+        enabled: false
+      schedule:
+        enabled: true
+        weight: 13
+      video:
+        enabled: true
+        weight: 14
+field_type: entity_reference_revisions

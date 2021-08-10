@@ -1,0 +1,25 @@
+uuid: e17967f8-5255-4bf6-9767-a346e1fafd25
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: meet_our_team
+label: 'Meet Our Team'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      team: team
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

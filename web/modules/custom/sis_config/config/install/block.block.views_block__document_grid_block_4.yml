@@ -1,0 +1,39 @@
+uuid: 4b506285-5b8d-4601-af7d-68553441d452
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.document_grid
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - leap
+id: views_block__document_grid_block_4
+theme: leap
+region: content
+weight: 5
+provider: null
+plugin: 'views_block:document_grid-block_4'
+settings:
+  id: 'views_block:document_grid-block_4'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/53
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      program_staff: program_staff
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

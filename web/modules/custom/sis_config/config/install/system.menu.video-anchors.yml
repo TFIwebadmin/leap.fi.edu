@@ -1,0 +1,8 @@
+uuid: a30e829b-a03d-4e3b-b829-d25eac4995af
+langcode: en
+status: true
+dependencies: {  }
+id: video-anchors
+label: 'Video anchors'
+description: ''
+locked: false

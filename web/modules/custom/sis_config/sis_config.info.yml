@@ -1,0 +1,83 @@
+name: 'Science in the Summer configurations'
+type: module
+description: 'Drupal configurations needed to duplicate the structure and functionality of the Science in the Summer website.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Custom'
+dependencies:
+  - automated_cron
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor
+  - config
+  - contextual
+  - datetime
+  - dynamic_page_cache
+  - editor
+  - field
+  - field_ui
+  - file
+  - filter
+  - image
+  - link
+  - media
+  - menu_link_content
+  - menu_ui
+  - node
+  - options
+  - page_cache
+  - path
+  - path_alias
+  - system
+  - taxonomy
+  - telephone
+  - text
+  - toolbar
+  - update
+  - user
+  - views
+  - views_ui
+  - address
+  - admin_toolbar
+  - admin_toolbar_search
+  - admin_toolbar_tools
+  - auto_entitylabel
+  - better_exposed_filters
+  - block_class
+  - block_content_permissions
+  - ctools
+  - embed
+  - entity_browser
+  - entity_embed
+  - entity_reference_revisions
+  - entityqueue
+  - feeds
+  - field_group
+  - fitvids
+  - geocoder
+  - geocoder_address
+  - geocoder_field
+  - geocoder_geofield
+  - geofield
+  - geofield_map
+  - google_analytics
+  - honeypot
+  - inline_entity_form
+  - masquerade
+  - menu_link_attributes
+  - metatag
+  - module_filter
+  - paragraphs
+  - pathauto
+  - permissions_by_term
+  - roleassign
+  - smtp
+  - token
+  - user_current_paths
+  - video_embed_wysiwyg
+  - video_embed_field
+  - view_unpublished
+  - webform_node
+  - webform_ui
+  - webform

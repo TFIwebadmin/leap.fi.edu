@@ -1,0 +1,36 @@
+uuid: 2d857026-d481-40a3-8014-a70c80a8bb89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_organization
+  module:
+    - geocoder_field
+    - user
+third_party_settings:
+  geocoder_field:
+    method: none
+    weight: 0
+    geocode_field: name
+    reverse_geocode_field: {  }
+    hidden: false
+    disabled: false
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+    providers: {  }
+id: user.user.field_organization
+field_name: field_organization
+entity_type: user
+bundle: user
+label: Organization
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

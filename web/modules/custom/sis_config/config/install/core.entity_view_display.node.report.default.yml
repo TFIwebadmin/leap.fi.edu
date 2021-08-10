@@ -1,0 +1,39 @@
+uuid: 7d6cf538-5ef8-447f-9ac6-ef3de3a9e270
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.report.body
+    - field.field.node.report.field_file
+    - field.field.node.report.field_permission
+    - node.type.report
+  module:
+    - file
+    - text
+    - user
+id: node.report.default
+targetEntityType: node
+bundle: report
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_file:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_permission: true

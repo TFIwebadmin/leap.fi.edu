@@ -1,0 +1,31 @@
+uuid: fdab3b53-8589-4749-8005-95829b034a89
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.scientist_menu
+  module:
+    - system
+    - views
+  theme:
+    - sis
+id: views_block__scientist_menu_block_3
+theme: sis
+region: content
+weight: 2
+provider: null
+plugin: 'views_block:scientist_menu-block_3'
+settings:
+  id: 'views_block:scientist_menu-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/be-an-engineer/*\r\n/node/368\r\n/node/390\r\n/node/393\r\n/node/395"
+    negate: false
+    context_mapping: {  }

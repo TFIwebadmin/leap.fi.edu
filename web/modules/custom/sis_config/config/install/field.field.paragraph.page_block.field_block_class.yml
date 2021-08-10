@@ -1,0 +1,19 @@
+uuid: 48c6a459-0657-4ec0-8e30-d8cdb1d9395d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block_class
+    - paragraphs.paragraphs_type.page_block
+id: paragraph.page_block.field_block_class
+field_name: field_block_class
+entity_type: paragraph
+bundle: page_block
+label: 'Block class'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

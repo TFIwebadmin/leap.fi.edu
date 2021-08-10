@@ -1,0 +1,35 @@
+uuid: 73aca80d-327b-49eb-a604-f0895f385676
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.scientist_menu
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - sis
+third_party_settings:
+  block_class:
+    classes: clearfix
+id: views_block__scientist_menu_block_2
+theme: sis
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:scientist_menu-block_2'
+settings:
+  id: 'views_block:scientist_menu-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/be-a-chemist/*\r\n/node/309\r\n/node/311\r\n/node/313\r\n/node/315"
+    negate: false
+    context_mapping: {  }

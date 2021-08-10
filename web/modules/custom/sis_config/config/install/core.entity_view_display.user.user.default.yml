@@ -1,0 +1,88 @@
+uuid: e446b563-584c-4301-a548-f07ffd27ad30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.feeds_item
+    - field.field.user.user.field_address_city
+    - field.field.user.user.field_address_state
+    - field.field.user.user.field_address_zipcode
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_location
+    - field.field.user.user.field_organization
+  module:
+    - address
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_address_city:
+    weight: 55
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_address_state:
+    weight: 56
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_address_zipcode:
+    weight: 57
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_firstname:
+    weight: 51
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_lastname:
+    weight: 52
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_location:
+    weight: 54
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_organization:
+    weight: 53
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  masquerade:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  member_for:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  feeds_item: true

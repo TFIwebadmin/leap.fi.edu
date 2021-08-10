@@ -1,0 +1,45 @@
+uuid: 49843c40-83be-4e52-9582-201f6b373f4e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c23969e9-3c8f-4404-b0ea-6f8526cce027'
+  module:
+    - block_class
+    - block_content
+    - system
+    - user
+  theme:
+    - sis
+third_party_settings:
+  block_class:
+    classes: block-resources
+id: sis_monthlymeetings
+theme: sis
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:c23969e9-3c8f-4404-b0ea-6f8526cce027'
+settings:
+  id: 'block_content:c23969e9-3c8f-4404-b0ea-6f8526cce027'
+  label: 'Webinar Schedule'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/141
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      national_coord: national_coord
+      program_staff: program_staff
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

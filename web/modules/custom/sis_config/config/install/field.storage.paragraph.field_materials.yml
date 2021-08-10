@@ -1,0 +1,19 @@
+uuid: e659b6b6-39fc-4434-b0d2-c51300571e45
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_materials
+field_name: field_materials
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,37 @@
+uuid: 423c3021-10b7-4eea-8943-a20d94b33a83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intro_body
+    - node.type.basic_page
+  module:
+    - geocoder_field
+    - text
+third_party_settings:
+  geocoder_field:
+    method: none
+    weight: 0
+    geocode_field: body
+    reverse_geocode_field: {  }
+    hidden: false
+    disabled: false
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+    providers: {  }
+id: node.basic_page.field_intro_body
+field_name: field_intro_body
+entity_type: node
+bundle: basic_page
+label: 'Intro Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

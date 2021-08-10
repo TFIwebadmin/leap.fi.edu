@@ -1,0 +1,28 @@
+uuid: dc4c698b-c353-41e4-ab45-28d683d96723
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_resources
+    - node.type.resource
+    - paragraphs.paragraphs_type.instructions
+id: paragraph.instructions.field_resources
+field_name: field_resources
+entity_type: paragraph
+bundle: instructions
+label: Resources
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      resource: resource
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

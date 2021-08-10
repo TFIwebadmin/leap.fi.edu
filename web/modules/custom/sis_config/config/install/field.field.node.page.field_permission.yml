@@ -1,0 +1,33 @@
+uuid: 6e58c510-486c-47bb-a60a-05719a0ae1b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_permission
+    - node.type.page
+    - taxonomy.vocabulary.permission
+  content:
+    - 'taxonomy_term:permission:f59629c3-b895-44d1-8c18-47953e062e9f'
+id: node.page.field_permission
+field_name: field_permission
+entity_type: node
+bundle: page
+label: Permission
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: f59629c3-b895-44d1-8c18-47953e062e9f
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      permission: permission
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

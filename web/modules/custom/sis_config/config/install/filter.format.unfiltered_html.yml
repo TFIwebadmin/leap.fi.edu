@@ -1,0 +1,17 @@
+uuid: dfbc3cc2-32a5-42cb-ba19-726748f5b38e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Unfiltered HTML'
+format: unfiltered_html
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<p> <br> <a href hreflang target class=""> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <img src alt data-entity-type data-entity-uuid> <iframe src width height> <u> <s> <sup> <sub> <hr> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <div class>'
+      filter_html_help: true
+      filter_html_nofollow: false

@@ -1,0 +1,28 @@
+uuid: 46d837d5-05b8-400a-9a99-c1a70e843cbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.basic_page.field_color_theme
+    - field.field.node.basic_page.field_intro_body
+    - field.field.node.basic_page.field_intro_title
+    - field.field.node.basic_page.field_page_blocks
+    - node.type.basic_page
+  module:
+    - user
+id: node.basic_page.teaser
+targetEntityType: node
+bundle: basic_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_color_theme: true
+  field_intro_body: true
+  field_intro_title: true
+  field_page_blocks: true

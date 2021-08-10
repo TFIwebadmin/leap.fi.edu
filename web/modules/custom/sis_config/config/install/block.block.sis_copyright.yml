@@ -1,0 +1,29 @@
+uuid: 9294bd96-1932-4fbf-bc10-8954224a103d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:58620ee6-9195-4b3b-bdf4-02e686644541'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - sis
+third_party_settings:
+  block_class:
+    classes: footer-copyright
+id: sis_copyright
+theme: sis
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:58620ee6-9195-4b3b-bdf4-02e686644541'
+settings:
+  id: 'block_content:58620ee6-9195-4b3b-bdf4-02e686644541'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

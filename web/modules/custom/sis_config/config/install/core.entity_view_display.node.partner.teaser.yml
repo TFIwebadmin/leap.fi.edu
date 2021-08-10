@@ -1,0 +1,26 @@
+uuid: 9183e564-355e-4bde-829f-aa3ba7a9c8a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.partner.field_address
+    - field.field.node.partner.field_contacts
+    - field.field.node.partner.field_location
+    - node.type.partner
+  module:
+    - user
+id: node.partner.teaser
+targetEntityType: node
+bundle: partner
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_address: true
+  field_contacts: true
+  field_location: true

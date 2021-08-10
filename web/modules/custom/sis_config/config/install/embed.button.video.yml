@@ -1,0 +1,26 @@
+uuid: 58edd1aa-43e4-4fbb-ae25-4bf56e85b8de
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - media.type.video
+  module:
+    - entity_embed
+    - media
+label: Video
+id: video
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - video
+  display_plugins:
+    - 'view_mode:media.full'
+  entity_browser: ''
+  entity_browser_settings:
+    display_review: false
+icon:
+  data: iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH5AEWDwAbiCpcFgAAATJJREFUWMPt1yFLBEEYxvHfrYIWBVEUiyDiF7AY5FAw+BUMYrIY/QKCdosGk9ksJsFgMNhsJoMgaBUt3ql3lj1Y1hO95Xbmwj0w8C7s8Pz3fWfemaWvHtIUjtAseVyjmjefxFMA8+zYygIcBDZvoI6JSgrwgcEIZa8maZA1/8IoKiWMkxzAeNKGqoG3kr74Kvf8ksTeekUAZnCOtW6CZFdo/Y93L3J7erUDn42c13KRDDQy8RIucYrhUCVop/W0ke3FAoAx7KYgizEAWprGDeZjAbTWyXssgFvM4TE0wD02sYCH/07q1gG0g2PUOp1YBCBb2zNs4zlkJxxKt9tsAZ8fnbBIBmrYj3kYlX4aJhgpyW/lt0X4mYkH8BooAc1WBg4DZ76Z3kPveuZaHv3HpK9o+gYCA77tGjymIAAAAABJRU5ErkJggg==
+  uri: 'public://embed_buttons/video_0.png'
+icon_uuid: null

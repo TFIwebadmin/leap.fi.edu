@@ -1,0 +1,34 @@
+uuid: a913768b-5f1d-4b0b-8ddf-0de74bf1ddb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.partners_map
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - sis
+third_party_settings:
+  block_class:
+    classes: block-map
+id: sis_views_block__partners_map_block_1
+theme: sis
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:partners_map-block_1'
+settings:
+  id: 'views_block:partners_map-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/3
+    negate: false
+    context_mapping: {  }

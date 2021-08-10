@@ -1,0 +1,25 @@
+uuid: 6c7347ad-4ea7-4e30-8f05-8060365471e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - sis
+id: sis_mainnavigation
+theme: sis
+region: primary_nav
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,21 @@
+name: Mission2Mars (Franklin Institute)
+type: theme
+description: A sub-theme of Science in the Summer; same templates, with modest branding changes
+core_version_requirement: ^8.8 || ^9
+base theme: "leap"
+libraries:
+  - mars/global-styles
+  - mars/ui-behaviors
+regions:
+  branding: Site branding
+  utility_nav: Utility navigation
+  primary_nav: Main navigation
+  alert: Alerts
+  site_nav: Site navigation
+  hero: Hero region
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  below: Below content
+  footer: Footer
+

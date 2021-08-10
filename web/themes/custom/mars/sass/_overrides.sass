@@ -1,0 +1,57 @@
+.button
+  color: $white
+  border-radius: 0px
+  background-color: $orange
+  font-family: $gotham
+  font-weight: 600
+  font-size: 11px
+  letter-spacing: 0.1875em
+  padding: 15px 20px
+  text-transform: uppercase
+
+
+a.button,
+input[type="button"],
+input[type="submit"],
+.action-link a,
+.action-link a:visited
+  background-color: $orange
+  color: $white
+  border-radius: 0px
+  cursor: pointer
+
+a.button
+  text-decoration: none
+  &:hover, &:active, &:visited 
+    background-color: $orange
+    color: $white
+    opacity: 1
+  &.button-inverse
+    background-color: #383838
+    &:hover, &:active, &:visited 
+      background-color: #383838
+
+img.no-stretch
+  width: auto
+
+
+.main-page-content a 
+  color: $orange
+  &.button
+    color: $white
+
+.sr-only 
+  position: absolute
+  width: 1px
+  height: 1px
+  padding: 0
+  margin: -1px
+  overflow: hidden
+  clip: rect(0,0,0,0)
+  border: 0
+
+.block-page-title
+  margin-top: 30px
+
+.partners-state-grouping h3
+  color: #272727

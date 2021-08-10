@@ -1,0 +1,21 @@
+uuid: c924f40d-7a02-4b4e-a23e-f0a18605e64a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_color_theme
+    - node.type.scientist
+  module:
+    - options
+id: node.scientist.field_color_theme
+field_name: field_color_theme
+entity_type: node
+bundle: scientist
+label: 'Color theme'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

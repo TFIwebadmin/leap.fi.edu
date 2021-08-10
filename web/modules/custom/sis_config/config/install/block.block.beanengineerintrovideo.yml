@@ -1,0 +1,31 @@
+uuid: 59680eeb-5f1b-4ad5-acbb-7e27ae48b665
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:featured_video:543adf0d-d795-4b7f-9aa7-054f6963d7d5'
+  module:
+    - block_content
+    - system
+  theme:
+    - sis
+id: beanengineerintrovideo
+theme: sis
+region: hero
+weight: -13
+provider: null
+plugin: 'block_content:543adf0d-d795-4b7f-9aa7-054f6963d7d5'
+settings:
+  id: 'block_content:543adf0d-d795-4b7f-9aa7-054f6963d7d5'
+  label: 'Be an Engineer intro video'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/423\r\n<front>"
+    negate: false
+    context_mapping: {  }

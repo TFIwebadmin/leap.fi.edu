@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Science in the Summer theme.
+ */
+
+
+function mars_preprocess_page(&$variables) {
+  // Get site name to use in page.html.twig
+  $variables['site_name'] = \Drupal::config('system.site')->get('name');
+
+    // Define some node-specific settings, and prepare certain node fields to render in page.html.twig.
+    if(isset($variables['node'])) {
+        $node_type = $variables['node']->getType();
+        $variables['node_type'] = $node_type;
+        
+        switch ($node_type) {
+            case 'page':
+            case 'scientist':
+                $color = $variables['node']->get('field_color_theme')->getValue();
+                if (isset($color[0])) {
+                    $variables['hero_color'] = $color[0]['value'];
+                }
+                break;
+            default:
+        }
+    }
+}
+
+function mars_preprocess_node(&$variables) {
+
+  // Get content type
+  $type = $variables['elements']['#node']->getType();
+
+  switch ($type) {
+
+    // Scientist
+    case 'scientist':
+      // Determine if there is content defined in the steps field
+      $steps = $variables['elements']['#node']->get('field_steps')->getValue();
+      // If there are steps defined, then activate numbering in the twig template
+      $variables['numbering'] = (count($steps) == 0) ? FALSE : TRUE;
+
+      break;
+
+    default:
+      break;
+  } 
+
+}
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ */
+function mars_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $suggestions[] = 'page__node__' . $node->bundle();
+  }
+}

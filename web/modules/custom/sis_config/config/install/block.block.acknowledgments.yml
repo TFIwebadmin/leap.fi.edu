@@ -1,0 +1,35 @@
+uuid: fe66822a-3dca-4f4f-9f99-90b7f4b03da8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1efb6890-18b7-42d8-ae91-028471ab686a'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - leap
+third_party_settings:
+  block_class:
+    classes: block-acknowledgments
+id: acknowledgments
+theme: leap
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:1efb6890-18b7-42d8-ae91-028471ab686a'
+settings:
+  id: 'block_content:1efb6890-18b7-42d8-ae91-028471ab686a'
+  label: Acknowledgments
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/2
+    negate: false
+    context_mapping: {  }

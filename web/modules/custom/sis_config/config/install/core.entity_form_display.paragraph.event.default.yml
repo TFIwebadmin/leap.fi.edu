@@ -1,0 +1,33 @@
+uuid: b8150523-5671-4723-9918-c671324bf561
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.event.field_block_link
+    - field.field.paragraph.event.field_date
+    - paragraphs.paragraphs_type.event
+  module:
+    - datetime
+    - link
+id: paragraph.event.default
+targetEntityType: paragraph
+bundle: event
+mode: default
+content:
+  field_block_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_date:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden:
+  created: true
+  status: true

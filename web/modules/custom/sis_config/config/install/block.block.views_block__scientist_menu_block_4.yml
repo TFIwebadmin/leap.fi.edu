@@ -1,0 +1,30 @@
+uuid: ab6f84a9-6aad-4e91-8f7b-1f3a5a727891
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.scientist_menu
+  module:
+    - system
+    - views
+  theme:
+    - sis
+id: views_block__scientist_menu_block_4
+theme: sis
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:scientist_menu-block_4'
+settings:
+  id: 'views_block:scientist_menu-block_4'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/423
+    negate: false
+    context_mapping: {  }

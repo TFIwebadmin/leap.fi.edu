@@ -61,3 +61,6 @@ $sites['leap.localhost'] = 'default';
 
 $sites['scienceinthesummer.fi.edu'] = 'scienceinthesummer';
 $sites['sis.localhost'] = 'scienceinthesummer';
+
+$sites['mission2mars.fi.edu'] = 'mission2mars';
+$sites['mission2mars.localhost'] = 'mission2mars';

@@ -1,0 +1,76 @@
+uuid: d233c99e-c16a-41fd-8ede-ce43e512b9fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - ckeditor
+format: filtered_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+            - Outdent
+            - Indent
+            - HorizontalRule
+            - Format
+            - Styles
+            - Table
+            - Blockquote
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - image
+            - video
+            - file
+        -
+          name: Tools
+          items:
+            - Source
+        -
+          name: View
+          items:
+            - ShowBlocks
+            - Maximize
+  plugins:
+    stylescombo:
+      styles: "a.button|Button link\r\na.button.button-inverse|Button link (inverse)\r\np.intro-text|Intro text"
+    language:
+      language_list: un
+    video_embed:
+      defaults:
+        children:
+          autoplay: true
+          responsive: true
+          width: '854'
+          height: '480'
+image_upload:
+  status: true
+  scheme: public
+  directory: Images/inline
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

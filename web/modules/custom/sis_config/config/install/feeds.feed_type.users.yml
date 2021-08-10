@@ -1,0 +1,97 @@
+uuid: 5620c347-c1b4-41e3-8ca9-7c7bdac54441
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_organization
+  module:
+    - user
+label: Users
+id: users
+description: 'Create new user accounts by importing CSV files.'
+help: null
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:user'
+processor_configuration:
+  update_existing: 0
+  update_non_existent: _keep
+  expire: -1
+  skip_hash_check: false
+  owner_id: 0
+  values:
+    '': null
+  authorize: false
+  owner_feed_author: false
+custom_sources:
+  username:
+    label: Username
+    value: Username
+    machine_name: username
+  email:
+    label: Email
+    value: Email
+    machine_name: email
+  attendee_s_first_name:
+    label: 'Attendee''s first name'
+    value: 'Attendee''s first name'
+    machine_name: attendee_s_first_name
+  attendee_s_last_name:
+    label: 'Attendee''s last name'
+    value: 'Attendee''s last name'
+    machine_name: attendee_s_last_name
+  organization_name:
+    label: 'Organization Name'
+    value: 'Organization Name'
+    machine_name: organization_name
+  payer_s_city:
+    label: 'Payer''s city'
+    value: 'Payer''s city'
+    machine_name: payer_s_city
+  payer_s_state:
+    label: 'Payer''s State'
+    value: 'Payer''s State'
+    machine_name: payer_s_state
+  payer_s_zip_postal_code:
+    label: 'Payer''s zip/postal code'
+    value: 'Payer''s zip/postal code'
+    machine_name: payer_s_zip_postal_code
+mappings:
+  -
+    target: name
+    map:
+      value: username
+    unique:
+      value: '1'
+  -
+    target: mail
+    map:
+      value: email
+    unique: {  }
+    settings:
+      defuse: false
+  -
+    target: field_firstname
+    map:
+      value: attendee_s_first_name
+    unique: {  }
+  -
+    target: field_lastname
+    map:
+      value: attendee_s_last_name
+    unique: {  }
+  -
+    target: field_organization
+    map:
+      value: organization_name
+    unique: {  }

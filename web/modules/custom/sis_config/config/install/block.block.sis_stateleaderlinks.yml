@@ -1,0 +1,40 @@
+uuid: aa4d8fc0-38b9-49ae-bbf2-077efd874766
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:513c1f0e-5392-42cf-9627-9e1055809ef7'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - sis
+id: sis_stateleaderlinks
+theme: sis
+region: content
+weight: 5
+provider: null
+plugin: 'block_content:513c1f0e-5392-42cf-9627-9e1055809ef7'
+settings:
+  id: 'block_content:513c1f0e-5392-42cf-9627-9e1055809ef7'
+  label: 'State Leader Links'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /links-reports
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      program_staff: program_staff
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

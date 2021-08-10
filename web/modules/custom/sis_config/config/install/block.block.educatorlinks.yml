@@ -1,0 +1,41 @@
+uuid: 1bb1af7b-0edf-4262-be59-fd7de82d88a0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:06c3c35c-896a-497f-9952-8822e37a9b4f'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - leap
+id: educatorlinks
+theme: leap
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:06c3c35c-896a-497f-9952-8822e37a9b4f'
+settings:
+  id: 'block_content:06c3c35c-896a-497f-9952-8822e37a9b4f'
+  label: 'Educator Links'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/54
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      program_staff: program_staff
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

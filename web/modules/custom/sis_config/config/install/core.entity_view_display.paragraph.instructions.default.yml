@@ -1,0 +1,49 @@
+uuid: 092d236c-76fa-421a-b59e-02ae102afe3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.instructions.field_block_title
+    - field.field.paragraph.instructions.field_intro
+    - field.field.paragraph.instructions.field_materials
+    - field.field.paragraph.instructions.field_resources
+    - paragraphs.paragraphs_type.instructions
+  module:
+    - text
+id: paragraph.instructions.default
+targetEntityType: paragraph
+bundle: instructions
+mode: default
+content:
+  field_block_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_intro:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_materials:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_resources:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: instructions
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

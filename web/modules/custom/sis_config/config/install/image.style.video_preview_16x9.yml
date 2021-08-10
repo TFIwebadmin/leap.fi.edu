@@ -1,0 +1,15 @@
+uuid: 13378dd6-0d11-4135-8813-e135825af771
+langcode: en
+status: true
+dependencies: {  }
+name: video_preview_16x9
+label: 'Video preview 16x9'
+effects:
+  39813d31-494f-4835-9122-a2dff36affd4:
+    uuid: 39813d31-494f-4835-9122-a2dff36affd4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 960
+      height: 540
+      anchor: center-center

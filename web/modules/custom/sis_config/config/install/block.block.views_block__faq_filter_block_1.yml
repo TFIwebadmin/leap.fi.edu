@@ -1,0 +1,34 @@
+uuid: 2c21829f-b389-4a7d-bad9-76e15fa2c6d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.faq_filter
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - leap
+third_party_settings:
+  block_class:
+    classes: faq-accordion
+id: views_block__faq_filter_block_1
+theme: leap
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:faq_filter-block_1'
+settings:
+  id: 'views_block:faq_filter-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/5
+    negate: false
+    context_mapping: {  }

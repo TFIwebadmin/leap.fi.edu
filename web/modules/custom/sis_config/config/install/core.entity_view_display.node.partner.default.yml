@@ -1,0 +1,32 @@
+uuid: 3c38ee3c-9903-456c-a17a-6c49062c55c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.partner.field_address
+    - field.field.node.partner.field_contacts
+    - field.field.node.partner.field_location
+    - node.type.partner
+  module:
+    - address
+    - user
+id: node.partner.default
+targetEntityType: node
+bundle: partner
+mode: default
+content:
+  field_address:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_contacts: true
+  field_location: true

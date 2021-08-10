@@ -1,0 +1,30 @@
+uuid: 5b7eed79-e650-4191-8b13-ebafdaebdc21
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.core_four_video
+  module:
+    - system
+    - views
+  theme:
+    - sis
+id: views_block__core_four_video_block_1
+theme: sis
+region: content
+weight: 7
+provider: null
+plugin: 'views_block:core_four_video-block_1'
+settings:
+  id: 'views_block:core_four_video-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/125
+    negate: false
+    context_mapping: {  }

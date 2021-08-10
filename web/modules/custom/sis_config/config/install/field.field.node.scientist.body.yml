@@ -1,0 +1,23 @@
+uuid: 54f529a5-3968-449f-8e7d-163c4fbf3d98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.scientist
+  module:
+    - text
+id: node.scientist.body
+field_name: body
+entity_type: node
+bundle: scientist
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

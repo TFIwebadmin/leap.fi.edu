@@ -1,0 +1,34 @@
+uuid: 1755a561-f6c6-44ec-ab7d-e3d0db10ad97
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.grouped_resources
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - sis
+third_party_settings:
+  block_class:
+    classes: block-resources
+id: sis_views_block__grouped_resources_block_1
+theme: sis
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:grouped_resources-block_1'
+settings:
+  id: 'views_block:grouped_resources-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/130
+    negate: false
+    context_mapping: {  }

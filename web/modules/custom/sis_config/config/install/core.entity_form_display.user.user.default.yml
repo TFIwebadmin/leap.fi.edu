@@ -1,0 +1,102 @@
+uuid: 275d44fa-9925-4680-8b9b-43aeb50a0ec5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.feeds_item
+    - field.field.user.user.field_address_city
+    - field.field.user.user.field_address_state
+    - field.field.user.user.field_address_zipcode
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_location
+    - field.field.user.user.field_organization
+  module:
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_location:
+      children:
+        - field_address_city
+        - field_address_state
+        - field_address_zipcode
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Location
+      region: content
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_address_city:
+    weight: 7
+    settings:
+      size: 40
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_address_state:
+    weight: 8
+    settings:
+      size: 20
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_address_zipcode:
+    weight: 9
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_firstname:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_lastname:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_organization:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  language:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  feeds_item: true
+  field_location: true
+  google_analytics: true
+  path: true
+  timezone: true

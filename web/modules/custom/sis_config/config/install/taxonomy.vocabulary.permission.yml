@@ -1,0 +1,8 @@
+uuid: aad3d121-a678-40c7-82a3-c99b31529d3f
+langcode: en
+status: true
+dependencies: {  }
+name: Permission
+vid: permission
+description: ''
+weight: 0

@@ -1,0 +1,27 @@
+uuid: 3ef25f01-04eb-4ae4-9a5f-9985892562f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - entity_browser.browser.image_browser
+    - media.type.image
+  module:
+    - entity_embed
+    - media
+label: Image
+id: image
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - image
+  display_plugins:
+    - 'view_mode:media.full'
+  entity_browser: image_browser
+  entity_browser_settings:
+    display_review: false
+icon:
+  data: iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH5AEWDwAvqZ6oowAAAWBJREFUWMPtl88rhEEYxz8vyhFJskc3hVJKLkTKUb2rPe5xay8kJf+AHFz2oNxdkFxcOTlSxBb5A4iTo5TedRn1NM377qzZecdhv/X2Ns+Pme/M88zzPi908E+wATRyfp6B/kgRaATaeLEr9NH3GGR3wLWn9b6ANZNCxmbH86blWnHwEDQjUAAuFdsPYDOPY5EhuAESTT+fZwimgUiT1XzfAj1rezXZWxOfRWAAeASeXENwaKhghYx5poRdAgy5hqAMVIFPlQ+jwGuK7QxwK8YR8A4MupyALRaA75Sa/+K7DkwCF0B3xlV+SMs3VwJjwH3G4r+YAK7aTWAOqLdgPwucuBBYBpbEeNxi5zpKf03Cc6E/EPJVx6YktiFwZnDcF/oVnwSOMpx3hV3VB4FTiwn2BIlKuwhsA8ctTFJzyInYVBy21MfEFuvAiOoXEvW29g/dFQdvyYZD/5j0df4Jg+MHCF4BqWiBheAAAAAASUVORK5CYII=
+  uri: 'public://embed_buttons/image.png'
+icon_uuid: null

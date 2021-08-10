@@ -1,0 +1,35 @@
+uuid: 38337f18-d9a1-4ab8-af21-d763ef465427
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9cfa3b3d-99b5-470f-a4f8-c6f4f9f37d17'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - leap
+third_party_settings:
+  block_class:
+    classes: block-resources
+id: surveylink
+theme: leap
+region: content
+weight: 2
+provider: null
+plugin: 'block_content:9cfa3b3d-99b5-470f-a4f8-c6f4f9f37d17'
+settings:
+  id: 'block_content:9cfa3b3d-99b5-470f-a4f8-c6f4f9f37d17'
+  label: Survey
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/130
+    negate: false
+    context_mapping: {  }

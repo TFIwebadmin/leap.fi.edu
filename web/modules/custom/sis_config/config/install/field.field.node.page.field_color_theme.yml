@@ -1,0 +1,21 @@
+uuid: de41f028-4892-4633-8b90-37ef6e21dd0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_color_theme
+    - node.type.page
+  module:
+    - options
+id: node.page.field_color_theme
+field_name: field_color_theme
+entity_type: node
+bundle: page
+label: 'Color theme'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

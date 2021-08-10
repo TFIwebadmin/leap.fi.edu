@@ -1,0 +1,8 @@
+uuid: a82745c6-6e13-4b8d-91ae-9a301686d34e
+langcode: en
+status: true
+dependencies: {  }
+id: basic
+label: 'Basic block with markup'
+revision: 0
+description: ''

@@ -1,0 +1,9 @@
+uuid: f5aed1fc-e5bb-4b9e-a9a6-ea1d81e0e75f
+langcode: en
+status: true
+dependencies: {  }
+id: phila_coord
+label: 'Philadelphia-area coordinator'
+weight: -6
+is_admin: null
+permissions: {  }

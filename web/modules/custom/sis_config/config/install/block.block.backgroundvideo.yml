@@ -1,0 +1,35 @@
+uuid: 37513b37-64dc-4a3a-be4f-876a19dc07a5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4d9ebbee-982d-4aeb-a276-19fcbe3b1d87'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - leap
+third_party_settings:
+  block_class:
+    classes: background-video
+id: backgroundvideo
+theme: leap
+region: hero
+weight: -6
+provider: null
+plugin: 'block_content:4d9ebbee-982d-4aeb-a276-19fcbe3b1d87'
+settings:
+  id: 'block_content:4d9ebbee-982d-4aeb-a276-19fcbe3b1d87'
+  label: 'Background Video'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,14 @@
+uuid: a852e7af-4006-4946-bf6a-292edf333660
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.national_coord
+  module:
+    - user
+id: user_remove_role_action.national_coord
+label: 'Remove the National coord role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: national_coord

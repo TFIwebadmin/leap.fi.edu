@@ -1,0 +1,37 @@
+uuid: e0b191f9-25ae-4849-a87b-971834bfc586
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.leap-public-menu
+  module:
+    - block_class
+    - system
+    - user
+  theme:
+    - sis
+third_party_settings:
+  block_class:
+    classes: nav-site-main
+id: sis_leappublicmenu
+theme: sis
+region: site_nav
+weight: -14
+provider: null
+plugin: 'system_menu_block:leap-public-menu'
+settings:
+  id: 'system_menu_block:leap-public-menu'
+  label: 'Leap public menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

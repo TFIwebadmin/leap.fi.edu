@@ -1,0 +1,21 @@
+uuid: 1369c4c8-6d51-41cb-8068-6fccb29def9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date
+    - paragraphs.paragraphs_type.event
+  module:
+    - datetime
+id: paragraph.event.field_date
+field_name: field_date
+entity_type: paragraph
+bundle: event
+label: 'Date and time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

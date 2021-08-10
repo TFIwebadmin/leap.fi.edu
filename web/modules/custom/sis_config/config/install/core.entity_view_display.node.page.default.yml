@@ -1,0 +1,43 @@
+uuid: 25842af7-d94f-4f4e-aac1-216401779725
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_color_theme
+    - field.field.node.page.field_page_blocks
+    - field.field.node.page.field_permission
+    - node.type.page
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_page_blocks:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    region: content
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_color_theme: true
+  field_permission: true

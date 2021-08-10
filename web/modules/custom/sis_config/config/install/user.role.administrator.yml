@@ -1,0 +1,10 @@
+uuid: 5db0f56a-986a-437e-ba37-444dcda645c2
+langcode: en
+status: true
+dependencies: {  }
+id: administrator
+label: Administrator
+weight: -3
+is_admin: true
+permissions:
+  - 'use text format filtered_html'

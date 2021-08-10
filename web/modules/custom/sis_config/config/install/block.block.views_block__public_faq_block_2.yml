@@ -1,0 +1,35 @@
+uuid: ef3b5299-d4f0-4902-bb8a-9a67ef996d45
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.public_faq
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - sis
+third_party_settings:
+  block_class:
+    classes: 'about-faq faq-accordion'
+id: views_block__public_faq_block_2
+theme: sis
+region: content
+weight: 4
+provider: null
+plugin: 'views_block:public_faq-block_2'
+settings:
+  id: 'views_block:public_faq-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/300
+    negate: false
+    context_mapping: {  }

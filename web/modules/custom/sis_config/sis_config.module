@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains sis_config.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function sis_config_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the sis_config module.
+    case 'help.page.sis_config':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Drupal configurations needed to duplicate the structure and functionality of the Science in the Summer website.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

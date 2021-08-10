@@ -1,0 +1,27 @@
+uuid: f722135f-a510-4b2d-8ab9-29adf97401c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file2
+    - node.type.resource
+  module:
+    - file
+id: node.resource.field_file2
+field_name: field_file2
+entity_type: node
+bundle: resource
+label: 'Alternate file'
+description: 'Upload a second file, e.g. a Spanish version of the same resource.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'resources/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx xls xlsx ppt pptx pdf jpg'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

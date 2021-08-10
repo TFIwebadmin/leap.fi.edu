@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ *
+ */
+#}
+<article{{ attributes.addClass('node-scientist clearfix') }}>
+
+  <div{{ content_attributes }}>
+    <div class="scientist-video">
+      {{ content.field_video_ref }}
+      {% if numbering %}
+        <div class="numbering">1</div>
+      {% endif %}
+    </div>
+    <div class="main-page-content">
+      <div class="intro-text color-match">
+        {{ content.body }}
+      </div>
+      <div class="center-icon">
+        <img class="no-stretch down-arrow" alt="down arrow" src="/{{ directory }}/images/arrow.png">
+      </div>
+      {{ content.field_steps }}
+    </div>
+  </div>
+
+</article>

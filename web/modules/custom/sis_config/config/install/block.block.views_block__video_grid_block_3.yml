@@ -1,0 +1,34 @@
+uuid: 3f46b8fc-7108-445b-839b-947ad8eb8728
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.video_grid
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - leap
+third_party_settings:
+  block_class:
+    classes: video-grid
+id: views_block__video_grid_block_3
+theme: leap
+region: content
+weight: 6
+provider: null
+plugin: 'views_block:video_grid-block_3'
+settings:
+  id: 'views_block:video_grid-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/124
+    negate: false
+    context_mapping: {  }

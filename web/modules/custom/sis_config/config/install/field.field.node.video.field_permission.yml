@@ -1,0 +1,33 @@
+uuid: 548725b6-5dc6-4182-84ca-0dddac804fb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_permission
+    - node.type.video
+    - taxonomy.vocabulary.permission
+  content:
+    - 'taxonomy_term:permission:f59629c3-b895-44d1-8c18-47953e062e9f'
+id: node.video.field_permission
+field_name: field_permission
+entity_type: node
+bundle: video
+label: Permission
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: f59629c3-b895-44d1-8c18-47953e062e9f
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      permission: permission
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

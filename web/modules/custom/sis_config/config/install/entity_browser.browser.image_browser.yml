@@ -1,0 +1,42 @@
+uuid: 02c71c13-3204-4d89-b3a6-700b903794a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_browser
+  module:
+    - views
+name: image_browser
+label: 'Image browser'
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  7fd10824-164a-4cb9-9c31-ea4fada3f7fd:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: image
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: 'Select files'
+    uuid: 7fd10824-164a-4cb9-9c31-ea4fada3f7fd
+    weight: 1
+    label: Upload
+    id: media_image_upload
+  4bc1dcfb-df92-47c2-9b2f-e28575a8f961:
+    settings:
+      view: media_browser
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 4bc1dcfb-df92-47c2-9b2f-e28575a8f961
+    weight: 2
+    label: Library
+    id: view

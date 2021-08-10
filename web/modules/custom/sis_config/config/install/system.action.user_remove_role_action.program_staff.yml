@@ -1,0 +1,14 @@
+uuid: 19019311-b4c2-4e22-a6b2-e7269242c290
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.program_staff
+  module:
+    - user
+id: user_remove_role_action.program_staff
+label: 'Remove the Program Staff role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: program_staff

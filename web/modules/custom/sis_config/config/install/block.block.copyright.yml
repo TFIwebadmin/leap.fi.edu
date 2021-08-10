@@ -1,0 +1,29 @@
+uuid: be2cf7c2-1fec-49d1-840d-0ee40b837644
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:58620ee6-9195-4b3b-bdf4-02e686644541'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - leap
+third_party_settings:
+  block_class:
+    classes: footer-copyright
+id: copyright
+theme: leap
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:58620ee6-9195-4b3b-bdf4-02e686644541'
+settings:
+  id: 'block_content:58620ee6-9195-4b3b-bdf4-02e686644541'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

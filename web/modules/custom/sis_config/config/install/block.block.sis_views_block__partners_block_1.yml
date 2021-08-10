@@ -1,0 +1,30 @@
+uuid: 309b9de4-adde-4bec-9f9b-7e997d8c479e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.partners
+  module:
+    - system
+    - views
+  theme:
+    - sis
+id: sis_views_block__partners_block_1
+theme: sis
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:partners-block_1'
+settings:
+  id: 'views_block:partners-block_1'
+  label: 'National Network'
+  provider: views
+  label_display: visible
+  views_label: 'National Network'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/3
+    negate: false
+    context_mapping: {  }

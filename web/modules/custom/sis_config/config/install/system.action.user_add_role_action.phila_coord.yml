@@ -1,0 +1,14 @@
+uuid: df2786e8-bdf4-4080-b25f-4f4db08cada9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.phila_coord
+  module:
+    - user
+id: user_add_role_action.phila_coord
+label: 'Add the Phila coord role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: phila_coord

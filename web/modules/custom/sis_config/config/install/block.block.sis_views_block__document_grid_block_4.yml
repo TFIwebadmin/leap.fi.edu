@@ -1,0 +1,39 @@
+uuid: 4182db01-5281-45d4-a512-f91c0ac0ba8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.document_grid
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - sis
+id: sis_views_block__document_grid_block_4
+theme: sis
+region: content
+weight: 6
+provider: null
+plugin: 'views_block:document_grid-block_4'
+settings:
+  id: 'views_block:document_grid-block_4'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/53
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      program_staff: program_staff
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

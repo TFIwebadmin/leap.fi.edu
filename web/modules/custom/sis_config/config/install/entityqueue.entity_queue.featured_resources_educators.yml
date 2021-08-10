@@ -1,0 +1,25 @@
+uuid: bfc3dff2-5903-4a32-9ef0-510e3df37996
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: featured_resources_educators
+label: 'Featured Resources Educators'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      resource: resource
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

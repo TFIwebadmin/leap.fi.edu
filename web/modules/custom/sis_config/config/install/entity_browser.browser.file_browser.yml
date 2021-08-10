@@ -1,0 +1,41 @@
+uuid: 8c97cc3f-677c-4c64-9110-1981572a2624
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_browser
+  module:
+    - views
+name: file_browser
+label: 'File browser'
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  7b23e81b-6aa1-4a19-9199-ae088837db8f:
+    settings:
+      upload_location: 'public://'
+      multiple: true
+      submit_text: 'Select files'
+      extensions: 'txt doc xls pdf ppt pps odt ods odp'
+    uuid: 7b23e81b-6aa1-4a19-9199-ae088837db8f
+    weight: 1
+    label: Upload
+    id: upload
+  c54bfa1b-7cf5-4677-85b6-57782088e339:
+    settings:
+      view: media_browser
+      view_display: entity_browser_3
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: c54bfa1b-7cf5-4677-85b6-57782088e339
+    weight: 2
+    label: Library
+    id: view

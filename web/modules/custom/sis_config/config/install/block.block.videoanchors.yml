@@ -1,0 +1,34 @@
+uuid: 678b3d01-67d3-4364-be7b-ebdb7d64d35f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.video-anchors
+  module:
+    - block_class
+    - system
+  theme:
+    - leap
+third_party_settings:
+  block_class:
+    classes: menu-inline
+id: videoanchors
+theme: leap
+region: content
+weight: -5
+provider: null
+plugin: 'system_menu_block:video-anchors'
+settings:
+  id: 'system_menu_block:video-anchors'
+  label: 'Video anchors'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/124
+    negate: false
+    context_mapping: {  }

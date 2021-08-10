@@ -1,0 +1,8 @@
+uuid: 993109b8-8600-4ca3-8ac6-b5771d2c82be
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resource category'
+vid: resource_category
+description: ''
+weight: 0

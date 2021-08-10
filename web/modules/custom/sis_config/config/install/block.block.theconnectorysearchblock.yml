@@ -1,0 +1,31 @@
+uuid: d64bb226-5ffa-4b26-9d8c-244384317dfe
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:af55948e-b8c9-4aab-b612-c925e0fdcf6f'
+  module:
+    - block_content
+    - system
+  theme:
+    - leap
+id: theconnectorysearchblock
+theme: leap
+region: content
+weight: 8
+provider: null
+plugin: 'block_content:af55948e-b8c9-4aab-b612-c925e0fdcf6f'
+settings:
+  id: 'block_content:af55948e-b8c9-4aab-b612-c925e0fdcf6f'
+  label: 'The Connectory search block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/5\r\n/node/130"
+    negate: false
+    context_mapping: {  }

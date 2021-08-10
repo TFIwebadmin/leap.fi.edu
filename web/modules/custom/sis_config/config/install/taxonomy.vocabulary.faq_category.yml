@@ -1,0 +1,8 @@
+uuid: db567e37-efcb-48cf-b1e6-4544ee97c931
+langcode: en
+status: true
+dependencies: {  }
+name: 'FAQ category'
+vid: faq_category
+description: ''
+weight: 0

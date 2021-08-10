@@ -1,0 +1,33 @@
+uuid: c2b4eed9-acad-40e0-b71d-8b1495cb6af3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.scientist
+    - taxonomy.vocabulary.science_career_theme
+  content:
+    - 'taxonomy_term:science_career_theme:34f02b70-0ae0-4d1c-902d-9fd5672722e3'
+id: node.scientist.field_category
+field_name: field_category
+entity_type: node
+bundle: scientist
+label: 'Career theme'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 34f02b70-0ae0-4d1c-902d-9fd5672722e3
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      science_career_theme: science_career_theme
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

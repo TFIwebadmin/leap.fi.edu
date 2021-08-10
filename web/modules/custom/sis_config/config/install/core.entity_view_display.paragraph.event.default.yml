@@ -1,0 +1,38 @@
+uuid: 7bb52be6-e8e4-4467-bd60-8e0fc83b38af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.event.field_block_link
+    - field.field.paragraph.event.field_date
+    - paragraphs.paragraphs_type.event
+  module:
+    - datetime
+    - link
+id: paragraph.event.default
+targetEntityType: paragraph
+bundle: event
+mode: default
+content:
+  field_block_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_date:
+    weight: 0
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: event_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden: {  }

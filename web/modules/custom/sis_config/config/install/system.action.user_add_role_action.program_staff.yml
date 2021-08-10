@@ -1,0 +1,14 @@
+uuid: 6e8c3e7c-9745-4c5f-9983-71592b5f118f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.program_staff
+  module:
+    - user
+id: user_add_role_action.program_staff
+label: 'Add the Program Staff role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: program_staff

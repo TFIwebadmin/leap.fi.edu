@@ -1,0 +1,21 @@
+uuid: 2ddd5853-f291-41ac-b36d-7a58a739ce4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_materials
+    - paragraphs.paragraphs_type.instructions
+  module:
+    - text
+id: paragraph.instructions.field_materials
+field_name: field_materials
+entity_type: paragraph
+bundle: instructions
+label: 'Materials Needed'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

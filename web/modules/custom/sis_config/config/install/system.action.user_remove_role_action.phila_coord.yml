@@ -1,0 +1,14 @@
+uuid: b08f70c0-3d7a-40c8-9ac2-5d4547e24c33
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.phila_coord
+  module:
+    - user
+id: user_remove_role_action.phila_coord
+label: 'Remove the Phila coord role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: phila_coord

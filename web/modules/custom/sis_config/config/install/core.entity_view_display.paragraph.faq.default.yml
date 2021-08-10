@@ -1,0 +1,30 @@
+uuid: 51ee7dc2-8a55-453b-8db0-6adcb964ab65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq.field_answer
+    - field.field.paragraph.faq.field_question
+    - paragraphs.paragraphs_type.faq
+  module:
+    - text
+id: paragraph.faq.default
+targetEntityType: paragraph
+bundle: faq
+mode: default
+content:
+  field_answer:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_question:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

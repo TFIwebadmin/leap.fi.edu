@@ -55,6 +55,7 @@
         "drupal/view_unpublished": "^1.0",
         "drupal/webform": "^6.1@beta",
         "drush/drush": "^10.0",
+        "geocoder-php/google-maps-provider": "^4.6",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"

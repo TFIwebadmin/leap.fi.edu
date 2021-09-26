@@ -56,9 +56,8 @@
 
   <header class="main-page-heading">
     <div class="container">
-      <div class="site-partner-logo"><img src="/{{ directory }}/images/GSK_Logo.png" alt="GSK logo"></div>
-      <h1><a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a></h1>
-      <div class="site-name-subhead">{{ "in partnership with The Franklin Institute"|t }}</div>
+      <div class="site-logo logo-desktop"><a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home"><img src="/{{ directory }}/images/21_M2M_Website_Assets_v01_Logo_Line.png" alt="{{ site_name }} {{ "Engineered by The Franklin Institute"|t }}"></a></div>
+      <div class="site-logo logo-mobile"><a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home"><img src="/{{ directory }}/images/21_M2M_Website_Assets_v01_Logo_Stacked.png" alt="{{ site_name }} {{ "Engineered by The Franklin Institute"|t }}"></a></div>
     </div>
   </header>
   {% if page.site_nav %}

@@ -87,26 +87,36 @@ p {
 
 .main-page-heading {
   text-align: center;
-  color: #FFFFFF;
+  color: #6f0c14;
   background-color: #eee1d1;
   background-image: url("../images/bkgd_header.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 40px !important; }
-  .main-page-heading .site-partner-logo img {
-    width: 55px; }
+  padding: 0px !important; }
   .main-page-heading h1 {
     font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
     font-weight: 900;
     font-size: 33px;
     line-height: 36px; }
     .main-page-heading h1 a {
-      color: #FFFFFF; }
+      color: #6f0c14; }
   .main-page-heading .site-name-subhead {
     font-weight: 500;
     font-size: 18px;
     line-height: 20px; }
+  .main-page-heading .site-logo.logo-desktop {
+    display: none; }
+    @media (min-width: 60em) {
+      .main-page-heading .site-logo.logo-desktop {
+        display: block;
+        padding: 60px; } }
+  .main-page-heading .site-logo.logo-mobile {
+    display: block;
+    padding: 20px; }
+    @media (min-width: 60em) {
+      .main-page-heading .site-logo.logo-mobile {
+        display: none; } }
 
 .bkgd-pattern-bottom {
   background-color: #FFFFFF;
@@ -117,7 +127,8 @@ p {
 
 .site-navigation {
   background-color: #be241c;
-  padding-top: 16px; }
+  padding-top: 16px;
+  margin-bottom: 60px; }
   .site-navigation nav.nav-site-main {
     margin-bottom: 0px !important; }
     .site-navigation nav.nav-site-main .menu {
@@ -128,6 +139,8 @@ p {
         font-size: 11px; }
       .site-navigation nav.nav-site-main .menu li:last-child {
         background-color: #be241c; }
+        .site-navigation nav.nav-site-main .menu li:last-child ul li {
+          background-color: inherit; }
 
 .page,
 .site-navigation,

@@ -1,25 +1,36 @@
 .main-page-heading
   text-align: center
-  color: $white
+  color: $dark_red
   background-color: $light_cream
   background-image: url('../images/bkgd_header.png')
   background-position: center
   background-repeat: no-repeat
   background-size: cover
-  padding: 40px !important
-  .site-partner-logo img
-    width: 55px
+  padding: 0px !important
+  //.site-partner-logo img
+    //width: 55px
   h1
     font-family: $gotham
     font-weight: 900
     font-size: 33px
     line-height: 36px
     a 
-      color: $white
+      color: $dark_red
   .site-name-subhead
     font-weight: 500
     font-size: 18px
     line-height: 20px
+  .site-logo
+    &.logo-desktop
+      display: none
+      @media (min-width: 60em)
+        display: block
+        padding: 60px
+    &.logo-mobile
+      display: block
+      padding: 20px
+      @media (min-width: 60em)
+        display: none
 
 
 

@@ -435,6 +435,20 @@ div.video-background .button, div.video-background .field--name-field-events .fi
   margin-bottom: 0.5em;
 }
 
+.partners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.partners-grid .partners-state-grouping {
+  flex: 1 1 30%;
+}
+@media (max-width: 499px) {
+  .partners-grid .partners-state-grouping {
+    flex: 1 1 90%;
+  }
+}
+
 .button, .field--name-field-events .field__item a {
   color: #FFFFFF;
   border-radius: 0px;

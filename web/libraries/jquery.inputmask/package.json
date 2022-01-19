@@ -63,7 +63,7 @@
     "karma-qunit": "^1.2.1",
     "load-grunt-tasks": "^3.5.2",
     "phantomjs-prebuilt": "^2.1.15",
-    "postcss": "^6.0.13",
+    "postcss": "^8.2.13",
     "postcss-cssnext": "^3.0.2",
     "postcss-loader": "^2.0.8",
     "qunitjs": "^2.4.0",

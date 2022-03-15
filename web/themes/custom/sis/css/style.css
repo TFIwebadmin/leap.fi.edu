@@ -290,7 +290,7 @@ div.video-background .button, div.video-background .field--name-field-events .fi
   height: 195px;
   margin-right: 30px;
   margin-bottom: 50px;
-  background-image: url("../images/document-guide-theme-blue.png");
+  background-image: url("../images/document-guide-theme-blue.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -300,13 +300,13 @@ div.video-background .button, div.video-background .field--name-field-events .fi
   }
 }
 .color-theme-green .instructions-docs .documents-wrapper .document-icon-wrapper {
-  background-image: url("../images/document-guide-theme-green.png");
+  background-image: url("../images/document-guide-theme-green.jpg");
 }
 .color-theme-magenta .instructions-docs .documents-wrapper .document-icon-wrapper {
-  background-image: url("../images/document-guide-theme-magenta.png");
+  background-image: url("../images/document-guide-theme-magenta.jpg");
 }
 .color-theme-teal .instructions-docs .documents-wrapper .document-icon-wrapper {
-  background-image: url("../images/document-guide-theme-teal.png");
+  background-image: url("../images/document-guide-theme-teal.jpg");
 }
 .instructions-docs .documents-wrapper .document-content {
   padding-top: 20px;

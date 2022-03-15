@@ -243,85 +243,24 @@ div.video-background .button, div.video-background .field--name-field-events .fi
 }
 .node-scientist .paragraph--type--video,
 .node-scientist .paragraph--type--instructions,
-.node-scientist .paragraph--type--schedule {
+.node-scientist .paragraph--type--schedule,
+.node-scientist .paragraph--type--additional {
   margin-top: 60px;
   margin-bottom: 60px;
-  margin-left: 85px;
   position: relative;
-}
-@media (min-width: 992px) {
-  .node-scientist .paragraph--type--video,
-.node-scientist .paragraph--type--instructions,
-.node-scientist .paragraph--type--schedule {
-    margin-left: 200px;
-  }
 }
 .node-scientist .paragraph--type--video h3.color-match,
 .node-scientist .paragraph--type--video .video-container-page,
 .node-scientist .paragraph--type--instructions h3.color-match,
 .node-scientist .paragraph--type--instructions .video-container-page,
 .node-scientist .paragraph--type--schedule h3.color-match,
-.node-scientist .paragraph--type--schedule .video-container-page {
+.node-scientist .paragraph--type--schedule .video-container-page,
+.node-scientist .paragraph--type--additional h3.color-match,
+.node-scientist .paragraph--type--additional .video-container-page {
   width: 70%;
 }
 .node-scientist .field--name-field-steps {
   margin-bottom: 100px;
-}
-
-.field--name-field-steps {
-  counter-reset: steps 1;
-}
-.field--name-field-steps .paragraph--type--video::before,
-.field--name-field-steps .paragraph--type--instructions::before,
-.field--name-field-steps .paragraph--type--schedule::before {
-  counter-increment: steps;
-  content: counter(steps);
-}
-
-.numbering,
-.paragraph--type--video::before,
-.paragraph--type--instructions::before,
-.paragraph--type--schedule::before {
-  width: 65px;
-  padding: 10px 0;
-  display: block;
-  text-align: center;
-  background-color: #EEA32D;
-  border-radius: 100%;
-  font-weight: 900;
-  font-size: 36px;
-}
-@media (min-width: 992px) {
-  .numbering,
-.paragraph--type--video::before,
-.paragraph--type--instructions::before,
-.paragraph--type--schedule::before {
-    font-size: 72px;
-    width: 105px;
-  }
-}
-
-.scientist-video {
-  position: relative;
-}
-.scientist-video .numbering {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-
-.paragraph--type--video::before,
-.paragraph--type--instructions::before,
-.paragraph--type--schedule::before {
-  position: absolute;
-  left: -85px;
-}
-@media (min-width: 992px) {
-  .paragraph--type--video::before,
-.paragraph--type--instructions::before,
-.paragraph--type--schedule::before {
-    left: -200px;
-  }
 }
 
 .instructions-flex {
@@ -345,7 +284,7 @@ div.video-background .button, div.video-background .field--name-field-events .fi
   display: flex;
 }
 .instructions-docs .documents-wrapper .document-icon-wrapper {
-  flex: 1 0 auto;
+  flex: 0 0 auto;
   display: block;
   width: 75px;
   height: 195px;
@@ -433,6 +372,10 @@ div.video-background .button, div.video-background .field--name-field-events .fi
 }
 .field--name-field-materials li {
   margin-bottom: 0.5em;
+}
+
+.field--type-text-long iframe {
+  border: 1px solid #dddddd;
 }
 
 .partners-grid {

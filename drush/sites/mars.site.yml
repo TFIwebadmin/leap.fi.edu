@@ -2,7 +2,7 @@
 # Docs at https://github.com/drush-ops/drush/blob/master/examples/example.site.yml
 
 prod:
-  host: mission2mars.fi.edu
+  host: leap.fi.edu
   user: todd
   root: /var/www/leap/web
   uri: http://mission2mars.fi.edu

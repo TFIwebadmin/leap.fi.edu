@@ -42,60 +42,68 @@
       line-height: 48px
   .paragraph--type--video,
   .paragraph--type--instructions,
-  .paragraph--type--schedule
+  .paragraph--type--schedule,
+  .paragraph--type--additional
     margin-top: 60px
     margin-bottom: 60px
-    margin-left: 85px
+    //margin-left: 85px
     position: relative
-    @media (min-width: 992px)
-      margin-left: 200px
+    // @media (min-width: 992px)
+    //   margin-left: 200px
     h3.color-match,
     .video-container-page
       width: 70%
   .field--name-field-steps
     margin-bottom: 100px
 
-.field--name-field-steps
-  counter-reset: steps 1
-  .paragraph--type--video,
-  .paragraph--type--instructions,
-  .paragraph--type--schedule
-    &::before
-      counter-increment: steps              
-      content: counter(steps)
 
-.numbering,
-.paragraph--type--video::before,
-.paragraph--type--instructions::before,
-.paragraph--type--schedule::before
-  width: 65px
-  padding: 10px 0
-  display: block
-  text-align: center
-  background-color: $lightOrange
-  border-radius: 100%
-  font-weight: 900
-  font-size: 36px
-  @media (min-width: 992px)
-    font-size: 72px
-    width: 105px
+// Add sequential numbering to video and paragrap steps.
+
+// Removed this styling, per Andrea Foster, 3/15/2022    
+
+// .field--name-field-steps
+//   counter-reset: steps 1
+//   .paragraph--type--video,
+//   .paragraph--type--instructions,
+//   .paragraph--type--schedule,
+//   .paragraph--type--additional
+//     &::before
+//       counter-increment: steps              
+//       content: counter(steps)
+
+// .numbering,
+// .paragraph--type--video::before,
+// .paragraph--type--instructions::before,
+// .paragraph--type--schedule::before,
+// .paragraph--type--additional::before
+//   width: 65px
+//   padding: 10px 0
+//   display: block
+//   text-align: center
+//   background-color: $lightOrange
+//   border-radius: 100%
+//   font-weight: 900
+//   font-size: 36px
+//   @media (min-width: 992px)
+//     font-size: 72px
+//     width: 105px
 
 
-.scientist-video
-  position: relative
-  .numbering
-    position: absolute
-    top: 20px
-    left: 20px
+// .scientist-video
+//   position: relative
+//   .numbering
+//     position: absolute
+//     top: 20px
+//     left: 20px
 
-.paragraph--type--video::before,
-.paragraph--type--instructions::before,
-.paragraph--type--schedule::before
-  position: absolute
-  left: -85px
-  @media (min-width: 992px)
-    left: -200px
-
+// .paragraph--type--video::before,
+// .paragraph--type--instructions::before,
+// .paragraph--type--schedule::before,
+// .paragraph--type--additional::before
+//   position: absolute
+//   left: -85px
+//   @media (min-width: 992px)
+//     left: -200px
 
 .instructions-flex
   display: block
@@ -112,7 +120,7 @@
   .documents-wrapper
     display: flex
     .document-icon-wrapper
-      flex: 1 0 auto
+      flex: 0 0 auto
       display: block
       width: 75px
       height: 195px
@@ -186,3 +194,6 @@
 
   
   
+.field--type-text-long
+  iframe
+    border: 1px solid #dddddd

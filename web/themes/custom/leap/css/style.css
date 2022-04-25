@@ -617,6 +617,10 @@ iframe {
   display: flex;
   flex-wrap: wrap;
 }
+.flex-grid .button {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
 
 .grid-two-col {
   display: grid;
@@ -650,6 +654,10 @@ iframe {
   .grid-three-col {
     grid-template-columns: repeat(auto-fill, minmax(calc(33% - 16px), 1fr));
   }
+}
+
+.pb {
+  padding-bottom: 2.25em;
 }
 
 a:focus {
@@ -1691,6 +1699,9 @@ div.video-background .action-link a {
 
 .basic-page p {
   color: #505857;
+}
+.basic-page .intro-paragraph {
+  margin-top: 2.25em;
 }
 .basic-page .intro-paragraph:after {
   content: "";

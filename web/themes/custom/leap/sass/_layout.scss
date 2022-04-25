@@ -2,6 +2,10 @@
 .flex-grid {
 	display: flex;
 	flex-wrap: wrap;
+	.button {
+		margin-right: em(16);
+		margin-bottom: em(16);
+	}
 }
 .grid-two-col {
 	display: grid;
@@ -30,4 +34,9 @@
     @media (min-width: em(960)) {
       grid-template-columns: repeat(auto-fill, minmax(calc(33% - #{16px}),1fr));
     }
+}
+
+// padding-bottom
+.pb {
+	padding-bottom: em(36);
 }

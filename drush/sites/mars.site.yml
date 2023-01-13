@@ -9,4 +9,4 @@ prod:
 
 local:
   root: /var/www/leap/web
-  uri: http://mission2mars.localhost
+  uri: http://mission2mars-old.localhost

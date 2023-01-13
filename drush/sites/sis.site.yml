@@ -9,4 +9,4 @@ prod:
 
 local:
   root: /var/www/leap/web
-  uri: http://sis.localhost
+  uri: http://sis-old.localhost

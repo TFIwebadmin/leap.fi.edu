@@ -9,4 +9,4 @@ prod:
 
 local:
   root: /var/www/leap/web
-  uri: http://leap.localhost
+  uri: http://leap-old.localhost

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "45dfe3be9b23ad86d7f105e36ce809f1",
+    "content-hash": "2f5c6bf530abe0cb3aa84b7164f478fe",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3995,6 +3995,62 @@
             "homepage": "https://www.drupal.org/project/google_tag",
             "support": {
                 "source": "https://git.drupalcode.org/project/google_tag"
+            }
+        },
+        {
+            "name": "drupal/hacked",
+            "version": "2.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/hacked.git",
+                "reference": "8.x-2.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/hacked-8.x-2.0-beta3.zip",
+                "reference": "8.x-2.0-beta3",
+                "shasum": "d7309360a632f17631b06cba2d3c5c2948b1a1b2"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0-beta3",
+                    "datestamp": "1626356649",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                },
+                {
+                    "name": "Deciphered",
+                    "homepage": "https://www.drupal.org/user/103796"
+                },
+                {
+                    "name": "ivnish",
+                    "homepage": "https://www.drupal.org/user/3547706"
+                },
+                {
+                    "name": "Steven Jones",
+                    "homepage": "https://www.drupal.org/user/99644"
+                }
+            ],
+            "description": "Shows if drupal or any of its modules have been changed",
+            "homepage": "https://www.drupal.org/project/hacked",
+            "support": {
+                "source": "https://git.drupalcode.org/project/hacked"
             }
         },
         {
@@ -12307,6 +12363,7 @@
         "drupal/block_class": 15,
         "drupal/feeds": 15,
         "drupal/focal_point": 15,
+        "drupal/hacked": 10,
         "drupal/smtp": 10,
         "drupal/webform": 10
     },

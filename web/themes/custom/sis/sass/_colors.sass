@@ -1,11 +1,25 @@
+$white:   #FFFFFF
+
+// Old colors
 $magenta: #BA0E82
 $blue:    #485DAA
 $green:   #55A43D
 $teal:    #00A4B3
 
-$orange:  #F36633
-$white:   #FFFFFF
+// New colors
+$theme-blue-light: #63a1d7
+$theme-blue-dark: #40609a
+$theme-green-light: #c8e7d8
+$theme-green-dark: #56bf99
+$theme-yellow-light: #f1e17d
+$theme-yellow-dark: #f1b440
+$theme-magenta-dark: #f1616e
+$theme-magenta-light: #f1c9c9
+$theme-orange-dark: #f26733
+$theme-orange-light: #fdcfaf
 
+// Brand colors
+$orange:  #F36633
 $lightOrange: #EEA32D
 
 
@@ -15,13 +29,17 @@ $lightOrange: #EEA32D
   height: 200px
   margin-bottom: -150px
   .color-theme-blue &
-    background-color: $blue
+    background-color: $theme-blue-light
   .color-theme-green &
-    background-color: $green
+    background-color: $theme-green-dark
   .color-theme-magenta &
-    background-color: $magenta
+    background-color: $theme-magenta-dark
   .color-theme-teal &
-    background-color: $teal
+    background-color: $teal // Keep legacy teal, just in case
+  .color-theme-yellow &
+    background-color: $theme-yellow-dark
+  .color-theme-orange &
+    background-color: $theme-orange-dark
 
 @media (min-width: 768px)
   .color-theme-block
@@ -45,11 +63,15 @@ $lightOrange: #EEA32D
 .color-match,
 .intro-text.color-match p
   .color-theme-blue &
-    color: $blue
+    color: $theme-blue-light
   .color-theme-green &
-    color: $green   
+    color: $theme-green-dark
   .color-theme-magenta &
-    color: $magenta   
+    color: $theme-magenta-dark 
   .color-theme-teal &
     color: $teal  
+  .color-theme-yellow &
+    color: $theme-yellow-dark 
+  .color-theme-orange &
+    color: $theme-orange-dark 
 

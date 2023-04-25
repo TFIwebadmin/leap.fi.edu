@@ -64,7 +64,7 @@ p {
   background-color: #f1616e;
 }
 .color-theme-teal .color-theme-block {
-  background-color: #00A4B3;
+  background-color: #63a1d7;
 }
 .color-theme-yellow .color-theme-block {
   background-color: #f1b440;
@@ -88,7 +88,7 @@ p {
 .block h2, .block h3,
 .main-page-content h2,
 .main-page-content h3 {
-  color: #00A4B3;
+  color: #63a1d7;
 }
 
 .main-page-content .intro-text p, .main-page-content .contact-us p {
@@ -109,7 +109,7 @@ p {
 }
 .color-theme-teal .color-match,
 .color-theme-teal .intro-text.color-match p {
-  color: #00A4B3;
+  color: #63a1d7;
 }
 .color-theme-yellow .color-match,
 .color-theme-yellow .intro-text.color-match p {
@@ -124,10 +124,6 @@ p {
   text-align: center;
   color: #FFFFFF;
   background-color: #F36633;
-  background-image: url("../images/bkgd_header.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 40px !important;
 }
 .main-page-heading .site-partner-logo img {
@@ -150,10 +146,6 @@ p {
 
 .bkgd-pattern-bottom {
   background-color: #FFFFFF;
-  background-image: url("../images/bkgd_icons.png");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .site-navigation {

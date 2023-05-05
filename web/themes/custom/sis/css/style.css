@@ -322,20 +322,32 @@ div.video-background .button, div.video-background .field--name-field-events .fi
 .color-theme-teal .instructions-docs .documents-wrapper .document-icon-wrapper {
   background-image: url("../images/document-guide-theme-teal.jpg");
 }
+.color-theme-yellow .instructions-docs .documents-wrapper .document-icon-wrapper {
+  background-image: url("../images/document-guide-theme-yellow.jpg");
+}
+.color-theme-orange .instructions-docs .documents-wrapper .document-icon-wrapper {
+  background-image: url("../images/document-guide-theme-orange.jpg");
+}
 .instructions-docs .documents-wrapper .document-content {
   padding-top: 20px;
 }
 .instructions-docs .field__item:last-of-type .document-icon-wrapper {
-  background-image: url("../images/document-notebook-theme-blue.png");
+  background-image: url("../images/document-notebook-theme-blue.jpg");
 }
 .color-theme-green .instructions-docs .field__item:last-of-type .document-icon-wrapper {
-  background-image: url("../images/document-notebook-theme-green.png");
+  background-image: url("../images/document-notebook-theme-green.jpg");
 }
 .color-theme-magenta .instructions-docs .field__item:last-of-type .document-icon-wrapper {
-  background-image: url("../images/document-notebook-theme-magenta.png");
+  background-image: url("../images/document-notebook-theme-magenta.jpg");
 }
 .color-theme-teal .instructions-docs .field__item:last-of-type .document-icon-wrapper {
-  background-image: url("../images/document-notebook-theme-teal.png");
+  background-image: url("../images/document-notebook-theme-teal.jpg");
+}
+.color-theme-yellow .instructions-docs .field__item:last-of-type .document-icon-wrapper {
+  background-image: url("../images/document-notebook-theme-yellow.jpg");
+}
+.color-theme-orange .instructions-docs .field__item:last-of-type .document-icon-wrapper {
+  background-image: url("../images/document-notebook-theme-orange.jpg");
 }
 
 .paragraph--type--schedule img {
